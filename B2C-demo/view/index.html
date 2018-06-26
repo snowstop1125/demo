@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+    <title>B2C商城</title>
+    <!--css文件-->
+    <link rel="stylesheet" href="../statics/layui/css/layui.css">
+    <link rel="stylesheet" href="../statics/stylesheets/style.css">
+
+    <!--js文件-->
+    <script src="../statics/scripts/jquery-1.9.1.min.js"></script>
+    <script src="../statics/layui/layui.js"></script>
+    <!--<script src="../statics/scripts/jquery.lazyload.min.js"></script>-->
+</head>
+
+<body class="is-index">
+<!-- 头部 header -->
+    <!--topbar-ad 设置图片1200*无限制高 和背景色-->
+    <div class="topbar-ad" style="background: #e54343;">
+        <div class="wrap-1200">
+            <img lay-src="https://img30.360buyimg.com/da/jfs/t19345/197/1998324150/70474/e03923d1/5ae01a0fN912bdb8b.png" />
+        </div>
+    </div>
+    <!--topbar-ad-->
+
+    <!-- 顶部导航 -->
+    <div class="topbar" id="topbar" >
+        <div class="wrap-1200">
+            <div class="topbar-l fl">
+                <div class="topbar-nav-item" style="margin-left:0;" >
+                    <div class="item-hd" >
+                        <a href="http://you.163.com/story" target="_blank" >
+                           <i class="layui-icon layui-icon-home topbar-icon"></i>您好，欢迎来到商城！</a></div>
+                </div>
+                <div class="topbar-nav-item">
+                    <div class="item-hd">
+                        <div class="topbar-notice" >
+                            <ul class="topbar-notice-list" id="topbarNotice">
+                                <li class="topbar-notice-item show" >
+                                    <a class="topbar-notice-text" href="javascript:;" target="_blank" >【福利】1元包邮团，早市抵现红包在严选A...</a>
+                                </li>
+                                <li class="yx-cp-noticeItem" >
+                                    <a class="topbar-notice-text" href="javascript:;" target="_blank">防诈骗公告</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="topbar-r fr">
+                <div style="float:left;">
+                    <div class="topbar-nav-item" >
+                        <div class="item-hd" >
+                            <a href="javascript:;" target="_blank" title="网易严选登录" >登录</a>
+                        </div>
+                    </div>
+                    <div class="topbar-nav-item" style="margin-left:20px;" >
+                        <div class="item-hd" >
+                            <a href="javascript:;" target="_blank">注册</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-nav-item">
+                    <div class="item-hd line" >
+                        <a href="http://you.163.com/order/myList" target="_blank" >我的订单</a></div>
+                </div>
+                <div class="topbar-nav-item" data-dropdown="customerServiceDropdown" >
+                    <div class="item-hd line" >
+                        <span>客户服务</span><i class="layui-icon layui-icon-down topbar-icon" style="margin-left: 10px;"></i>
+                    </div>
+                    <div class="item-td">
+                        <div class="topbar-dropdown-menu">
+                            <a class="menu-item" href="javascript:;" >在线客服</a>
+                            <a class="menu-item" href="http://you.163.com/help" target="_blank">帮助中心</a>
+                            <a href="http://you.163.com/help#business" class="menu-item" target="_blank" >商务合作</a>
+                            <a href="https://open.you.163.com/" class="menu-item" target="_blank" >开放平台</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="topbar-nav-item" data-dropdown="appDownload">
+                    <div class="item-hd line" >
+                        <a target="_blank" href="//you.163.com/downloadapp?_stat_from=web_out_pz_baidu_1" ><i class="layui-icon layui-icon-cellphone topbar-icon "></i><span>手机版</span></a>
+                    </div>
+                    <div class="item-td">
+                        <div class="topbar-dropdown-menu topbar-dropdown-menu-mobile" >
+                            <div class="QR-code" >
+                                <img src="../statics/images/demo_qrcode.png"/>
+                            </div>
+                            <span class="yx-cp-QRtxt">扫码浏览移动端</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 顶部导航end -->
+
+    <!-- logo搜索 -->
+    <div class="header">
+        <div class="wrap-1200 clearfix pr">
+            <div class="logo">
+                <img src="../statics/images/demo_logo.png" alt="商城Logo"/>
+            </div>
+            <div class="searchbar">
+                <form class="search-form" action="" method="post">
+                    <input type="text" autocomplete="off" placeholder="搜索想要的商品"/><button class="submit" type="button"><i class="layui-icon layui-icon-search icon-search"></i></button>
+                </form>
+                <div class="search-hot">
+                    <a href="javascript:;">iphone8</a><a href="javascript:;">chanel口红</a><a href="javascript:;">连衣裙</a>
+                </div>
+            </div>
+            <!-- 迷你购物车 -->
+            <div class="mini-cart">
+                <div class="mini-cart-con">
+                    <a href="javascript:;">
+                      <i class="layui-icon layui-icon-cart"></i>
+                      我的购物车
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- logo搜索 end -->
+
+    <!-- 头部导航栏 -->
+    <div class="nav">
+        <div class="wrap-1200 clearfix">
+            <div class="nav-left">
+                <div class="category_handle">
+                    <div class="all-cate">
+                        <a href="#">全部商品分类</a>
+                    </div>
+                    <div class="category">
+                        <ul class="category-primary">
+                            <li>
+                                <div class="category-primary-item">
+                                    <a href="javascript:;">服装鞋包 </a>
+                                    <p>
+                                        <a href="javascript:;">女装</a><a href="javascript:;">皮鞋</a><a href="javascript:;">箱包</a>
+                                    </p>
+                                    <span class="layui-icon layui-icon-right"></span>
+                                </div>
+                                <div class="category-sub clearfix">
+                                    <div class="category-sub-l fl">
+                                        <div class="category-sub-item clearfix">
+                                            <div class="category-sub-title fl">
+                                                <a href="http://ys-bbc.wxt.bycache.com/topics.html?cat_id=2">女装<span class="layui-icon layui-icon-right"></span></a>
+                                            </div>
+                                            <ul class="fl clearfix">
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=33">连衣裙</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=34">外套</a></li>
+                                                <li>| <a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=35">羽绒服</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=36">羊绒衫</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=37">卫衣</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=38">棉服</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=39">打底衫</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=40">T恤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=41">小西服</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=42">休闲裤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=43">牛仔裤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=44">短裤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=45">裙子</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item clearfix">
+                                            <div class="category-sub-title fl">
+                                                <a href="http://ys-bbc.wxt.bycache.com/topics.html?cat_id=2">女装<span class="layui-icon layui-icon-right"></span></a>
+                                            </div>
+                                            <ul class="fl clearfix">
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=33">连衣裙</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=34">外套</a></li>
+                                                <li>| <a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=35">羽绒服</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=36">羊绒衫</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=37">卫衣</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=38">棉服</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=39">打底衫</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=40">T恤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=41">小西服</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=42">休闲裤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=43">牛仔裤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=44">短裤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=45">裙子</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item clearfix">
+                                            <div class="category-sub-title fl">
+                                                <a href="http://ys-bbc.wxt.bycache.com/topics.html?cat_id=2">女装<span class="layui-icon layui-icon-right"></span></a>
+                                            </div>
+                                            <ul class="fl clearfix">
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=33">连衣裙</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=34">外套</a></li>
+                                                <li>| <a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=35">羽绒服</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=36">羊绒衫</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=37">卫衣</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=38">棉服</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=39">打底衫</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=40">T恤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=41">小西服</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=42">休闲裤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=43">牛仔裤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=44">短裤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=45">裙子</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class="category-sub-item clearfix">
+                                            <div class="category-sub-title fl">
+                                                <a href="http://ys-bbc.wxt.bycache.com/topics.html?cat_id=2">女装<span class="layui-icon layui-icon-right"></span></a>
+                                            </div>
+                                            <ul class="fl clearfix">
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=33">连衣裙</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=34">外套</a></li>
+                                                <li>| <a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=35">羽绒服</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=36">羊绒衫</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=37">卫衣</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=38">棉服</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=39">打底衫</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=40">T恤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=41">小西服</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=42">休闲裤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=43">牛仔裤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=44">短裤</a></li>
+                                                <li>|<a href="http://ys-bbc.wxt.bycache.com/list.html?cat_id=45">裙子</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="category-sub-r fr">
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="category-primary-item">
+                                    <a href="javascript:;">服装鞋包 </a>
+                                    <p>
+                                        <a href="javascript:;">女装</a><a href="javascript:;">皮鞋</a><a href="javascript:;">箱包</a>
+                                    </p>
+                                    <span class="layui-icon layui-icon-right"></span>
+                                </div>
+
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right">
+                <div class="menu">
+                    <span><a href="javascript:;">首页</a></span><span><a href="javascript:;">会员中心</a></span><span><a href="javascript:;">热门活动</a></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- 头部导航栏 end -->
+
+<!-- 头部 header end -->
+
+<div class="main">
+    <!-- 轮播图区 -->
+    <div class="main-focus" style="margin-bottom:100px;">
+        <div class="full-slider">
+            <div class="layui-carousel" id="main_banner">
+                <div carousel-item="">
+                    <div><img src="../statics/images/demo_banner_01.jpg"></div>
+                    <div><img src="../statics/images/demo_banner_01.jpg"></div>
+                    <div><img src="../statics/images/demo_banner_01.jpg"></div>
+                    <div><img src="../statics/images/demo_banner_01.jpg"></div>
+                    <div><img src="../statics/images/demo_banner_01.jpg"></div>
+                    <div><img src="../statics/images/demo_banner_01.jpg"></div>
+                    <div><img src="../statics/images/demo_banner_01.jpg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="module">
+        <!--<img class="lazy" lay-src="../statics/images/demo_banner_01.jpg" alt="我是图片" >-->
+
+
+        <div class="wrap-1200">
+            <!--<img class="lazy" lay-src="../statics/images/demo_banner_01.jpg" alt="我是图片" width="100%" height="500">-->
+
+
+
+        </div>
+    </div>
+</div>
+<!-- 公用底部-->
+<div class="footer">
+
+</div>
+<!-- 公用底部-->
+</body>
+<script>
+    layui.use(['flow','carousel'], function () {
+        var flow = layui.flow;
+        //当你执行这样一个方法时，即对页面中的全部带有lay-src的img元素开启了懒加载（当然你也可以指定相关img）
+        flow.lazyimg();
+
+        //图片轮播
+        var carousel = layui.carousel;
+        carousel.render({
+            elem: '#main_banner'
+            , anim:'default' //default（左右切换）updown（上下切换）fade（渐隐渐显切换）
+            , width: '1920px'
+            , height: '420px'
+            , interval: 5000
+        });
+
+
+    });
+
+    $(function () {
+//        $("img.lazy").lazyload({ effect: "fadeIn" });//图片懒加载
+        // 头部通知栏
+        var topbarNotice = document.getElementById('topbarNotice');
+        var ali = topbarNotice.getElementsByTagName('li')
+        var now = 0;
+        var timer = null;
+        next();
+        function tab() {
+            for (var i = 0; i < ali.length; i++) {
+                ali[i].className = 'topbar-notice-item';
+            }
+            ali[now].className = 'topbar-notice-item show';
+        };
+        function next() {
+            timer = setInterval(function () {
+                now++;
+                now %= ali.length;
+                tab();
+            }, 3000);
+        };
+        topbarNotice.onmouseover = function () {
+            clearInterval(timer);
+        };
+        topbarNotice.onmouseout = next;
+
+    });
+</script>
+
+</html>
