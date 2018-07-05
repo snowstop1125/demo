@@ -20,6 +20,7 @@ body {
     font-size: 75%;
     line-height: 1.5;
     color:#666;
+    font-family: "Microsoft YaHei",'layui-icon';
 }
 blockquote, q {
     quotes: none;
@@ -427,7 +428,7 @@ B2C商城模板样式
     width: 980px;
     background: #fff;
     color: #666;
-    min-height: 420px;
+    min-height: 423px;
     box-shadow: 10px 3px 20px rgba(0, 0, 0, 0.3);
     
 }
@@ -507,4 +508,17 @@ B2C商城模板样式
 }
 .main-focus .full-slider .layui-carousel:hover .layui-carousel-arrow[lay-type=add], .main-focus .full-slider .layui-carousel[lay-arrow=always] .layui-carousel-arrow[lay-type=add] {
     right: 370px;
+}
+.sub-ad {
+    margin: 30px 0 20px;
+}
+.sub-ad li {
+    float: left;
+    width: 292px;
+    margin: 0 10px 10px 0;
+    webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -ms-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
 }
