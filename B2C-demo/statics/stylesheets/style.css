@@ -14,7 +14,7 @@ ul, ol, menu {
     padding: 0;
 }
 body {
-    font-size: 75%;
+    font-size: 13px;
     line-height: 1.5;
     color:#666;
     font-family: "Microsoft YaHei",'layui-icon';
@@ -123,6 +123,30 @@ img{
 .pr{
     position: relative;
 }
+.ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ml-ellipsis{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.price,.red{
+    color: #e15f45;
+}
+del{
+    color: #999;
+}
+
 /**
 B2C商城模板样式
 **/
@@ -136,7 +160,24 @@ B2C商城模板样式
     width: 1200px;
     margin: 0 auto;
 }
-
+.o-btn-red{
+    color: #e15f45;
+    border-color: #e15f45;
+    -webkit-transition: ease .2s; -moz-transition: ease .2s; -ms-transition: ease .2s; -o-transition: ease .2s; transition: ease .2s;
+}
+.o-btn-red:hover{
+    background-color: #e15f45;
+    color:#fff;
+}
+.cshop-icon{
+    width:20px;
+    height:18px;
+    display: inline-block;
+    background-image: url("../images/cshop_icon.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    vertical-align: middle;
+}
 .topbar{
     position: relative;
     height: 36px;
@@ -278,6 +319,7 @@ B2C商城模板样式
     float: left;
     width:220px;
     margin-right:20px;
+    min-height: 50px;
 }
 .header .logo img {
     width:auto;
@@ -490,7 +532,10 @@ B2C商城模板样式
 .nav-right .menu span.active, .nav-right .menu span:hover {
     color: #e15f45;
 }
-
+.main-focus{
+    background:#fff;
+    margin-bottom:30px;
+}
 .main-focus .full-slider{
     overflow:hidden;
 }
@@ -511,15 +556,228 @@ B2C商城模板样式
     right: 370px;
 }
 .sub-ad {
-    margin: 30px 0 20px;
+    padding: 20px 0 10px;
 }
 .sub-ad li {
     float: left;
-    width: 292px;
-    margin: 0 10px 10px 0;
+    width: 285px;
+    margin: 0 20px 10px 0;
     webkit-transition: all .2s linear 0s;
     -moz-transition: all .2s linear 0s;
     -ms-transition: all .2s linear 0s;
     -o-transition: all .2s linear 0s;
     transition: all .2s linear 0s;
+}
+.sub-ad li:nth-child(4n){
+    margin-right:0;
+}
+.img-hover{
+    webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -ms-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
+}
+.img-hover:hover{
+    opacity: .8;
+}
+.fixed-right-nav {
+    visibility: hidden;
+    position: fixed;
+    top: 24px;
+    right: auto;
+    left: 50%;
+    margin-left: 620px;
+    width: 60px;
+    z-index: 2;
+    background-color: #fff;
+}
+.fixed-right-nav .nav-item {
+    text-align: center;
+    display: block;
+    border: 1px solid #eee;
+    color: #999;
+    padding-bottom: 5px;
+    margin-top: -1px;
+}
+.fixed-right-nav .nav-item .index-icon {
+    margin-top: 10px;
+    width: 30px;
+    height: 25px;
+}
+.fixed-right-nav .nav-item .index-icon-cart em {
+    position: absolute;
+    min-width: 12px;
+    height: 20px;
+    background: #e15f45;
+    top: -6px;
+    border-radius: 20px;
+    line-height: 20px;
+    border: 1px solid #fff;
+    font-weight: 500;
+    padding: 0 4px;
+    color: #fff;
+}
+.fixed-right-nav .nav-item.top-btn {
+    background: #999;
+}
+.wrap-footer{
+    background: #fff;
+}
+.footer-site-ensure {
+    border-top: 1px solid #ddd;
+}
+.footer-site-ensure .wrap-1200 {
+    border-bottom: 1px solid #ddd;
+    padding: 30px 0;
+}
+.footer-site-ensure dl {
+    float: left;
+    height: 58px;
+    margin-left: 10px;
+}
+.footer-site-ensure dt {
+    margin-left: 60px;
+    font-size: 16px;
+    color: #e25e44;
+    font-weight: bold;
+    margin-top: 5px;
+}
+.footer-site-ensure dd {
+    margin-left: 60px;
+    font-size: 12px;
+    color: #666;
+}
+.page-helper .wrap-1200 {
+    padding: 40px 0 40px;
+}
+.helper-item {
+    margin-right: 20px;
+    width: 140px;
+    float: left;
+}
+.helper-item .content-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.helper-item .node-index, .helper-item .article-index-list {
+    line-height: 24px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.helper-item .content-title a {
+    color: #333333;
+}
+.helper-item .node-index a, .helper-item .article-index-list a {
+    color: #999;
+}
+.helper-item .node-index a:hover, .helper-item .article-index-list a:hover {
+    text-decoration: underline;
+}
+.page-footer{
+    background:#333;
+}
+.page-footer .theme-footer{
+    text-align: center;
+    padding: 20px 0;
+    color:#eee;
+}
+
+.module{
+    padding: 0px 0 30px;
+}
+.module .module-hd{
+    padding-bottom: 15px;
+}
+.module-hd h2{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.module-hd h2 span{
+    font-size: 13px;
+    font-weight: normal;
+    color: #999;
+    margin-left:10px;
+}
+.module-hd .fr{
+    margin-top: 14px;
+    color:#999;
+}
+.module-flashgo .pt-list{
+    width:940px;
+}
+.module-flashgo .pt-list li{
+    width:50%;
+    float: left;
+    position: relative;
+}
+.module-flashgo .pt-list li:nth-child(1):after, .module-flashgo .pt-list li:nth-child(2):after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    background: #eee;
+    visibility: visible;
+}
+.module-flashgo .pt-list li:before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    right: 0;
+    background: #eee;
+    visibility: visible;
+}
+.module-flashgo .pt-list li .img{
+    width:190px;
+    height:190px;
+    overflow: hidden;
+}
+.module-flashgo .pt-list li .pt-info{
+    width: 240px;
+    padding: 20px 20px 0;
+}
+.module-flashgo .pt-list li .pt-info .name{
+    font-size: 16px;
+    color:#333;
+    display: block;
+}
+.module-flashgo .pt-list li .pt-info .subtitle {
+    font-size: 12px;
+    color: #999;
+    height:35px;
+    margin:5px 0 27px 0;
+}
+.module-flashgo .pt-list li .pt-info .price-p{
+    margin-bottom:3px;
+}
+.module-flashgo .pt-list li .pt-info .price{
+    font-size: 18px;
+    font-weight:bold;
+}
+.module-flashgo .pt-list .pt-info .time{
+    font-size: 12px;
+    color: #999;
+    margin-top:6px;
+}
+.module-flashgo .pt-list .pt-info .time .cshop-icon-clock{
+    margin-right:5px;
+    margin-top: -2px;
+}
+.module-flashgo .pt-list .pt-info .o-btn-red{
+    border-radius: 20px;
+    padding: 8px 15px;
+}
+.module-tuango .pt-list{
+    width: 940px;
+}
+.module-tuango .pt-list li{
+    width: 33.3%;
+    float: left;
+    height: 190px;
 }
