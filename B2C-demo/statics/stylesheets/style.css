@@ -64,8 +64,6 @@ input[type=reset]::-moz-focus-inner, input[type=button]::-moz-focus-inner, input
     padding: 0;
 }
 input[type=text],input[type=number]{
-    height:30px;
-    border:1px solid #ccc;
     border-radius: 4px;
     padding:0 10px;
 }
@@ -78,7 +76,8 @@ button{
     cursor: pointer;
 }
 button:hover{
-    background:#f7f7f7;
+    opacity: .8;
+    filter: alpha(opacity=80);
 }
 input:active, input:hover, input:focus, input:visited,
 button:active, button:hover, button:focus, button:visited{
@@ -143,18 +142,57 @@ img{
 .price,.red{
     color: #e15f45;
 }
+.green{
+    color:#79c579;
+}
 del{
     color: #999;
 }
-
+.link{
+    color: #528ccc;
+}
+/**
+layui制定
+**/
+.layui-tab{
+    margin:0;
+}
+.layui-tab-card{
+    -webkit-box-shadow: 0 0 0 0 #ffffff; -moz-box-shadow: 0 0 0 0 #ffffff; box-shadow: 0 0 0 0 #ffffff;
+}
+.layui-tab-content{
+    background:#fff;
+}
+.layui-tab-card > .layui-tab-more .layui-this{
+    color: #e15f45;
+}
+.layui-btn{
+    border-radius: 4px;
+}
+.layui-form-checked[lay-skin=primary] i{
+    border-color: #e15f45;
+    background-color: #e15f45;
+}
+.layui-form-checkbox[lay-skin=primary]:hover i {
+    border-color: #e15f45;
+}
+.layui-form-radio > i:hover, .layui-form-radioed > i{
+    color: #e15f45;
+}
+.layui-layer-btn{
+    text-align: center;
+}
+.layui-layer-btn .layui-layer-btn0{
+    background-color: #e15f45;
+}
 /**
 B2C商城模板样式
 **/
+.bg-fff, .main {
+    background-color: #fff;
+}
 .bg-gray{
     background-color: #f0f3ef;
-}
-.bg-fff{
-    background-color: #fff;
 }
 .wrap-1200 {
     width: 1200px;
@@ -177,6 +215,49 @@ B2C商城模板样式
     background-repeat: no-repeat;
     background-position: 0 0;
     vertical-align: middle;
+}
+.step-module .step-item{
+    float: left;
+    position: relative;
+}
+.step-module .step-item span{
+    display: block;
+    background-color: #f3f3f3;
+    color:#999;
+    font-size: 15px;
+    padding: 5px 10px 5px 30px;
+    margin-right: 18px;
+}
+.step-module .step-item b{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width:0px;
+    height:0px;
+    border-top: 16px solid transparent;
+    border-left: 18px solid #f3f3f3;
+    border-bottom: 16px solid transparent;
+}
+.step-module .step-item.active span{
+    background-color: #e15f45;
+    color: #fff;
+}
+.step-module .step-item.active b {
+    border-left-color: #e15f45;
+}
+.step-module .step-item:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0px;
+    height: 0px;
+    border-top: 16px solid transparent;
+    border-left: 18px solid #fff;
+    border-bottom: 16px solid transparent;
+}
+.step-module .step-item:first-child:before{
+    content: normal;
 }
 .topbar{
     position: relative;
@@ -600,12 +681,10 @@ B2C商城模板样式
     padding-bottom: 5px;
     margin-top: -1px;
 }
-.fixed-right-nav .nav-item .index-icon {
-    margin-top: 10px;
-    width: 30px;
-    height: 25px;
+.fixed-right-nav .nav-item .layui-icon {
+    font-size: 26px;
 }
-.fixed-right-nav .nav-item .index-icon-cart em {
+.fixed-right-nav .nav-item .layui-icon-cart em {
     position: absolute;
     min-width: 12px;
     height: 20px;
@@ -617,6 +696,7 @@ B2C商城模板样式
     font-weight: 500;
     padding: 0 4px;
     color: #fff;
+    font-size: 12px;
 }
 .fixed-right-nav .nav-item.top-btn {
     background: #999;
@@ -677,6 +757,31 @@ B2C商城模板样式
 .helper-item .node-index a:hover, .helper-item .article-index-list a:hover {
     text-decoration: underline;
 }
+.helper-item-r{
+    float:right;
+}
+.helper-item-r .hotline{
+    color:#e25e44;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.helper-item-r .hotline b{
+    font-style: italic;
+}
+.helper-item-r .time{
+    font-size: 17px;
+    text-align: center;
+}
+.helper-item-r .footer-qr{
+    margin-left: 40px;
+}
+.cshop-icon-kefu{
+    width: 27px;
+    height: 27px;
+    background-position: 1px -28px;
+}
 .page-footer{
     background:#333;
 }
@@ -693,7 +798,7 @@ B2C商城模板样式
     padding-bottom: 15px;
 }
 .module-hd h2{
-    font-size: 24px;
+    font-size: 23px;
     font-weight: bold;
     color: #333;
 }
@@ -777,7 +882,259 @@ B2C商城模板样式
     width: 940px;
 }
 .module-tuango .pt-list li{
-    width: 33.3%;
+    width: 33.2%;
     float: left;
+    height: 189px;
+    border-width: 0px 1px 1px 0;
+    border-style: solid;
+    border-color: #eee;
+}
+.module-tuango .pt-list li:nth-child(6n-2), .module-tuango .pt-list li:nth-child(6n-1), .module-tuango .pt-list li:nth-child(6n){
+    border-bottom: none;
+}
+.module-tuango .pt-list li:nth-child(3n) {
+    border-right: none;
+}
+.module-tuango .pt-list li .img{
+    width:100px;
+    margin-right:15px;
+}
+.module-tuango .pt-list li .img a{
+    line-height: 190px;
+}
+.module-tuango .pt-list li .pt-info{
+    padding: 20px 10px 0 20px;
+    width: 160px;
+}
+.module-tuango .pt-list li .pt-info .name{
+    font-size: 18px;
+    color: #333;
+    height: 52px;
+}
+.module-tuango .pt-list li .pt-info .price {
+    font-size: 15px;
+    margin: 10px 0 30px;
+}
+.module-tuango .pt-list li .pt-info .bar{
+    height:5px;
+    background:#d5d5d5;
+}
+.module-tuango .pt-list li .pt-info .bar b{
+    background: #e25e44;
+    display: block;
+    height: 100%;
+    max-width: 100%;
+}
+.module-tuango .pt-list li .pt-info .rest{
+    color:#999;
+    margin-top: 4px;
+}
+.module-fourimg .big-ad{
+    margin-right:9px;
+    width:394px;
+    height:353px;
+}
+.module-fourimg .small-ad{
+    width:394px;
+}
+.module-fourimg .small-ad a{
+    height: 172px;
+    display: block;
+    margin-bottom: 9px;
+    overflow: hidden;
+}
+.module-fourimg .small-ad a:nth-child(2n){
+    margin-bottom:0;
+}
+.module-fourimg img:hover{
+    transform:scale(1.01,1.01);
+}
+.module-hottop .layui-tab-card{
+    border-width:0;
+}
+.module-hottop .layui-tab-card > .layui-tab-title{
+    background-color: #dbac8f;
+    color: #fff;
+}
+.module-hottop .layui-tab-card > .layui-tab-more .layui-this,
+.module-hottop .layui-tab-card > .layui-tab-title .layui-tab-bar,
+.module-hottop .layui-tab-title .layui-this{
+    color: #6a3515;
+}
+.module-hottop .layui-tab-content{
+    height:260px;
+}
+.module-hottop .pt-list li{
+    float: left;
+    width:196px;
+}
+.module-hottop .pt-list li .img{
+    width: 160px;
     height: 190px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.module-hottop .pt-list li .img a{
+    line-height: 190px;
+}
+.module-hottop .pt-list li .name{
+    margin: 5px 10px 5px;
+    height: 37px;
+}
+.module-hottop .pt-list li .price{
+    font-weight: bold;
+    margin:0 10px;
+}
+.module-floor .big-ad{
+    width:594px;
+    height:364px;
+    margin:0 10px 10px 0;
+    overflow: hidden;
+}
+.module-floor .item{
+    float: left;
+    background: #fff;
+    width: 252px;
+    height:344px;
+    padding: 10px 20px;
+    margin: 0 10px 10px 0;
+}
+.module-floor .item:nth-child(2),
+.module-floor .item:nth-child(4n+2){
+    margin-right:0;
+}
+.module-floor .item .img{
+    width:220px;
+    margin:0 auto;
+    height:260px;
+    line-height: 260px;
+    overflow: hidden;
+}
+.module-floor .item .name{
+    font-size: 15px;
+    height:44px;
+    margin: 5px 0 5px;
+}
+.module-floor .item .price{
+    font-weight:bold;
+    font-size: 15px;
+    text-align: center;
+}
+
+.passport-tit{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+}
+.wrap-login{
+    height: 410px;
+}
+.wrap-login .login_left{
+    width:745px;
+    height:410px;
+    float: left;
+}
+.wrap-login .login-form {
+    width: 334px;
+    padding:30px;
+    background: #fff;
+    float: right;
+    margin:20px 60px 0 0;
+    border-radius: 8px;
+    -webkit-box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.15); -moz-box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.15); box-shadow: 0 4px 5px 2px rgba(0, 0, 0, 0.15);
+}
+.login-form .login-tit h2{
+    color:#333;
+}
+.login-form .login-tit a {
+    color: #999;
+    font-size: 14px;
+}
+.login-form .layui-tab{
+    margin-top: 10px;
+}
+.login-form .layui-tab-title,
+.login-form .layui-tab-title .layui-this:after{
+    border-color: #e15f45;
+}
+.login-form .layui-tab-title li,
+.login-form .layui-tab-title .layui-this {
+    color: #e15f45;
+}
+.login-form .layui-tab-title li{
+    background-color: #fdf3f1;
+    padding: 0 45px;
+}
+.login-form .layui-tab-title li:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: '';
+    width: 100%;
+    height: 41px;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px 4px 0 0;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+.login-form .layui-tab-title .layui-this:after {
+    border-bottom-color: #fff;
+}
+.login-form .layui-tab-title .layui-this{
+    background-color: #fff;
+}
+.login-form .layui-tab-content{
+    padding:15px 0 0;
+}
+.login-form .layui-input-block{
+    margin-left:0;
+}
+.login-form .layui-form-mid{
+    margin-right: 0px;
+}
+.login-form .login-btn{
+    width:100%;
+    font-size: 16px;
+}
+.wrap-forgot .step-module{
+    width: 800px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.wrap-forgot .step-module .step-item{
+    width:25%;
+}
+.wrap-forgot .layui-tab-item{
+    width: 400px;
+    margin: 40px auto 60px;
+    padding-right: 20px;
+}
+.wrap-forgot .layui-form-label{
+    width: 105px;
+}
+.wrap-forgot .layui-input-block{
+    margin-left: 135px;
+}
+.wrap-forgot .newpsw-success{
+    margin-top: 65px;
+}
+.wrap-forgot .newpsw-success .layui-form-label{
+    line-height: 34px;
+}
+.wrap-forgot .newpsw-success .layui-icon-ok-circle{
+    font-size: 60px;
+}
+.wrap-signup .layui-tab-content{
+    background: #f6f6f6;
+}
+.wrap-signup {
+    padding-bottom: 40px;
+}
+.wrap-signup .signup-btn{
+    width:100%;
+}
+.wrap-signup .layui-tab-item{
+    padding-right: 60px;
 }
