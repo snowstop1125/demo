@@ -260,140 +260,96 @@
         </div>
 
         <!--筛选区-->
-        <div class="section filter-container" id="filter_container">
-            <div class="section-title clearfix">
-                <h3>商品筛选</h3>
-                <span class="fr">筛选到<i class="price">2462</i>件商品</span>
-            </div>
-            <!-- 筛选条件 -->
-            <div class="section-content" id="gallery_filter">
-                <div class="filter-lists-container" id="filter_lists">
-                    <!-- 分类 -->
-                    <dl class="filter-entries clearfix">
-                        <dt class="filter-entries-label">分类：</dt>
-                        <dd class="filter-entries-values">
-                            <span class="filter-item"><a href="index.html" class="handle action-cat-filter">家常菜</a></span>
-                            <span class="filter-item"><a href="index.html" class="handle action-cat-filter">火锅/香锅/干锅</a></span>
-                            <span class="filter-item"><a href="index.html" class="handle action-cat-filter">面食/粉</a></span>
-                            <span class="filter-item"><a href="index.html" class="handle action-cat-filter">面包蛋糕</a></span>
-                            <span class="filter-item"><a href="index.html" class="handle action-cat-filter">小吃/卤味</a></span>
-                            <span class="filter-item"><a href="index.html" class="handle action-cat-filter">半成品菜</a></span>
-                        </dd>
-                    </dl>
-
-                    <!-- 品牌 -->
-                    <dl class="filter-entries clearfix" data-label="brand_id">
-                        <dt class="filter-entries-label">品牌：</dt>
-                        <dd class="filter-entries-values">
-                            <span class="filter-item active"><a href="javascript:void(0);" class="handle action-select-unlimit">不限</a></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">盛津美食</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">北方饺子王</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">颓废鸭</a><b class="delete action-delete-filter">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">敦城海鲜酒家</a><b class="delete action-delete-filter">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">上海豫园</a><b class="delete action-delete-filter">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">旺角28</a><b class="delete action-delete-filter">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">赤炸风云</a><b class="delete action-delete-filter">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">旺角28</a><b class="delete action-delete-filter">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">赤炸风云</a><b class="delete action-delete-filter">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">天津馅饼</a><b class="delete action-delete-filter">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">多乐之日</a><b class="delete action-delete-filter">×</b></span>
-                           <span class="filter-item"> <a href="javascript:;" class="handle action-select-filter">贵州花溪王</a><b class="delete action-delete-filter">×</b></span>
-                          <span class="filter-item"> <a href="javascript:;" class="handle action-select-filter">稻香饭团</a><b class="delete action-delete-filter">×</b></span>
-                          <span class="filter-item"> <a href="javascript:;" class="handle action-select-filter">老洛阳凉皮</a><b class="delete action-delete-filter">×</b></span>
-                          <span class="filter-item"> <a href="javascript:;" class="handle action-select-filter">汤功煮</a><b class="delete action-delete-filter">×</b></span>
-                          <span class="filter-item"> <a href="javascript:;" class="handle action-select-filter">满嘴香川菜</a><b class="delete action-delete-filter">×</b></span>
-                          <span class="filter-item"> <a href="javascript:;" class="handle action-select-filter">不一样点心</a><b class="delete action-delete-filter">×</b></span>
-                          <span class="filter-item"> <a href="javascript:;" class="handle action-select-filter">小魏麻辣鸭脖</a><b class="delete action-delete-filter">×</b></span>
-                        </dd>
-                        <dd class="filter-entries-more">
-                            <a href="javascript:;"><span class="text" data-toggle="收起">展开</span><i class="layui-icon layui-icon-down"></i></a>
-                        </dd>
-                    </dl>
-                    <!-- 包装 -->
-                    <dl class="filter-entries clearfix" data-label="brand_id">
-                        <dt class="filter-entries-label">包装状态：</dt>
-                        <dd class="filter-entries-values">
-                            <span class="filter-item active"><a href="javascript:void(0);" class="handle action-select-unlimit">不限</a></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">打包盒</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">礼盒装</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">包装袋</a><b class="delete action-delete-filter">×</b></span>
-                        </dd>
-                        <dd class="filter-entries-more">
-                            <a href="javascript:;"><span class="text" data-toggle="收起">展开</span><i class="layui-icon layui-icon-down"></i></a>
-                        </dd>
-                    </dl>
-                    <dl class="filter-entries clearfix" data-label="brand_id">
-                        <dt class="filter-entries-label">包装状态：</dt>
-                        <dd class="filter-entries-values">
-                            <span class="filter-item active"><a href="javascript:void(0);" class="handle action-select-unlimit">不限</a></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">打包盒</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">礼盒装</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">包装袋</a><b class="delete action-delete-filter">×</b></span>
-                        </dd>
-                        <dd class="filter-entries-more">
-                            <a href="javascript:;"><span class="text" data-toggle="收起">展开</span><i class="layui-icon layui-icon-down"></i></a>
-                        </dd>
-                    </dl>
-                    <dl class="filter-entries clearfix" data-label="brand_id">
-                        <dt class="filter-entries-label">包装状态：</dt>
-                        <dd class="filter-entries-values">
-                            <span class="filter-item active"><a href="javascript:void(0);" class="handle action-select-unlimit">不限</a></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">打包盒</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">礼盒装</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">包装袋</a><b class="delete action-delete-filter">×</b></span>
-                        </dd>
-                        <dd class="filter-entries-more">
-                            <a href="javascript:;"><span class="text" data-toggle="收起">展开</span><i class="layui-icon layui-icon-down"></i></a>
-                        </dd>
-                    </dl>
-                    <dl class="filter-entries clearfix" data-label="brand_id">
-                        <dt class="filter-entries-label">包装状态：</dt>
-                        <dd class="filter-entries-values">
-                            <span class="filter-item active"><a href="javascript:void(0);" class="handle action-select-unlimit">不限</a></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">打包盒</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">礼盒装</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">包装袋</a><b class="delete action-delete-filter">×</b></span>
-                        </dd>
-                        <dd class="filter-entries-more">
-                            <a href="javascript:;"><span class="text" data-toggle="收起">展开</span><i class="layui-icon layui-icon-down"></i></a>
-                        </dd>
-                    </dl>
-                    <dl class="filter-entries clearfix" data-label="brand_id">
-                        <dt class="filter-entries-label">包装状态：</dt>
-                        <dd class="filter-entries-values">
-                            <span class="filter-item active"><a href="javascript:void(0);" class="handle action-select-unlimit">不限</a></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">打包盒</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">礼盒装</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">包装袋</a><b class="delete action-delete-filter">×</b></span>
-                        </dd>
-                        <dd class="filter-entries-more">
-                            <a href="javascript:;"><span class="text" data-toggle="收起">展开</span><i class="layui-icon layui-icon-down"></i></a>
-                        </dd>
-                    </dl>
-                    <dl class="filter-entries clearfix" data-label="brand_id">
-                        <dt class="filter-entries-label">包装状态：</dt>
-                        <dd class="filter-entries-values">
-                            <span class="filter-item active"><a href="javascript:void(0);" class="handle action-select-unlimit">不限</a></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">打包盒</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">礼盒装</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                            <span class="filter-item"><a href="javascript:;" class="handle action-select-filter">包装袋</a><b class="delete action-delete-filter">×</b></span>
-                        </dd>
-                        <dd class="filter-entries-more">
-                            <a href="javascript:;"><span class="text" data-toggle="收起">展开</span><i class="layui-icon layui-icon-down"></i></a>
-                        </dd>
-                    </dl>
+        <div id="filter_container">
+            <div class="section filter-container">
+                <div class="section-title clearfix">
+                    <h3>商品筛选</h3>
+                    <span class="fr">筛选到<i class="price">2462</i>件商品</span>
                 </div>
+                <!-- 筛选条件 -->
+                <div class="section-content" id="gallery_filter">
+                    <div class="filter-lists-container" id="filter_lists">
+                        <!-- 分类 -->
+                        <dl class="filter-entries clearfix">
+                            <dt class="filter-entries-label">分类：</dt>
+                            <dd class="filter-entries-values">
+                                <span class="filter-item"><a href="index.html" class="handle action-cat-filter">家常菜</a></span>
+                                <span class="filter-item"><a href="index.html" class="handle action-cat-filter">火锅/香锅/干锅</a></span>
+                                <span class="filter-item"><a href="index.html" class="handle action-cat-filter">面食/粉</a></span>
+                                <span class="filter-item"><a href="index.html" class="handle action-cat-filter">面包蛋糕</a></span>
+                                <span class="filter-item"><a href="index.html" class="handle action-cat-filter">小吃/卤味</a></span>
+                                <span class="filter-item"><a href="index.html" class="handle action-cat-filter">半成品菜</a></span>
+                            </dd>
+                        </dl>
 
-                <div class="filter-more" id="filterMore"><i class="layui-icon layui-icon-down" data-toggle="收起"></i></div>
+                        <!-- 品牌 -->
+                        <dl class="filter-entries clearfix" data-label="brand_id" data-single="false">
+                            <dt class="filter-entries-label">品牌：</dt>
+                            <dd class="filter-entries-values">
+                                <span class="filter-item active"><a href="javascript:void(0);" class="handle action-select-unlimit">不限</a></span>
+                                <span class="filter-item" data-fid="brand_id-1"><a href="javascript:;" class="handle action-select-filter">盛津美食</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-2"><a href="javascript:;" class="handle action-select-filter">北方饺子王</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-3"><a href="javascript:;" class="handle action-select-filter">颓废鸭</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-4"><a href="javascript:;" class="handle action-select-filter">敦城海鲜酒家</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-5"><a href="javascript:;" class="handle action-select-filter">上海豫园</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-6"><a href="javascript:;" class="handle action-select-filter">旺角28</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-7"><a href="javascript:;" class="handle action-select-filter">赤炸风云</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-8"><a href="javascript:;" class="handle action-select-filter">旺角28</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-9"><a href="javascript:;" class="handle action-select-filter">赤炸风云</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-10"><a href="javascript:;" class="handle action-select-filter">天津馅饼</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-11"><a href="javascript:;" class="handle action-select-filter">多乐之日</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-12"> <a href="javascript:;" class="handle action-select-filter">贵州花溪王</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-13"> <a href="javascript:;" class="handle action-select-filter">稻香饭团</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-14"> <a href="javascript:;" class="handle action-select-filter">老洛阳凉皮</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-15"> <a href="javascript:;" class="handle action-select-filter">汤功煮</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-16"> <a href="javascript:;" class="handle action-select-filter">满嘴香川菜</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-17"> <a href="javascript:;" class="handle action-select-filter">不一样点心</a><b class="delete action-delete-filter">×</b></span>
+                                <span class="filter-item" data-fid="brand_id-18"> <a href="javascript:;" class="handle action-select-filter">小魏麻辣鸭脖</a><b class="delete action-delete-filter">×</b></span>
+                            </dd>
+                            <dd class="filter-entries-more">
+                                <a href="javascript:;"><span class="text" data-toggle="收起">展开</span><i class="layui-icon layui-icon-down"></i></a>
+                            </dd>
+                        </dl>
+                        <!-- 包装 -->
+                        <dl class="filter-entries clearfix" data-label="p_1">
+                            <dt class="filter-entries-label">包装状态：</dt>
+                            <dd class="filter-entries-values">
+                                <span class="filter-item active"><a href="javascript:void(0);" class="handle action-select-unlimit">不限</a></span>
+                                <span class="filter-item " data-fid="p_1-50"><a href="javascript:;" class="handle action-select-filter">打包盒</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
+                                <span class="filter-item" data-fid="p_1-51"><a href="javascript:;" class="handle action-select-filter">礼盒装</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
+                                <span class="filter-item" data-fid="p_1-52"><a href="javascript:;" class="handle action-select-filter">包装袋</a><b class="delete action-delete-filter">×</b></span>
+                            </dd>
+                            <dd class="filter-entries-more">
+                                <a href="javascript:;"><span class="text" data-toggle="收起">展开</span><i class="layui-icon layui-icon-down"></i></a>
+                            </dd>
+                        </dl>
+
+                    </div>
+
+                    <div class="filter-more" id="filterMore"><i class="layui-icon layui-icon-down" data-toggle="收起"></i></div>
+                </div>
+            </div>
+            <div id="filter_selected" class="filter-selected clearfix">
+                <dl class="filter-selected-list clearfix">
+                    <dt class="filter-selected-title">您已选择：</dt>
+                    <dd class="filter-selected-values">
+                        <!--<span class="filter-selected-entries" data-label="brand_id" data-single="true">
+                              <label for="" class="filter-selected-label">品牌：</label>
+                              <em class="filter-selected-item" data-fid="brand_id-1">盛津美食<b class="delete action-delete-filter" title="移除筛选">×</b></em>
+                              <em class="filter-selected-item" data-fid="brand_id-5">上海豫园<b class="delete action-delete-filter" title="移除筛选">×</b></em>
+                        </span>
+                            <span class="filter-selected-entries" data-label="p_1" data-single="true">
+                              <label for="" class="filter-selected-label">包装状态：</label>
+                              <em class="filter-selected-item" data-fid="p_1-50">打包盒<b class="delete action-delete-filter" title="移除筛选">×</b></em>
+                        </span>-->
+                    </dd>
+                </dl>
             </div>
         </div>
+        <div class="section">
+            <div class="section-title">
 
-        <div id="filter_selected" class="filter-selected clearfix">
-            <dl class="filter-selected-list clearfix">
-                <dt class="filter-selected-title">您已选择：</dt>
-                <dd class="filter-selected-values">
-                </dd>
-            </dl>
+            </div>
         </div>
     </div>
 </div>
@@ -593,22 +549,102 @@
             }
         });
         $('.action-select-filter').click(function(){ // 点击筛选项
-            $(this).parent('.filter-item').addClass('active');
-            $(this).parents('.filter-entries-values').find('.action-select-unlimit').parent('.filter-item').removeClass('active');//不限取消高亮
+            var item = $(this).parent('.filter-item');
+            if (item.hasClass('active')) return;
+            setFilter($(this), item);
+            item.addClass('active');
+            // $(this).parent('.filter-item').addClass('active');
+            // $(this).parents('.filter-entries-values').find('.action-select-unlimit').parent('.filter-item').removeClass('active');//不限取消高亮
         });
         $('.action-select-unlimit').click(function () { // 点击不限筛选项
-            $(this).parents('.filter-entries').find('.filter-item').removeClass('active');
-            $(this).parent('.filter-item').addClass('active');
+            var item = $(this).parent('.filter-item');
+            if (item.hasClass('active')) return;
+            var actives = item.parent().find('.active');
+
+            var label = $(this).parents('[data-label]').data('label');
+            if (actives.length) {
+                actives.removeClass('active');
+            }
+//            try {
+                $('#filter_selected').find('[data-label=' + label + ']').remove();
+            console.log($('#filter_selected').find('[data-label=' + label + ']'))
+//            } catch (e) {
+//            }
+            item.addClass('active');
+
+//            $(this).parents('.filter-entries').find('.filter-item').removeClass('active');
+//            $(this).parent('.filter-item').addClass('active');
         });
 
-        $('.filter-item .action-delete-filter').click(function () { // 移除筛选项
-            var filterEntriesVal= $(this).parents('.filter-entries-values');
-            $(this).parent('.filter-item').removeClass('active');
-            var len= filterEntriesVal.find('.filter-item.active').length;
-            if(len==0){
-                filterEntriesVal.find('.action-select-unlimit').parent('.filter-item').addClass('active');
-            }
+        $(document).on('click','.action-delete-filter',function(){
+            var isSelect = $(this).parent().hasClass('filter-selected-item') ? '-selected' : '';
+            var el = $(this).parent('.filter' + isSelect + '-item');
+            var id = el.data('fid');
+            var selectItem;
+            if (isSelect) { // 点击已选筛选
+                selectItem = el;  // 自身已选项
+                el = $('#filter_lists').find('[data-fid=' + id + ']');//选出两个相同的筛选项
+            } else {
+                selectItem = $('#filter_selected').find('[data-fid=' + id + ']'); //选出已选筛选项
+            };
+            delFilter(el, selectItem)
+        })
+        $('.action-delete-filter').click(function (e) { // 移除筛选项
+
         });
+        function delFilter(item, sel) { // item表单里的筛选 ， sel自身已选项
+            var selItems = sel.siblings();
+            var items=item.parent().find('.filter-item.active');
+            if (selItems.length == 1 || items.length == 1) {
+                if (item) {
+                    var parent = item.parent();// 整条
+                    parent.find('.action-select-unlimit').parent('.filter-item').addClass('active');
+                }
+                selItems.parent().remove(); // 销毁
+            } else sel.remove();
+//            var input = el.getElements('.action-filter-input');
+//            if (input.length) {
+//                input.each(function (el) {
+//                    el.value = '';
+//                });
+//            }
+            item && item.removeClass('active');
+        };
+        function setFilter(el, item, value) {
+            value = value || el.text();
+            console.log(value)
+            item = item || el.parent('.filter-item');
+            var type = el.parents('.filter-lists-container') ? '-entries' : el.parent('.filter-promotion') ? '-promotion' : '-dropdown';
+            var id = item.data('fid');
+            var entries = el.parents('[data-label]');
+            var first = entries.find('.action-select-unlimit').parent(); //不限
+            var label = entries.data('label');
+            var single = entries.data('single');
+            var name = entries.find('.filter' + type + '-label').text();
+            name = name.substr(0, name.length - 1) + '：';
+            var tpl = value + '<b class="delete action-delete-filter" title="移除筛选">×</b>';
+            var selected = $('#filter_selected').find('.filter-selected-values');
+            var selected_item = selected.find('[data-label="' + label + '"]')[0];
+            single = single ? ' data-single="true"' : '';
+            if (first.hasClass('active')) first.removeClass('active');
+            if (single) item.parent().find('.active').removeClass('active');
+//            if (!id || id.test(/custom/) && (min || min === 0) && max) {
+//                id = label + '-' + min + '~' + max;
+//            }
+            if (!selected_item) {
+                tpl = '<span class="filter-selected-entries" data-label="' + label + '"' + single + '><label class="filter-selected-label">' + name + '</label><span class="filter-selected-item" data-fid="' + id + '">' + tpl + '</span></span>';
+                selected.append(tpl);
+            } else {
+                if (single) {
+                    $(selected_item).find('.filter-selected-item').data('fid',id)[0].innerHTML = tpl;
+                    console.log($(selected_item).find('.filter-selected-item'))
+                } else {
+                    tpl = '<span class="filter-selected-item" data-fid="'+ id +'">'+ tpl +'</span>';
+                    $(selected_item).append(tpl);
+                }
+            }
+        }
+
         $('.filter-entries-more').click(function(){ // 展开 收起
             var btn=$(this).find('.text');
             var icon= $(this).find('.layui-icon');
@@ -625,7 +661,6 @@
                 parent.removeClass('open')
             }
         });
-
     });
 </script>
 

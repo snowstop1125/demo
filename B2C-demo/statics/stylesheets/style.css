@@ -1183,7 +1183,8 @@ B2C商城模板样式
 .filter-container .filter-entries.open .filter-entries-values{
     overflow-y: auto;
 }
-.filter-container .filter-entries .filter-entries-label{
+.filter-container .filter-entries .filter-entries-label,
+.filter-selected-list .filter-selected-title{
     width:110px;
     float: left;
     margin-top: 2px;
@@ -1203,7 +1204,8 @@ B2C商城模板样式
     font-size: 12px;
     margin-left: 2px;
 }
-.filter-container .filter-entries-values{
+.filter-container .filter-entries-values,
+.filter-selected-list .filter-selected-values{
     float: left;
     width: 990px;
     max-height: 150px;
@@ -1243,6 +1245,9 @@ B2C商城模板样式
     cursor: pointer;
     display: none;
 }
+.filter-container .filter-more:hover{
+    background-color: #e2e3e0;
+}
 .filter-selected{
     margin:30px 12px 0px;
 }
@@ -1255,4 +1260,24 @@ B2C商城模板样式
 .filter-container .filter-more .layui-icon{
     font-weight: bold;
     font-size: 14px;
+}
+.filter-selected-list .filter-selected-values {
+    width: 1060px;
+}
+.filter-selected-list .filter-selected-values .filter-selected-entries{
+    color:#e25e44;
+    margin-right: 10px;
+}
+.filter-selected-list .filter-selected-entries .filter-selected-item{
+    margin:0 0 5px 5px;
+    border: 1px solid #e15f45;
+    padding: 1px 6px;
+    display: inline-block;
+}
+.filter-selected-list .filter-selected-entries .filter-selected-item .delete{
+    font-size: 16px;
+    line-height: 15px;
+    font-weight: 800;
+    margin-left: 5px;
+    cursor: pointer;
 }
