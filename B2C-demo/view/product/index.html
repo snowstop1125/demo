@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <title>B2C商城-商品列表</title>
+    <title>B2C商城-商品详情</title>
     <!--css文件-->
     <link rel="stylesheet" href="../../statics/layui/css/layui.css">
     <link rel="stylesheet" href="../../statics/stylesheets/style.css">
@@ -259,86 +259,14 @@
             <span class="now">手机</span>
         </div>
 
-        <!--筛选区-->
-        <div id="filter_container">
-            <div class="section filter-container">
-                <div class="section-title clearfix">
-                    <h3>商品筛选</h3>
-                    <span class="fr">筛选到<i class="price">2462</i>件商品</span>
-                </div>
-                <!-- 筛选条件 -->
-                <div class="section-content" id="gallery_filter">
-                    <div class="filter-lists-container" id="filter_lists">
-                        <!-- 分类 -->
-                        <dl class="filter-entries clearfix">
-                            <dt class="filter-entries-label">分类：</dt>
-                            <dd class="filter-entries-values">
-                                <span class="filter-item"><a href="index.html" class="handle action-cat-filter">家常菜</a></span>
-                                <span class="filter-item"><a href="index.html" class="handle action-cat-filter">火锅/香锅/干锅</a></span>
-                                <span class="filter-item"><a href="index.html" class="handle action-cat-filter">面食/粉</a></span>
-                                <span class="filter-item"><a href="index.html" class="handle action-cat-filter">面包蛋糕</a></span>
-                                <span class="filter-item"><a href="index.html" class="handle action-cat-filter">小吃/卤味</a></span>
-                                <span class="filter-item"><a href="index.html" class="handle action-cat-filter">半成品菜</a></span>
-                            </dd>
-                        </dl>
-
-                        <!-- 品牌 -->
-                        <dl class="filter-entries clearfix" data-label="brand_id" data-single="false">
-                            <dt class="filter-entries-label">品牌：</dt>
-                            <dd class="filter-entries-values">
-                                <span class="filter-item active"><a href="javascript:void(0);" class="handle action-select-unlimit">不限</a></span>
-                                <span class="filter-item" data-fid="brand_id-1"><a href="javascript:;" class="handle action-select-filter">盛津美食</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-2"><a href="javascript:;" class="handle action-select-filter">北方饺子王</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-3"><a href="javascript:;" class="handle action-select-filter">颓废鸭</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-4"><a href="javascript:;" class="handle action-select-filter">敦城海鲜酒家</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-5"><a href="javascript:;" class="handle action-select-filter">上海豫园</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-6"><a href="javascript:;" class="handle action-select-filter">旺角28</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-7"><a href="javascript:;" class="handle action-select-filter">赤炸风云</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-8"><a href="javascript:;" class="handle action-select-filter">旺角28</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-9"><a href="javascript:;" class="handle action-select-filter">赤炸风云</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-10"><a href="javascript:;" class="handle action-select-filter">天津馅饼</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-11"><a href="javascript:;" class="handle action-select-filter">多乐之日</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-12"> <a href="javascript:;" class="handle action-select-filter">贵州花溪王</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-13"> <a href="javascript:;" class="handle action-select-filter">稻香饭团</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-14"> <a href="javascript:;" class="handle action-select-filter">老洛阳凉皮</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-15"> <a href="javascript:;" class="handle action-select-filter">汤功煮</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-16"> <a href="javascript:;" class="handle action-select-filter">满嘴香川菜</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-17"> <a href="javascript:;" class="handle action-select-filter">不一样点心</a><b class="delete action-delete-filter">×</b></span>
-                                <span class="filter-item" data-fid="brand_id-18"> <a href="javascript:;" class="handle action-select-filter">小魏麻辣鸭脖</a><b class="delete action-delete-filter">×</b></span>
-                            </dd>
-                            <dd class="filter-entries-more">
-                                <a href="javascript:;"><span class="text" data-toggle="收起">展开</span><i class="layui-icon layui-icon-down"></i></a>
-                            </dd>
-                        </dl>
-                        <!-- 包装 -->
-                        <dl class="filter-entries clearfix" data-label="p_1">
-                            <dt class="filter-entries-label">包装状态：</dt>
-                            <dd class="filter-entries-values">
-                                <span class="filter-item active"><a href="javascript:void(0);" class="handle action-select-unlimit">不限</a></span>
-                                <span class="filter-item " data-fid="p_1-50"><a href="javascript:;" class="handle action-select-filter">打包盒</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                                <span class="filter-item" data-fid="p_1-51"><a href="javascript:;" class="handle action-select-filter">礼盒装</a><b class="delete action-delete-filter" title="移除筛选">×</b></span>
-                                <span class="filter-item" data-fid="p_1-52"><a href="javascript:;" class="handle action-select-filter">包装袋</a><b class="delete action-delete-filter">×</b></span>
-                            </dd>
-                            <dd class="filter-entries-more">
-                                <a href="javascript:;"><span class="text" data-toggle="收起">展开</span><i class="layui-icon layui-icon-down"></i></a>
-                            </dd>
-                        </dl>
-
-                    </div>
-
-                    <div class="filter-more" id="filterMore"><i class="layui-icon layui-icon-down" data-toggle="收起"></i></div>
-                </div>
+        <div class="section filter-container">
+            <div class="section-title clearfix">
+                <h3>商品筛选</h3>
+                <span class="fr">筛选到<i class="price">2462</i>件商品</span>
             </div>
-            <div id="filter_selected" class="filter-selected clearfix">
-                <dl class="filter-selected-list clearfix">
-                    <dt class="filter-selected-title">您已选择：</dt>
-                    <dd class="filter-selected-values">
-                        <!--<span class="filter-selected-entries" data-label="brand_id" data-single="true">
-                              <label for="" class="filter-selected-label">品牌：</label>
-                              <em class="filter-selected-item" data-fid="brand_id-1">盛津美食<b class="delete action-delete-filter" title="移除筛选">×</b></em>
-                        </span>-->
-                    </dd>
-                </dl>
+            <!-- 筛选条件 -->
+            <div class="section-content">
+
             </div>
         </div>
         <div id="gallery_sortbar" class="gallery-sortbar clearfix">
@@ -373,69 +301,6 @@
                         </div>
                         <div class="goods-btn clearfix">
                             <i class="layui-icon fl layui-icon-star-fill faved" title="已收藏"></i>
-                            <div class="fr">
-                                <button class="layui-btn-sm o-btn-red">立即购买</button>
-                                <button class="layui-btn layui-btn-sm">加入购物车</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="goods-item">
-                        <div class="goods-pic">
-                            <a href="../product/index.html">
-                                <img class="action-goods-img img-hover" alt="越南进口 中原G7三合一速溶咖啡1600g (16gx100条）" lay-src="https://img13.360buyimg.com/n7/jfs/t20113/350/2336290627/419520/5566d71d/5b3d7582Ne67c2364.jpg">
-                            </a>
-                        </div>
-                        <div class="goods-info">
-                            <h3 class="goods-name ml-ellipsis"><a href="../product/index.html">越南进口 中原G7三合一速溶咖啡1600g (16gx100条）</a></h3>
-                            <div class="goods-tag"><span class="layui-badge">限时购</span></div>
-                            <div class="goods-price"><span class="price">￥198.00</span>
-                                <del>￥398.00</del>
-                                <i class="warning">库存紧张</i></div>
-                        </div>
-                        <div class="goods-btn clearfix">
-                            <i class="layui-icon fl layui-icon-star-fill" title="收藏"></i>
-                            <div class="fr">
-                                <button class="layui-btn-sm o-btn-red">立即购买</button>
-                                <button class="layui-btn layui-btn-sm">加入购物车</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="goods-item">
-                        <div class="goods-pic">
-                            <a href="../product/index.html">
-                                <img class="action-goods-img img-hover" alt="越南进口 中原G7三合一速溶咖啡1600g (16gx100条）" lay-src="https://img12.360buyimg.com/n7/jfs/t17524/346/1512654007/389081/7b124ecb/5acc64d3N340da7a4.jpg">
-                            </a>
-                        </div>
-                        <div class="goods-info">
-                            <h3 class="goods-name ml-ellipsis"><a href="../product/index.html">越南进口 中原G7三合一速溶咖啡1600g (16gx100条）</a></h3>
-                            <div class="goods-tag"><span class="layui-badge">限时购</span></div>
-                            <div class="goods-price"><span class="price">￥198.00</span>
-                                <del>￥398.00</del>
-                                <i class="warning">库存紧张</i></div>
-                        </div>
-                        <div class="goods-btn clearfix">
-                            <i class="layui-icon fl layui-icon-star-fill" title="收藏"></i>
-                            <div class="fr">
-                                <button class="layui-btn-sm o-btn-red">立即购买</button>
-                                <button class="layui-btn layui-btn-sm">加入购物车</button>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="goods-item">
-                        <div class="goods-pic">
-                            <a href="../product/index.html">
-                                <img class="action-goods-img img-hover" alt="越南进口 中原G7三合一速溶咖啡1600g (16gx100条）" lay-src="https://img13.360buyimg.com/n7/jfs/t8356/79/1672180265/415393/8bd4f652/59bcfcf7Nb319a833.jpg">
-                            </a>
-                        </div>
-                        <div class="goods-info">
-                            <h3 class="goods-name ml-ellipsis"><a href="../product/index.html">越南进口 中原G7三合一速溶咖啡1600g (16gx100条）</a></h3>
-                            <div class="goods-tag"><span class="layui-badge">限时购</span></div>
-                            <div class="goods-price"><span class="price">￥198.00</span>
-                                <del>￥398.00</del>
-                                <i class="warning">库存紧张</i></div>
-                        </div>
-                        <div class="goods-btn clearfix">
-                            <i class="layui-icon fl layui-icon-star-fill" title="收藏"></i>
                             <div class="fr">
                                 <button class="layui-btn-sm o-btn-red">立即购买</button>
                                 <button class="layui-btn layui-btn-sm">加入购物车</button>

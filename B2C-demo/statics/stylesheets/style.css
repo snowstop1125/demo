@@ -185,6 +185,9 @@ layui制定
 .layui-layer-btn .layui-layer-btn0{
     background-color: #e15f45;
 }
+.layui-badge, .layui-badge-dot, .layui-badge-rim{
+    background-color: #e15f45;
+}
 /**
 B2C商城模板样式
 **/
@@ -700,6 +703,14 @@ B2C商城模板样式
 }
 .fixed-right-nav .nav-item.top-btn {
     background: #999;
+}
+.cshop-icon-top{
+    background-position: -21px 2px;
+    width: 40px;
+    height: 26px;
+}
+.fixed-right-nav .nav-item.top-btn .cshop-icon-top{
+    margin-top: 5px;
 }
 .wrap-footer{
     background: #fff;
@@ -1276,6 +1287,7 @@ B2C商城模板样式
     border: 1px solid #e15f45;
     padding: 1px 6px;
     display: inline-block;
+    background: #f2eceb;
 }
 .filter-selected-list .filter-selected-entries .filter-selected-item .delete{
     font-size: 16px;
@@ -1287,20 +1299,45 @@ B2C商城模板样式
 .gallery-sortbar {
     border: 1px solid #eee;
     background-color: #f5f5f5;
+    margin-bottom: 10px;
 }
 .gallery-sortbar .gallery-sort {
     float: left;
-    padding-left: 10px;
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding-left: 12px;
+    line-height: 40px;
+}
+.gallery-sortbar .gallery-sort .action-sort{
+    margin-right: 40px;
+}
+.gallery-sortbar .gallery-sort .action-sort.active{
+    color:#e15f45;
+}
+.gallery-sortbar .gallery-sort .action-sort .cshop-icon, .cshop-icon-drop{
+    width: 15px;
+    height: 17px;
+}
+.gallery-sortbar .gallery-sort .action-sort .cshop-icon{
+    background-position: -29px -60px;
+}
+.gallery-sortbar .gallery-sort .action-sort.price-desc.active .cshop-icon {
+    background-position: 3px -60px;
+}
+.gallery-sortbar .gallery-sort .action-sort.price-asc.active .cshop-icon {
+    background-position: 3px -77px;
+}
+.gallery-sortbar .gallery-sort .action-sort .cshop-icon-drop {
+    background-position: -16px -60px;
+}
+.gallery-sortbar .gallery-sort .action-sort.active .cshop-icon-drop {
+    background-position: -16px -77px;
 }
 .gallery-sortbar .gallery-showmode {
     float: left;
-    padding: 11px 2px 8px 10px;
+    padding: 8px 2px 8px 10px;
 }
 .gallery-sortbar .mini-pageview {
     float: right;
-    margin-right: 10px;
+    margin-right: 9px;
     padding-top: 10px;
 }
 .mini-pageview {
@@ -1309,14 +1346,78 @@ B2C商城模板样式
 }
 .mini-pageview .flip {
     border: 1px solid #ddd;
-    color: #3a68cb;
+    color: #666;
     background: #f9f9f9;
     padding: 1px 5px;
     display: inline-block;
     margin-left: 1px;
     width: auto;
 }
+.mini-pageview .flip .layui-icon{
+    font-size: 12px;
+}
 .mini-pageview .over {
     color: #ccc;
     cursor: not-allowed;
+}
+.gallery-show .gallery-grid li{
+    float: left;
+    margin:0 20px 20px 0;
+    width:283px;
+    background: #fff;
+    border:1px solid #fff;
+    -webkit-transition: ease .3s; -moz-transition: ease .3s; -ms-transition: ease .3s; -o-transition: ease .3s; transition: ease .3s;
+}
+.gallery-show .gallery-grid li:hover{
+    border-color:#e15f45;
+    -webkit-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, .07); -moz-box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, .07); box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, .07);
+}
+.gallery-show .gallery-grid li:nth-child(4n){
+    margin-right:0;
+}
+.gallery-show .gallery-grid li .goods-pic{
+    width:100%;
+    height:283px;
+    line-height: 285px;
+    overflow: hidden;
+}
+.gallery-show .gallery-grid li .goods-info{
+    padding:10px 15px 0;
+}
+.gallery-show .gallery-grid li .goods-info .goods-name{
+    height:45px;
+    font-size: 14px;
+}
+.gallery-show .gallery-grid li .goods-info .goods-price .price{
+    font-size: 18px;
+    font-weight: bold;
+    margin-right:5px;
+}
+.gallery-show .gallery-grid li .goods-info .goods-price .warning{
+    float: right;
+    color:#ccc;
+    margin-top: 4px;
+    font-size: 12px;
+}
+.gallery-show .gallery-grid li .goods-info .goods-tag{
+    margin-bottom: 10px;
+    height: 21px;
+    overflow: hidden;
+}
+.gallery-show .gallery-grid li .goods-info .goods-tag .layui-badge{
+    margin:0 3px 3px 0;
+}
+.gallery-show .gallery-grid li .goods-btn{
+    padding:5px 15px 10px;
+}
+.gallery-show .gallery-grid li .goods-btn .layui-icon-star-fill{
+    color:#dbdbdb;
+    font-size: 22px;
+    cursor: pointer;
+}
+.gallery-show .gallery-grid li .goods-btn .layui-icon-star-fill.faved{
+    color:#e15f45;
+}
+.brand-list{
+    padding:0;
 }
