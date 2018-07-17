@@ -346,9 +346,20 @@
                 </dl>
             </div>
         </div>
-        <div class="section">
-            <div class="section-title">
-
+        <div id="gallery_sortbar" class="gallery-sortbar clearfix">
+            <div class="gallery-sort">
+                <a href="javascript:void(0);" class="action-sort active" data-sort=""><em>默认</em></a>
+                <a href="javascript:void(0);" class="action-sort price-desc" data-sort="price desc"><em>价格<span class="icon desc">*</span><span class="icon asc">+</span></em></a>
+                <a href="javascript:void(0);" class="action-sort " data-sort="buy_w_count desc"><em>销量<span class="icon">*</span></em></a>
+            </div>
+            <div class="gallery-showmode layui-form">
+                <input type="checkbox" name="is_store" id="" class="action-available" title="仅显示有货" lay-skin="primary">
+                <input type="checkbox" name="gTag[]" id="" class="action-available" value="1" title="团购" lay-skin="primary">
+                <input type="checkbox" name="gTag[]" id="" class="action-available" value="2" title="送赠品" lay-skin="primary">
+            </div>
+            <div class="mini-pageview">
+                <span class="page-count"><span class="page-current">1</span>/<span class="page-total">2</span></span>
+                <span class="page-action"><a href="javascript:void(0);" class="flip prev over"><i class="icon">4</i></a><a href="javascript:void(0);" class="flip next"><i class="icon">5</i></a></span>
             </div>
         </div>
     </div>
@@ -517,7 +528,7 @@
 <!-- 公用底部-->
 </body>
 <script>
-    layui.use(['element'], function () {
+    layui.use(['element','form'], function () {
 
     });
 
