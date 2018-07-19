@@ -131,9 +131,9 @@
                         <ul class="category-primary">
                             <li>
                                 <div class="category-primary-item">
-                                    <a href="index.html">服装鞋包 </a>
+                                    <a href="../gallery/index.html">服装鞋包 </a>
                                     <p>
-                                        <a href="index.html">女装</a><a href="index.html">皮鞋</a><a href="index.html">箱包</a>
+                                        <a href="../gallery/index.html">女装</a><a href="../gallery/index.html">皮鞋</a><a href="../gallery/index.html">箱包</a>
                                     </p>
                                     <span class="layui-icon layui-icon-right"></span>
                                 </div>
@@ -251,63 +251,138 @@
     <!-- 头部导航栏 end -->
 <!-- 头部 header end -->
 
-<div class="main bg-gray">
+<div class="main bg-fff">
     <div class="wrap-1200">
         <div class="bread-crumbs">
-            <span><a href="../../index.html" alt="" title="">首页</a></span>
+            <span><a href="../../index.html">首页</a></span>
             <span> / </span>
-            <span class="now">手机</span>
+            <span class="now"><a href="../gallery/index.html">手机</a></span>
+            <span> / </span>
+            <span class="now"><a href="../gallery/index.html">苹果</a></span>
         </div>
 
-        <div class="section filter-container">
-            <div class="section-title clearfix">
-                <h3>商品筛选</h3>
-                <span class="fr">筛选到<i class="price">2462</i>件商品</span>
-            </div>
-            <!-- 筛选条件 -->
-            <div class="section-content">
-
-            </div>
-        </div>
-        <div id="gallery_sortbar" class="gallery-sortbar clearfix">
-            <div class="gallery-sort">
-                <a href="javascript:void(0);" class="action-sort active" data-sort=""><em>综合<span class="cshop-icon cshop-icon-drop"></span></em></a>
-                <a href="javascript:void(0);" class="action-sort price-desc" data-sort="price desc"><em>价格<span class="cshop-icon"></span></em></a>
-                <a href="javascript:void(0);" class="action-sort " data-sort="buy_w_count desc"><em>销量<span class="cshop-icon cshop-icon-drop"></span></em></a>
-            </div>
-            <div class="gallery-showmode layui-form">
-                <input type="checkbox" name="is_store" id="" class="action-available" title="仅显示有货" lay-skin="primary">
-                <input type="checkbox" name="gTag[]" id="" class="action-available" value="1" title="团购" lay-skin="primary">
-                <input type="checkbox" name="gTag[]" id="" class="action-available" value="2" title="送赠品" lay-skin="primary">
-            </div>
-            <div class="mini-pageview">
-                <span class="page-count"><span class="page-current">1</span>/<span class="page-total">2</span></span>
-                <span class="page-action"><a href="javascript:void(0);" class="flip prev over"><i class="layui-icon layui-icon-left"></i></a><a href="javascript:void(0);" class="flip next"><i class="layui-icon layui-icon-right"></i></a></span>
-            </div>
-        </div>
-        <div id="gallery_show" class="gallery-show">
-            <div class="gallery-grid">
-                <ul class="clearfix">
-                    <li class="goods-item">
-                        <div class="goods-pic">
-                            <a href="../product/index.html">
-                                <img class="action-goods-img img-hover" alt="越南进口 中原G7三合一速溶咖啡1600g (16gx100条）" lay-src="https://img13.360buyimg.com/n2/jfs/t2932/279/759495863/243388/5086177e/57677d33Ned8dbfd5.jpg">
-                            </a>
-                        </div>
-                        <div class="goods-info">
-                            <h3 class="goods-name ml-ellipsis"><a href="../product/index.html">越南进口 中原G7三合一速溶咖啡1600g (16gx100条）</a></h3>
-                            <div class="goods-tag"><span class="layui-badge">限时购</span></div>
-                            <div class="goods-price"><span class="price">￥198.00</span><del>￥398.00</del><i class="warning">库存紧张</i></div>
-                        </div>
-                        <div class="goods-btn clearfix">
-                            <i class="layui-icon fl layui-icon-star-fill faved" title="已收藏"></i>
-                            <div class="fr">
-                                <button class="layui-btn-sm o-btn-red">立即购买</button>
-                                <button class="layui-btn layui-btn-sm">加入购物车</button>
+        <div class="product-container">
+            <div class="product-main clearfix">
+                <div class="product-side">
+                    <div class="product-album">
+                        <div class="product-album-preview">
+                            <div class="product-album-pic">
+                                <a href="javascript:;" class="album-preview-container" id="op_product_zoom">
+                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" rel="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" class="small-pic">
+                                </a>
                             </div>
                         </div>
-                    </li>
-                </ul>
+                        <div class="product-album-thumb">
+                            <a href="javascript:;" class="btn btn-prev unclick"><i class="layui-icon layui-icon-left"></i></a>
+                            <a href="javascript:;" class="btn btn-next"><i class="layui-icon layui-icon-right"></i></a>
+                            <div class="thumbnail-list">
+                                <ul class="wrapper clearfix" id="thumbnailList" style="margin-left:0px;">
+                                    <li class="item item-cur" data-src="images/small_1.jpg"><img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" alt="#"></li>
+                                    <li class="item" data-src="images/small_2.jpg"><img src="https://img.alicdn.com/imgextra/i1/713805254/TB23CKXbsD85uJjSZFpXXXz3VXa_!!713805254.jpg_60x60q90.jpg" alt="#"></li>
+                                    <li class="item" data-src="images/small_3.jpg"><img src="https://img.alicdn.com/imgextra/i4/713805254/TB2IVz6CrSYBuNjSspfXXcZCpXa_!!713805254.jpg_60x60q90.jpg" alt="#"></li>
+                                    <!--<li class="item" data-src="images/small_4.jpg"><img src="https://gd1.alicdn.com/imgextra/i1/11247811/TB2tJDJawnH8KJjSspcXXb3QFXa_!!11247811.jpg_50x50.jpg" alt="#"></li>
+                                    <li class="item" data-src="images/small_5.jpg"><img src="https://gd1.alicdn.com/imgextra/i1/11247811/TB2rLbQaznD8KJjSspbXXbbEXXa_!!11247811.jpg_50x50.jpg" alt="#"></li>
+                                    <li class="item" data-src="images/small_6.jpg"><img src="https://gd2.alicdn.com/imgextra/i2/1698220480/TB2FnrCkLDH8KJjy1XcXXcpdXXa_!!1698220480.png_50x50.jpg" alt="#"></li>
+                                    <li class="item" data-src="images/small_4.jpg">
+                                        <img src="https://gd1.alicdn.com/imgextra/i1/11247811/TB2tJDJawnH8KJjSspcXXb3QFXa_!!11247811.jpg_50x50.jpg" alt="#">
+                                    </li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-information">
+                    <form class="layui-form">
+                        <div class="pt-titles">
+                            <h2>Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</h2>
+                            <p>支持移动联通4G网络 Apple产品年中狂欢月。iPhone X，你好未来。</p>
+                        </div>
+                        <div class="pt-price">
+                            <div class="p-item">
+                                <label class="item-label">价格</label>
+                                <span class="item-value">
+                                    <b class="price">￥5499.00</b>
+                                    <span class="del">原价：<del>￥6630.00</del></span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="pt-promotion">
+                            <ul class="pr">
+                                <li class="p-item">
+                                    <label class="item-label">优惠券</label>
+                                    <div class="item-value">
+                                        <em class="coupon-item">满100减20<a href="javascript:;">领券</a></em>
+                                        <em class="coupon-item">满200减30<a href="javascript:;">领券</a></em>
+                                        <a class="link" href="javascript:;">领券中心<i class="layui-icon layui-icon-next"></i></a>
+                                    </div>
+                                </li>
+                                <li class="p-item">
+                                    <label class="item-label">赠品</label>
+                                    <div class="item-value">
+                                        <span class="gift-item">
+                                            <a href="javascript:;">
+                                                <img src="https://img13.360buyimg.com/n1/s25x25_jfs/t21370/150/218634241/308933/4529e20a/5b050737N267f7eb0.jpg" alt="Apple 苹果品牌钢化膜（图片仅供参考 非原装） iphoneX全屏钢化膜" title="Apple 苹果品牌钢化膜（图片仅供参考 非原装） iphoneX全屏钢化膜">
+                                            </a>
+                                            <b>× 1</b>
+                                        </span>
+                                        <span class="gift-item">
+                                            <a href="javascript:;">
+                                                <img src="https://img13.360buyimg.com/n1/s25x25_jfs/t21370/150/218634241/308933/4529e20a/5b050737N267f7eb0.jpg" alt="Apple 苹果品牌钢化膜（图片仅供参考 非原装） iphoneX全屏钢化膜" title="Apple 苹果品牌钢化膜（图片仅供参考 非原装） iphoneX全屏钢化膜">
+                                            </a>
+                                            <b>× 1</b>
+                                        </span>
+                                    </div>
+                                </li>
+
+                                <li class="p-item promotion-panel">
+                                    <div class="promotion-list">
+                                        <label class="item-label">促销</label>
+                                        <div class="item-value">
+                                            <p class="pm-item"><span class="cshop-tag">满减</span>满200元减10元</p>
+                                            <p class="pm-item"><span class="cshop-tag">折扣</span>满100元打9.9折</p>
+                                            <p class="pm-item"><span class="cshop-tag">满减</span>满200元减10元</p>
+                                            <p class="red hide"><i class="layui-icon layui-icon-more"></i></p>
+                                            <a href="javascript:;" class="pt-promotion-open hide">展开更多 <i class="layui-icon layui-icon-down"></i></a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="pt-panel">
+                            <div class="p-item">
+                                <label class="item-label">运费</label>
+                                <span class="item-value">免运费</span>
+                            </div>
+                            <div class="p-item">
+                                <label class="item-label">重量</label>
+                                <span class="item-value">0.43kg</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--人气配件-->
+            <div class="popularity-parts">
+
+            </div>
+            <!--图文详情-->
+            <div class="product-panel clearfix">
+                <div class="recommend-left">
+
+                </div>
+                <div class="product-detail">
+                    <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                        <ul class="layui-tab-title">
+                            <li class="layui-this">商品详情</li>
+                            <li>商品评论</li>
+                        </ul>
+                        <div class="layui-tab-content">
+                            <div class="layui-tab-item layui-show">内容1</div>
+                            <div class="layui-tab-item">内容2</div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -481,161 +556,62 @@
     });
 
     $(function () {
-        var filterEntriesLen=$('.filter-lists-container').find('.filter-entries').length;
-        if(filterEntriesLen>5){
-            $('#filterMore').show();
+        $(".small-pic").imagezoom();
+        $(".thumbnail-list li").click(function () {
+            $(this).addClass("item-cur").siblings().removeClass("item-cur");
+//            $(".jqzoom").attr('src', $(this).find("img").attr("mid"));
+//            $(".jqzoom").attr('rel', $(this).find("img").attr("big"));
+        });
+
+        var pm_item_len=$('.promotion-panel').find('.pm-item').length;
+        if(pm_item_len == 2){
+            $('.promotion-panel').addClass('two-pm-item');
         }else{
-            $('#filterMore').hide();
+            $('.promotion-panel').removeClass('two-pm-item');
         };
-        $('#filterMore').click(function(){
-            var icon = $(this).find('.layui-icon');
-            if (icon.data('toggle') == "收起") {
-                icon.data('toggle', '展开');
-                icon.removeClass('layui-icon-down').addClass('layui-icon-up');
-                $('#filter_lists').addClass('open');
-            } else {
-                icon.data('toggle', '收起');
-                icon.removeClass('layui-icon-up').addClass('layui-icon-down');
-                $('#filter_lists').removeClass('open');
-            }
-        });
-        $('.filter-entries').each(function(){ // 判断高度显示展开按钮
-            var height=$(this).find('.filter-entries-values').height();
-            if(height>30){
-                $(this).find('.filter-entries-more').show();
-            }else{
-                $(this).find('.filter-entries-more').hide();
-            }
-        });
-        $('.action-select-filter').click(function(){ // 点击筛选项
-            var item = $(this).parent('.filter-item');
-            if (item.hasClass('active')) return;
-            setFilter($(this), item);
-            item.addClass('active');
-            // $(this).parent('.filter-item').addClass('active');
-            // $(this).parents('.filter-entries-values').find('.action-select-unlimit').parent('.filter-item').removeClass('active');//不限取消高亮
-        });
-        $('.action-select-unlimit').click(function () { // 点击不限筛选项
-            var item = $(this).parent('.filter-item');
-            if (item.hasClass('active')) return;
-            var actives = item.parent().find('.active');
-
-            var label = $(this).parents('[data-label]').data('label');
-            if (actives.length) {
-                actives.removeClass('active');
-            }
-//            try {
-                $('#filter_selected').find('[data-label=' + label + ']').remove();
-            console.log($('#filter_selected').find('[data-label=' + label + ']'))
-//            } catch (e) {
-//            }
-            item.addClass('active');
-
-//            $(this).parents('.filter-entries').find('.filter-item').removeClass('active');
-//            $(this).parent('.filter-item').addClass('active');
-        });
-
-        $(document).on('click','.action-delete-filter',function(){
-            var isSelect = $(this).parent().hasClass('filter-selected-item') ? '-selected' : '';
-            var el = $(this).parent('.filter' + isSelect + '-item');
-            var id = el.data('fid');
-            var selectItem;
-            if (isSelect) { // 点击已选筛选
-                selectItem = el;  // 自身已选项
-                el = $('#filter_lists').find('[data-fid=' + id + ']');//选出两个相同的筛选项
-            } else {
-                selectItem = $('#filter_selected').find('[data-fid=' + id + ']'); //选出已选筛选项
-            };
-            delFilter(el, selectItem)
-        })
-        $('.action-delete-filter').click(function (e) { // 移除筛选项
-
-        });
-        function delFilter(item, sel) { // item表单里的筛选 ， sel自身已选项
-            var selItems = sel.siblings();
-            var items=item.parent().find('.filter-item.active');
-            if (selItems.length == 1 || items.length == 1) {
-                if (item) {
-                    var parent = item.parent();// 整条
-                    parent.find('.action-select-unlimit').parent('.filter-item').addClass('active');
-                }
-                selItems.parent().remove(); // 销毁
-            } else sel.remove();
-            item && item.removeClass('active');
+        if(pm_item_len>2){
+            $('.promotion-panel').addClass('more-pm-item');
+            $('.pt-promotion-open').show();
+            $('.promotion-panel').find('.red').show();
+        }else{
+            $('.promotion-panel').removeClass('more-pm-item');
+            $('.pt-promotion-open').hide();
+            $('.promotion-panel').find('.red').hide();
         };
-        function setFilter(el, item, value) {
-            value = value || el.text();
-            item = item || el.parent('.filter-item');
-            var type = el.parents('.filter-lists-container') ? '-entries' : el.parent('.filter-promotion') ? '-promotion' : '-dropdown';
-            var id = item.data('fid');
-            var entries = el.parents('[data-label]');
-            var first = entries.find('.action-select-unlimit').parent(); //不限
-            var label = entries.data('label');
-            var single = entries.data('single');
-            var name = entries.find('.filter' + type + '-label').text();
-            name = name.substr(0, name.length - 1) + '：';
-            var tpl = value + '<b class="delete action-delete-filter" title="移除筛选">×</b>';
-            var selected = $('#filter_selected').find('.filter-selected-values');
-            var selected_item = selected.find('[data-label="' + label + '"]')[0];
-            single = single ? ' data-single="true"' : '';
-            if (first.hasClass('active')) first.removeClass('active');
-            if (single) item.parent().find('.active').removeClass('active');
-            if (!selected_item) {
-                tpl = '<span class="filter-selected-entries" data-label="' + label + '"' + single + '><label class="filter-selected-label">' + name + '</label><span class="filter-selected-item" data-fid="' + id + '">' + tpl + '</span></span>';
-                selected.append(tpl);
-            } else {
-                if (single) {
-                    $(selected_item).find('.filter-selected-item').data('fid',id)[0].innerHTML = tpl;
-                    console.log($(selected_item).find('.filter-selected-item'))
-                } else {
-                    tpl = '<span class="filter-selected-item" data-fid="'+ id +'">'+ tpl +'</span>';
-                    $(selected_item).append(tpl);
-                }
-            }
-        }
 
-        $('.filter-entries-more').click(function(){ // 展开 收起 筛选
-            var btn=$(this).find('.text');
-            var icon= $(this).find('.layui-icon');
-            var parent=$(this).parent('.filter-entries');
-            if(btn.data('toggle')=="收起"){
-                btn.html('收起');
-                btn.data('toggle', '展开');
-                icon.removeClass('layui-icon-down').addClass('layui-icon-up');
-                parent.addClass('open')
+        var n=0;
+        $('.product-album-thumb .btn').click(function(){
+            var itemsLen=$('#thumbnailList .item').length;
+            if($(this).hasClass('unclick')){
+                return false;
             }else{
-                btn.html('展开');
-                btn.data('toggle', '收起');
-                icon.removeClass('layui-icon-up').addClass('layui-icon-down');
-                parent.removeClass('open')
-            }
-        });
-
-        $('#gallery_sortbar .gallery-sort .action-sort').click(function(){ //点击 综合、价格、销量
-            var el=$(this);
-            if(el.hasClass('active')){
-                if (el.hasClass('price-desc')) {
-                    el.addClass('price-asc').removeClass('price-desc');
-                } else if (el.hasClass('price-asc')) {
-                    el.addClass('price-desc').removeClass('price-asc');
+                if ($(this).hasClass('btn-next')) {
+                    $('.product-album-thumb .btn-prev').removeClass('unclick');
+                    if (itemsLen - 5 == n+1){
+                        $(this).addClass('unclick');
+                    } else{
+                        $(this).removeClass('unclick');
+                    };
+                    n++;
+                    var left = n * 80;
+                    $('#thumbnailList').animate({ 'margin-left': -left });
+                } else if ($(this).hasClass('btn-prev')) {
+                    $('.product-album-thumb .btn-next').removeClass('unclick');
+                    if (itemsLen - 5 == n + 1) {
+                        $(this).addClass('unclick');
+                    } else {
+                        $(this).removeClass('unclick');
+                    }
+                    n--;
+                    var left = n * 80;
+                    $('#thumbnailList').animate({ 'margin-left': -left });
                 }
-            };
-            el.addClass('active').siblings().removeClass('active');
-        });
-        $('.goods-btn .layui-icon-star-fill').click(function(){ // 收藏
-            var el=$(this);
-            if(el.hasClass('faved')){
-                el.removeClass('faved');
-                el.attr('title','收藏');
-                layer.msg('已取消收藏');
-            }else{
-                el.addClass('faved');
-                el.attr('title', '已收藏');
-                layer.msg('收藏成功');
             }
         });
 
     });
+
+
 </script>
 
 </html>

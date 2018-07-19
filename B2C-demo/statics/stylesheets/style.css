@@ -151,9 +151,18 @@ del{
 .link{
     color: #528ccc;
 }
+.link:hover{
+    color:#3b6da3;
+}
+.hide{
+    display: none;
+}
 /**
 layui制定
 **/
+.layui-icon{
+    font-size: inherit;
+}
 .layui-tab{
     margin:0;
 }
@@ -188,9 +197,18 @@ layui制定
 .layui-badge, .layui-badge-dot, .layui-badge-rim{
     background-color: #e15f45;
 }
+.layui-tab-brief > .layui-tab-title .layui-this{
+    color: #e15f45;
+}
+.layui-tab-brief > .layui-tab-more li.layui-this:after, .layui-tab-brief > .layui-tab-title .layui-this:after{
+    border-bottom-color:#e15f45;
+}
 /**
 B2C商城模板样式
 **/
+.pb20{
+    padding-bottom:20px;
+}
 .bg-fff, .main {
     background-color: #fff;
 }
@@ -1418,6 +1436,296 @@ B2C商城模板样式
 .gallery-show .gallery-grid li .goods-btn .layui-icon-star-fill.faved{
     color:#e15f45;
 }
-.brand-list{
+.brand-area .brand-list{
     padding:0;
+}
+.brand-area .section{
+    margin-bottom: 30px;
+}
+.brand-area .brand-list li{
+    float: left;
+    padding: 10px 20px;
+    height: 70px;
+    line-height: 70px;
+    width:108.5px;
+    border-width: 0px 1px 1px 0;
+    border-style: solid;
+    border-color: #eee;
+    overflow: hidden;
+    text-align: center;
+}
+.brand-area .brand-list li:nth-child(8n){
+    border-right-width: 0;
+}
+.brand-area .brand-list li img{
+    width: auto;
+    max-height: 100%;
+    max-width: 100%;
+}
+.product-side{
+    float: left;
+    width: 452px;
+}
+.product-album-preview{
+    margin-bottom:15px;
+}
+.product-album-pic {
+    position: relative;
+    border: 1px solid #eee;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 450px;
+    height: 450px;
+    /*line-height: 448px;*/
+    /*overflow: hidden;*/
+    text-align: center;
+}
+.album-preview-container {
+    /*position: relative;*/
+    /*display: inline-block;*/
+    /*line-height: 100%;*/
+    height: 450px;
+    width: 450px;
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.product-album-pic .small-pic {
+    max-width: 450px;
+    max-height: 450px;
+    vertical-align: middle;
+}
+.product-album-thumb {
+    position: relative;
+    width: 100%;
+}
+.product-album-thumb .btn {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 50px;
+    margin-top: -25px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 26px;
+    font-weight: 800;
+    color: #ccc;
+}
+.product-album-thumb .btn.unclick{
+    cursor: not-allowed;
+}
+.product-album-thumb .btn-prev {
+    left: 0;
+}
+.product-album-thumb .btn-next {
+    right: 0;
+}
+.product-album-thumb .thumbnail-list {
+    overflow: hidden;
+    width: 400px;
+    margin: 0 auto;
+}
+.product-album-thumb .wrapper {
+    width: 100000px;
+}
+.product-album-thumb .thumbnail-list .item {
+    float: left;
+    margin: 0 10px;
+    width:56px;
+    height:56px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+.product-album-thumb .thumbnail-list .item-cur{
+    border: 2px solid #e53e41;
+}
+.zoomDiv {
+    z-index: 999;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 200px;
+    background: #ffffff;
+    border: 1px solid #eee;
+    display: none;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 4px 8px 13px 0px rgba(0,0,0,.1);
+}
+.zoomDiv img{
+    width:auto;
+    vertical-align: top;
+}
+.zoomMask{
+    position: absolute;
+    background: url(../images/mask.png) repeat scroll 0 0 transparent;
+    cursor: move;
+    z-index: 1;
+}
+.product-information {
+    margin-left: 480px;
+}
+.product-information .pt-titles h2{
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin: 5px 0;
+}
+.product-information .pt-titles p {
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 10px;
+}
+.product-information .p-item{
+    margin:0 20px 10px 20px;
+    line-height:30px;
+}
+.product-information .p-item .item-label{
+    width: 6em;
+    float: left;
+}
+.product-information .p-item .item-value{
+    display: block;
+    margin-left: 7em;
+}
+.product-information .pt-price {
+    background: #fff1ee;
+    padding:15px 0;
+}
+.product-information .pt-price .item-value .price{
+    font-size: 30px;
+    margin: 6px 30px 0 0;
+    display: inline-block;
+}
+.product-information .pt-price .p-item {
+    margin-bottom: 0;
+}
+.product-information .pt-price .p-item .item-label{
+    line-height: 56px;
+}
+.product-information .pt-price .del{
+    color: #999;
+}
+.product-information .pt-promotion{
+    background: #fef7f6;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+.product-information .coupon-item{
+    color:#e15f45;
+    border:1px dashed #e15f45;
+    background:#fee6e1;
+    border-radius: 4px;
+    padding:1px 5px;
+    font-size: 12px;
+    display: inline-block;
+    line-height: 18px;
+}
+.product-information .coupon-item a{
+    border-left:1px dashed #e15f45;
+    padding-left:5px;
+    margin-left:5px;
+}
+.product-information .pt-promotion .link{
+    margin-left: 10px;
+}
+.product-information .pt-promotion .gift-item{
+    margin-right:6px;
+}
+.product-information .pt-promotion .gift-item img{
+    width:25px;
+    height:25px;
+}
+.pt-promotion .pm-item .cshop-tag{
+    color: #e15f45;
+    border: 1px solid #e15f45;
+    padding: 2px;
+    margin-right:5px;
+}
+.pt-promotion .item-value{
+    position: relative;
+}
+.pt-promotion .item-value .pt-promotion-open{
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    color: #999;
+}
+.pt-promotion .item-value .pt-promotion-open .layui-icon-down{
+    font-size: 13px;
+}
+.pt-promotion .promotion-panel{
+    height: 30px;
+    margin: 0 0 5px;
+}
+.pt-promotion .promotion-panel.two-pm-item{
+    height: 56px;
+}
+.pt-promotion .promotion-panel.more-pm-item {
+    height: 73px;
+}
+.pt-promotion .promotion-panel .promotion-list{
+    position: absolute;
+    width: 100%;
+    /*height: 59px;*/
+    overflow: hidden;
+    background: #fef7f6;
+    padding-bottom: 10px;
+}
+
+.pt-promotion .promotion-panel .promotion-list .item-label{
+    padding-left: 20px;
+}
+.pt-promotion .promotion-panel .promotion-list .item-value{
+    margin-left: 110px;
+}
+.pt-promotion .promotion-panel .promotion-list .item-value .red{
+    line-height: 12px;
+    margin-top: 5px;
+}
+.pt-promotion .promotion-panel .promotion-list .item-value .pm-item:nth-child(1n+3){
+    display: none;
+}
+.pt-promotion .promotion-panel:hover .promotion-list{
+    /*height:auto;*/
+    box-shadow: 0 5px 10px -1px #eee;
+}
+.pt-promotion .promotion-panel:hover .promotion-list .item-value .pm-item:nth-child(1n+3) {
+    display: block;
+}
+.pt-promotion .promotion-panel:hover .promotion-list .item-value .red{
+    display: none !important;
+}
+.pt-promotion .promotion-panel:hover .promotion-list .item-value .pt-promotion-open{
+    display: none !important;
+}
+#mark {
+    width: 200px;
+    height: 200px;
+    background: green;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+#div2 {
+    width: 450px;
+    height: 450px;
+    position: absolute;
+    left: 480px;
+    top: 0;
+    border: #333 solid 1px;
+    overflow: hidden;
+    display: none;
+    z-index: 2;
+}
+#div2 img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:auto;
 }
