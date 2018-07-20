@@ -272,23 +272,27 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="product-album-thumb">
+                        <div class="product-album-thumb" id="product_album_thumb1" data-init="0">
                             <a href="javascript:;" class="btn btn-prev unclick"><i class="layui-icon layui-icon-left"></i></a>
                             <a href="javascript:;" class="btn btn-next"><i class="layui-icon layui-icon-right"></i></a>
-                            <div class="thumbnail-list">
-                                <ul class="wrapper clearfix" id="thumbnailList" style="margin-left:0px;">
+                            <div class="slide-list">
+                                <ul class="slide-wrapper clearfix" style="margin-left:0px;">
                                     <li class="item item-cur" data-src="images/small_1.jpg"><img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" alt="#"></li>
                                     <li class="item" data-src="images/small_2.jpg"><img src="https://img.alicdn.com/imgextra/i1/713805254/TB23CKXbsD85uJjSZFpXXXz3VXa_!!713805254.jpg_60x60q90.jpg" alt="#"></li>
                                     <li class="item" data-src="images/small_3.jpg"><img src="https://img.alicdn.com/imgextra/i4/713805254/TB2IVz6CrSYBuNjSspfXXcZCpXa_!!713805254.jpg_60x60q90.jpg" alt="#"></li>
-                                    <!--<li class="item" data-src="images/small_4.jpg"><img src="https://gd1.alicdn.com/imgextra/i1/11247811/TB2tJDJawnH8KJjSspcXXb3QFXa_!!11247811.jpg_50x50.jpg" alt="#"></li>
+                                    <li class="item" data-src="images/small_4.jpg"><img src="https://gd1.alicdn.com/imgextra/i1/11247811/TB2tJDJawnH8KJjSspcXXb3QFXa_!!11247811.jpg_50x50.jpg" alt="#"></li>
                                     <li class="item" data-src="images/small_5.jpg"><img src="https://gd1.alicdn.com/imgextra/i1/11247811/TB2rLbQaznD8KJjSspbXXbbEXXa_!!11247811.jpg_50x50.jpg" alt="#"></li>
                                     <li class="item" data-src="images/small_6.jpg"><img src="https://gd2.alicdn.com/imgextra/i2/1698220480/TB2FnrCkLDH8KJjy1XcXXcpdXXa_!!1698220480.png_50x50.jpg" alt="#"></li>
-                                    <li class="item" data-src="images/small_4.jpg">
-                                        <img src="https://gd1.alicdn.com/imgextra/i1/11247811/TB2tJDJawnH8KJjSspcXXb3QFXa_!!11247811.jpg_50x50.jpg" alt="#">
-                                    </li>-->
+                                     <li class="item" data-src="images/small_4.jpg">
+                                          <img src="https://gd1.alicdn.com/imgextra/i1/11247811/TB2tJDJawnH8KJjSspcXXb3QFXa_!!11247811.jpg_50x50.jpg" alt="#">
+                                      </li><!---->
                                 </ul>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="product-side-b clearfix">
+                        <a class="fr fav-btn" href="javascript:;"><i class="layui-icon layui-icon-star-fill"></i><span>收藏</span></a>
                     </div>
                 </div>
                 <div class="product-information">
@@ -356,6 +360,27 @@
                             <div class="p-item">
                                 <label class="item-label">重量</label>
                                 <span class="item-value">0.43kg</span>
+                            </div>
+                        </div>
+                        <div class="pt-sales-volume">
+                            <span>月销量<i>9</i></span>
+                            <span>累计评价<i>7</i></span>
+                            <span>送积分<i style="color:#c6aa79">546</i></span>
+                        </div>
+                        <div class="pt-spec-list">
+                            <div class="p-item">
+                                <label class="item-label">网络类型</label>
+                                <div class="item-value clearfix">
+                                    <a href="javascript:;" class="spec-attr active"><span>无需合约版</span></a>
+                                    <a href="javascript:;" class="spec-attr"><span>无需合约版</span></a>
+                                </div>
+                            </div>
+                            <div class="p-item">
+                                <label class="item-label">机身颜色</label>
+                                <div class="item-value">
+                                    <a href="javascript:;" class="spec-attr active"><span>银色</span></a>
+                                    <a href="javascript:;" class="spec-attr"><span>太空灰</span></a>
+                                </div>
                             </div>
                         </div>
                     </form>
@@ -557,7 +582,7 @@
 
     $(function () {
         $(".small-pic").imagezoom();
-        $(".thumbnail-list li").click(function () {
+        $(".product-album-thumb .slide-list .item").click(function () {
             $(this).addClass("item-cur").siblings().removeClass("item-cur");
 //            $(".jqzoom").attr('src', $(this).find("img").attr("mid"));
 //            $(".jqzoom").attr('rel', $(this).find("img").attr("big"));
@@ -579,35 +604,50 @@
             $('.promotion-panel').find('.red').hide();
         };
 
-        var n=0;
-        $('.product-album-thumb .btn').click(function(){
-            var itemsLen=$('#thumbnailList .item').length;
-            if($(this).hasClass('unclick')){
-                return false;
-            }else{
-                if ($(this).hasClass('btn-next')) {
-                    $('.product-album-thumb .btn-prev').removeClass('unclick');
-                    if (itemsLen - 5 == n+1){
-                        $(this).addClass('unclick');
-                    } else{
-                        $(this).removeClass('unclick');
-                    };
-                    n++;
-                    var left = n * 80;
-                    $('#thumbnailList').animate({ 'margin-left': -left });
-                } else if ($(this).hasClass('btn-prev')) {
-                    $('.product-album-thumb .btn-next').removeClass('unclick');
-                    if (itemsLen - 5 == n + 1) {
-                        $(this).addClass('unclick');
-                    } else {
-                        $(this).removeClass('unclick');
-                    }
-                    n--;
-                    var left = n * 80;
-                    $('#thumbnailList').animate({ 'margin-left': -left });
-                }
-            }
+
+
+        var itemsLen = $('#product_album_thumb1 .item').length;
+        if(itemsLen<=5){
+            $('#product_album_thumb1 .btn-next').addClass('unclick');
+        };
+        $('#product_album_thumb1 .btn').click(function(){
+            toSlide($(this),5,1);
         });
+        $('#product_album_thumb2 .btn').click(function () {
+            toSlide($(this), 5, 2);
+        });
+        function toSlide(obj,rowNum,type){// obj,一排数量，类型1：一个个划 2：一排一排划
+            var el=obj;
+            var len=el.parent().find('.slide-wrapper .item').length;
+
+            if (el.hasClass('unclick')) return false;
+            if(type==1){
+                var num=len-rowNum;
+                slideBtn(el,num, 80);
+            }else if(type==2){
+                var num = parseInt(len/rowNum);//取整数
+                var width=el.parent().find('.slide-list')[0].offsetWidth;
+                slideBtn(el,num,width);
+            };
+        };
+        function slideBtn(el,n,w){
+            var init = el.parent().data('init');
+            if (el.hasClass('btn-next')) {
+                el.parent().data('init', init + 1)
+                var now = el.parent().data('init');
+                now == n ? el.addClass('unclick') : el.removeClass('unclick');
+                var left = now * w;
+                el.parent().find('.slide-wrapper').animate({ 'margin-left': -left });
+                el.siblings('.btn').removeClass('unclick');
+            } else if (el.hasClass('btn-prev')) {
+                el.parent().data('init', init - 1)
+                var now = el.parent().data('init');
+                now == 0 ? el.addClass('unclick') : el.removeClass('unclick');
+                var left = now * w;
+                el.parent().find('.slide-wrapper').animate({ 'margin-left': -left });
+                el.siblings('.btn').removeClass('unclick');
+            };
+        };
 
     });
 

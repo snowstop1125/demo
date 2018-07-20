@@ -107,11 +107,15 @@ img{
     width:100%;
     vertical-align: middle;
 }
+.clearfix {
+}
 .clearfix:after {
     content: "\0020";
     display: block;
     visibility: hidden;
     clear: both;
+    height: 0;
+    overflow: hidden;
 }
 .fl {
     float: left;
@@ -1511,10 +1515,11 @@ B2C商城模板样式
     line-height: 50px;
     font-size: 26px;
     font-weight: 800;
-    color: #ccc;
+    color: #999;
 }
 .product-album-thumb .btn.unclick{
     cursor: not-allowed;
+    color: #e8e8e8;
 }
 .product-album-thumb .btn-prev {
     left: 0;
@@ -1522,15 +1527,15 @@ B2C商城模板样式
 .product-album-thumb .btn-next {
     right: 0;
 }
-.product-album-thumb .thumbnail-list {
+.product-album-thumb .slide-list {
     overflow: hidden;
     width: 400px;
     margin: 0 auto;
 }
-.product-album-thumb .wrapper {
+.product-album-thumb .slide-wrapper {
     width: 100000px;
 }
-.product-album-thumb .thumbnail-list .item {
+.product-album-thumb .slide-list .item {
     float: left;
     margin: 0 10px;
     width:56px;
@@ -1538,8 +1543,18 @@ B2C商城模板样式
     border: 2px solid #fff;
     cursor: pointer;
 }
-.product-album-thumb .thumbnail-list .item-cur{
+.product-album-thumb .slide-list .item-cur{
     border: 2px solid #e53e41;
+}
+.product-side-b{
+    margin:10px 0;
+}
+.product-side-b .fav-btn{
+    color:#dbdbdb;
+}
+.product-side-b .fav-btn .layui-icon{
+    font-size: 20px;
+    margin-right:5px;
 }
 .zoomDiv {
     z-index: 999;
@@ -1702,30 +1717,35 @@ B2C商城模板样式
 .pt-promotion .promotion-panel:hover .promotion-list .item-value .pt-promotion-open{
     display: none !important;
 }
-#mark {
-    width: 200px;
-    height: 200px;
-    background: green;
-    opacity: 0.4;
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: none;
+.pt-sales-volume {
+    padding: 10px 0;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+    margin: 18px 0;
+    text-align: center;
 }
-#div2 {
-    width: 450px;
-    height: 450px;
-    position: absolute;
-    left: 480px;
-    top: 0;
-    border: #333 solid 1px;
+.pt-sales-volume span {
+    color: #929292;
+    margin: 0 0px 0 80px;
+    border-right: 1px dashed #ddd;
+    padding-right: 80px;
+    color: #929292;
+    font-size: 14px;
+}
+.pt-sales-volume span:last-child {
+    border-right:0;
+}
+.pt-sales-volume span i{
+    color:#e15f45;
+    margin-left:10px;
+    font-weight: bold;
+}
+.pt-spec-list .spec-attr{
+    float: left;
+    clear: none;
+    margin: 0 5px 5px 0;
+    border: 1px solid #ddd;
+    color: #333;
+    position: relative;
     overflow: hidden;
-    display: none;
-    z-index: 2;
-}
-#div2 img {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width:auto;
 }
