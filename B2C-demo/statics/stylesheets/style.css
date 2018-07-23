@@ -17,7 +17,7 @@ body {
     font-size: 13px;
     line-height: 1.5;
     color:#666;
-    font-family: "Microsoft YaHei",'layui-icon';
+    font-family: "Microsoft YaHei";
     background:#333;
 }
 blockquote, q {
@@ -107,16 +107,15 @@ img{
     width:100%;
     vertical-align: middle;
 }
-.clearfix {
-}
+
 .clearfix:after {
-    content: "\0020";
+    content: ".";
     display: block;
-    visibility: hidden;
-    clear: both;
     height: 0;
-    overflow: hidden;
+    clear: both;
+    visibility: hidden;
 }
+.clearfix { zoom: 1 }
 .fl {
     float: left;
 }
@@ -1601,6 +1600,7 @@ B2C商城模板样式
 .product-information .p-item .item-label{
     width: 6em;
     float: left;
+    color: #999;
 }
 .product-information .p-item .item-value{
     display: block;
@@ -1741,11 +1741,225 @@ B2C商城模板样式
     font-weight: bold;
 }
 .pt-spec-list .spec-attr{
-    float: left;
+    display: inline-block;
     clear: none;
-    margin: 0 5px 5px 0;
+    margin: 0 5px 0px 0;
     border: 1px solid #ddd;
     color: #333;
     position: relative;
     overflow: hidden;
+}
+.pt-spec-list .spec-attr span{
+    display: block;
+    border:1px solid #fff;
+    padding:0 10px;
+}
+.pt-spec-list .spec-attr.active,
+.pt-spec-list .spec-attr.active span{
+    border-color: #e15f45;
+    color:#e15f45;
+}
+.p-quantity .btn{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    text-align: center;
+    font-size: 20px;
+    line-height: 30px;
+    background: #f7f7f7;
+}
+.p-quantity .layui-input{
+    display: inline-block;
+    width: 50px;
+    height: 32px;
+    border-radius: 0;
+    text-align: center;
+    border-color:#ddd;
+    margin: 0 -1px;
+    color:#666;
+}
+.product-information .pt-btn{
+    margin: 35px 0 20px 20px;
+}
+.product-information .pt-btn .layui-btn{
+    border-radius: 0;
+    font-size: 22px;
+    padding: 0 35px;
+    line-height: 40px;
+    border: 2px solid #e15f45;
+}
+.cshop-pink-btn{
+    color: #e15f45;
+    background: #fff5f5;
+}
+.cshop-pink-btn:hover{
+    color: #e15f45;
+}
+.popularity-parts{
+    -webkit-box-shadow: 0 9px 44px 3px rgba(0, 0, 0, 0.08); -moz-box-shadow: 0 9px 44px 3px rgba(0, 0, 0, 0.08); box-shadow: 0 9px 44px 3px rgba(0, 0, 0, 0.08);
+    margin: 50px 0 20px;
+}
+.popularity-parts .layui-tab-content{
+    padding:20px 10px;
+}
+.popularity-parts .this-goods{
+    float: left;
+}
+.popularity-parts .item{
+    width:120px;
+}
+.popularity-parts .item .pt-img{
+    width:100px;
+    height:100px;
+    display:block;
+    overflow: hidden;
+    vertical-align: middle;
+    margin:0 auto;
+}
+.popularity-parts .item .pt-img img{
+    max-height:100%;
+}
+.popularity-parts .item .pt-name{
+    height:37px;
+}
+.popularity-parts .icon-add{
+    float: left;
+    line-height: 137px;
+}
+.popularity-parts .icon-add .cshop-icon-add{
+    width:23px;
+    height:23px;
+    background-position: 0 -99px;
+}
+.popularity-parts .icon-add .cshop-icon-equal{
+    width: 23px;
+    height: 23px;
+    background-position: -31px -99px;
+}
+.parts-list{
+    float: left;
+    position: relative;
+    width: 780px;
+    margin: 0 20px;
+}
+.parts-list .slide-list {
+    overflow: hidden;
+    width: 700px;
+    margin: 0 auto;
+}
+.parts-list .slide-wrapper {
+    width: 100000px;
+}
+.parts-list .item {
+    float: left;
+    margin: 0 10px;
+}
+.parts-list .btn {
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 50px;
+    margin-top: -25px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 26px;
+    font-weight: 800;
+    color: #999;
+    border: 1px solid #eee;
+    border-radius: 4px;
+}
+.parts-list .btn.unclick {
+    cursor: not-allowed;
+    color: #e8e8e8;
+}
+.parts-list .btn-prev {
+    left: 0;
+}
+.parts-list .btn-next {
+    right: 0;
+}
+.parts-settle{
+    margin:30px 0 0 20px;
+}
+.parts-settle .price{
+    font-size: 20px;
+    margin: 8px 0;
+    display: inline-block;
+    font-weight: bold;
+}
+.product-panel{
+    margin-top: 40px;
+}
+.product-panel .recommend-left{
+    width:200px;
+    float: left;
+    border:1px solid #eee;
+    margin-right:20px;
+}
+.product-panel .product-detail{
+    float: left;
+    width: 978px;
+}
+.recommend-left .title{
+    text-align: center;
+    border-bottom:1px solid #eee;
+    line-height:40px;
+    font-size: 17px;
+}
+.recommend-left .goods-item{
+    margin:15px;
+}
+.product-container .layui-tab-title li{
+    font-size: 16px;
+}
+.product-panel .product-detail .layui-tab-content{
+    padding:10px 0;
+}
+.product-panel .product-detail .pt-attribute{
+    background:#f7f7f7;
+    padding:15px;
+    margin-bottom: 10px;
+}
+.product-panel .product-detail .pt-attribute .attr-item{
+    float: left;
+    width:33.3%;
+    margin-bottom: 5px;
+}
+.pt-all-score{
+    background: #f7f7f7;
+    padding: 17px 0 26px 50px;
+    font-size: 17px;
+    margin-bottom:20px;
+}
+.pt-all-score .red{
+    font-size: 32px;
+    margin: 0 30px 0 10px;
+}
+.pt-all-score .red i{
+    font-size: 17px;
+}
+.score-star{
+    color: #ccc;
+    font-size: 23px;
+}
+.score-star i.cur{
+    color: #e15f45;
+}
+.comment-list .layui-tab-title li{
+    font-size: 14px;
+}
+.comment-list .layui-tab-title li.layui-this{
+    color: #e15f45;
+}
+.comment-item .user-info{
+    float: left;
+}
+.comment-item .user-info .photo{
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
 }

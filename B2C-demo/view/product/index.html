@@ -251,7 +251,7 @@
     <!-- 头部导航栏 end -->
 <!-- 头部 header end -->
 
-<div class="main bg-fff">
+<div class="main bg-fff pb20">
     <div class="wrap-1200">
         <div class="bread-crumbs">
             <span><a href="../../index.html">首页</a></span>
@@ -272,7 +272,7 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="product-album-thumb" id="product_album_thumb1" data-init="0">
+                        <div class="product-album-thumb" id="product_album_thumb" data-init="0">
                             <a href="javascript:;" class="btn btn-prev unclick"><i class="layui-icon layui-icon-left"></i></a>
                             <a href="javascript:;" class="btn btn-next"><i class="layui-icon layui-icon-right"></i></a>
                             <div class="slide-list">
@@ -370,7 +370,7 @@
                         <div class="pt-spec-list">
                             <div class="p-item">
                                 <label class="item-label">网络类型</label>
-                                <div class="item-value clearfix">
+                                <div class="item-value">
                                     <a href="javascript:;" class="spec-attr active"><span>无需合约版</span></a>
                                     <a href="javascript:;" class="spec-attr"><span>无需合约版</span></a>
                                 </div>
@@ -382,18 +382,279 @@
                                     <a href="javascript:;" class="spec-attr"><span>太空灰</span></a>
                                 </div>
                             </div>
+                            <div class="p-item">
+                                <label class="item-label">数量</label>
+                                <div class="item-value">
+                                    <span class="p-quantity">
+                                        <a href="javascript:;" class="btn btn-decrease layui-disabled">-</a><input type="text" name="goods[num]" class="layui-input action-quantity-input" value="1" min="1" max="999"><a href="javascript:;" class="btn btn-increase">+</a>
+                                    </span>
+                                     <span style="margin-left:10px;">库存 999 个</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-btn">
+                            <a href="javascript:;" class="layui-btn layui-btn-lg cshop-pink-btn">立即购买</a>
+                            <button class="layui-btn layui-btn-lg">加入购物车</button>
+                        </div>
+                        <div class="p-item">
+                            <label class="item-label">温馨提示</label>
+                            <span class="item-value">• 支持七天无理由退换货</span>
                         </div>
                     </form>
                 </div>
             </div>
             <!--人气配件-->
             <div class="popularity-parts">
-
+                <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
+                    <ul class="layui-tab-title">
+                        <li class="layui-this">人气配件</li>
+                        <li>手机壳</li>
+                    </ul>
+                    <div class="layui-tab-content">
+                        <div class="layui-tab-item layui-show clearfix">
+                            <form class="layui-form">
+                                <div class="this-goods item">
+                                    <div class="pt-img">
+                                        <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                    </div>
+                                    <div class="pt-info">
+                                        <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                        <p><span class="price">￥5690.00</span></p>
+                                    </div>
+                                </div>
+                                <div class="icon-add">
+                                    <i class="cshop-icon cshop-icon-add"></i>
+                                </div>
+                                <div class="parts-list" data-init="0">
+                                    <a href="javascript:;" class="btn btn-prev unclick"><i class="layui-icon layui-icon-left"></i></a>
+                                    <a href="javascript:;" class="btn btn-next"><i class="layui-icon layui-icon-right"></i></a>
+                                    <div class="slide-list">
+                                        <ul class="slide-wrapper clearfix" style="margin-left:0px;">
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p><input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span></p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p>
+                                                        <input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p>
+                                                        <input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p>
+                                                        <input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p>
+                                                        <input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p>
+                                                        <input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p>
+                                                        <input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="icon-add">
+                                    <i class="cshop-icon cshop-icon-equal"></i>
+                                </div>
+                                <div class="parts-settle fl">
+                                    <p>已选择 0 个配件</p>
+                                    <p>组合价 <span class="price">￥7599.00</span></p>
+                                    <p><a href="javascript:;" class="layui-btn">立即购买</a></p>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="layui-tab-item clearfix">
+                            <form class="layui-form">
+                                <div class="this-goods item">
+                                    <div class="pt-img">
+                                        <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                    </div>
+                                    <div class="pt-info">
+                                        <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                        <p><span class="price">￥5690.00</span></p>
+                                    </div>
+                                </div>
+                                <div class="icon-add">
+                                    <i class="cshop-icon cshop-icon-add"></i>
+                                </div>
+                                <div class="parts-list" data-init="0">
+                                    <a href="javascript:;" class="btn btn-prev unclick"><i class="layui-icon layui-icon-left"></i></a>
+                                    <a href="javascript:;" class="btn btn-next"><i class="layui-icon layui-icon-right"></i></a>
+                                    <div class="slide-list">
+                                        <ul class="slide-wrapper clearfix" style="margin-left:0px;">
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p><input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p>
+                                                        <input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p>
+                                                        <input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p>
+                                                        <input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p>
+                                                        <input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p>
+                                                        <input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="pt-img">
+                                                    <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg" />
+                                                </div>
+                                                <div class="pt-info">
+                                                    <p class="pt-name ml-ellipsis">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                                    <p>
+                                                        <input type="checkbox" name="" lay-skin="primary"><span class="price">￥38.00</span>
+                                                    </p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="icon-add">
+                                    <i class="cshop-icon cshop-icon-equal"></i>
+                                </div>
+                                <div class="parts-settle fl">
+                                    <p>已选择 0 个配件</p>
+                                    <p>组合价 <span class="price">￥7599.00</span></p>
+                                    <p><a href="javascript:;" class="layui-btn">立即购买</a></p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!--图文详情-->
             <div class="product-panel clearfix">
                 <div class="recommend-left">
-
+                    <div class="title">同款推荐</div>
+                    <ul class="goods-list">
+                        <li class="goods-item">
+                            <div class="goods-img">
+                                <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg">
+                            </div>
+                            <div class="goods-info">
+                                <p class="goods-name">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                <p class=""><span class="price">￥5683.90</span><del>￥5899.00</del></p>
+                            </div>
+                        </li>
+                        <li class="goods-item">
+                            <div class="goods-img">
+                                <img src="https://gd2.alicdn.com/imgextra/i2/204548578/TB25wioX26TBKNjSZJiXXbKVFXa_!!204548578.jpg">
+                            </div>
+                            <div class="goods-info">
+                                <p class="goods-name">Apple iPhone X (A1865) 64GB 银色 移动联通电信4G手机</p>
+                                <p class=""><span class="price">￥5683.90</span>
+                                    <del>￥5899.00</del>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="product-detail">
                     <div class="layui-tab layui-tab-brief" lay-filter="docDemoTabBrief">
@@ -402,8 +663,61 @@
                             <li>商品评论</li>
                         </ul>
                         <div class="layui-tab-content">
-                            <div class="layui-tab-item layui-show">内容1</div>
-                            <div class="layui-tab-item">内容2</div>
+                            <div class="layui-tab-item layui-show">
+                                <div class="pt-attribute">
+                                    <ul class="clearfix">
+                                        <li class="attr-item">品牌：<a href="javascript:;" class="link">apple苹果</a></li>
+                                        <li class="attr-item">型号：iphoneX</li>
+                                        <li class="attr-item">上市年份：2017年</li>
+                                        <li class="attr-item">品牌：<a href="javascript:;" class="link">apple苹果</a></li>
+                                        <li class="attr-item">型号：iphoneX</li>
+                                        <li class="attr-item">上市年份：2017年</li>
+                                    </ul>
+                                </div>
+                                <div class="">
+                                    <img lay-src="https://img10.360buyimg.com/imgzone/jfs/t18493/37/635247604/42841/b751e11f/5a9cfa70Nd0637367.jpg">
+                                    <img lay-src="https://img10.360buyimg.com/imgzone/jfs/t18493/37/635247604/42841/b751e11f/5a9cfa70Nd0637367.jpg">
+                                </div>
+                            </div>
+                            <div class="layui-tab-item">
+                                <div class="pt-all-score">
+                                    <span class="tit">好评度</span>
+                                    <span class="red">97% <i>好评</i></span>
+                                    <span class="score-star">
+                                        <i class="layui-icon layui-icon-star-fill cur"></i>
+                                        <i class="layui-icon layui-icon-star-fill cur"></i>
+                                        <i class="layui-icon layui-icon-star-fill cur"></i>
+                                        <i class="layui-icon layui-icon-star-fill cur"></i>
+                                        <i class="layui-icon layui-icon-star-fill"></i>
+                                    </span>
+                                </div>
+                                <div class="layui-tab comment-list">
+                                    <ul class="layui-tab-title">
+                                        <li class="layui-this">全部评价</li>
+                                        <li>晒图</li>
+                                        <li>好评</li>
+                                        <li>中评</li>
+                                        <li>差价</li>
+                                    </ul>
+                                    <div class="layui-tab-content">
+                                        <div class="layui-tab-item layui-show">
+                                            <ul>
+                                                <li class="comment-item clearfix">
+                                                    <div class="user-info">
+                                                        <div class="photo">
+                                                            <img src="../../statics/images/demo/demo_product_01.jpg">
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="layui-tab-item">内容2</div>
+                                        <div class="layui-tab-item">内容3</div>
+                                        <div class="layui-tab-item">内容4</div>
+                                        <div class="layui-tab-item">内容5</div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -606,14 +920,18 @@
 
 
 
-        var itemsLen = $('#product_album_thumb1 .item').length;
+        var itemsLen = $('#product_album_thumb .item').length;
         if(itemsLen<=5){
-            $('#product_album_thumb1 .btn-next').addClass('unclick');
+            $('#product_album_thumb .btn-next').addClass('unclick');
         };
-        $('#product_album_thumb1 .btn').click(function(){
+        $('#product_album_thumb .btn').click(function(){
             toSlide($(this),5,1);
         });
-        $('#product_album_thumb2 .btn').click(function () {
+        var partsItemLen = $('.parts-list .item').length;
+        if (partsItemLen <= 5) {
+            $('.parts-list .btn-next').addClass('unclick');
+        };
+        $('.parts-list .btn').click(function () {
             toSlide($(this), 5, 2);
         });
         function toSlide(obj,rowNum,type){// obj,一排数量，类型1：一个个划 2：一排一排划
@@ -626,6 +944,7 @@
                 slideBtn(el,num, 80);
             }else if(type==2){
                 var num = parseInt(len/rowNum);//取整数
+                console.log(num)
                 var width=el.parent().find('.slide-list')[0].offsetWidth;
                 slideBtn(el,num,width);
             };
