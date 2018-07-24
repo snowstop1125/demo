@@ -206,6 +206,27 @@ layui制定
 .layui-tab-brief > .layui-tab-more li.layui-this:after, .layui-tab-brief > .layui-tab-title .layui-this:after{
     border-bottom-color:#e15f45;
 }
+.layui-form-select dl dd.layui-this{
+    background-color: #e15f45;
+}
+.layui-btn-warm {
+    background-color: #d1ab70;
+}
+.dialog-miniCart.layui-layer-tips .layui-layer-content{
+    background-color: #fff;
+    color:#666;
+    box-shadow: 1px 4px 11px rgba(0, 0, 0, .2);
+    padding:0px;
+}
+.dialog-miniCart.layui-layer-tips i.layui-layer-TipsB,.dialog-miniCart.layui-layer-tips i.layui-layer-TipsT{
+    display: none;
+}
+.miniCart-html .title{
+    line-height: 40px;
+    background:#f7f7f7;
+    font-size: 16px;
+    padding:0 10px;
+}
 /**
 B2C商城模板样式
 **/
@@ -1654,7 +1675,7 @@ B2C商城模板样式
     width:25px;
     height:25px;
 }
-.pt-promotion .pm-item .cshop-tag{
+.cshop-tag{
     color: #e15f45;
     border: 1px solid #e15f45;
     padding: 2px;
@@ -1759,26 +1780,39 @@ B2C商城模板样式
     border-color: #e15f45;
     color:#e15f45;
 }
-.p-quantity .btn{
+.p-quantity{
+    position: relative;
     display: inline-block;
-    width: 30px;
+    border: 1px solid #ddd;
     height: 30px;
+}
+.p-quantity .btn{
+    position: absolute;
+    left: 1px;
+    top: 0px;
+    width: 30px;
+    height: 100%;
     overflow: hidden;
     vertical-align: middle;
-    border: 1px solid #ddd;
     text-align: center;
     font-size: 20px;
     line-height: 30px;
     background: #f7f7f7;
+    border-right:1px solid #ddd;
+}
+.p-quantity .btn.btn-increase{
+    right:1px;
+    left: auto;
+    border-right: none;
+    border-left: 1px solid #ddd;
 }
 .p-quantity .layui-input{
-    display: inline-block;
     width: 50px;
-    height: 32px;
+    height: 100%;
     border-radius: 0;
     text-align: center;
-    border-color:#ddd;
-    margin: 0 -1px;
+    border:none;
+    margin: 0 30px;
     color:#666;
 }
 .product-information .pt-btn{
@@ -1803,7 +1837,7 @@ B2C商城模板样式
     margin: 50px 0 20px;
 }
 .popularity-parts .layui-tab-content{
-    padding:20px 10px;
+    padding:20px 20px;
 }
 .popularity-parts .this-goods{
     float: left;
@@ -1941,9 +1975,12 @@ B2C商城模板样式
 .pt-all-score .red i{
     font-size: 17px;
 }
+.pt-all-score .score-star{
+    font-size: 23px;
+}
 .score-star{
     color: #ccc;
-    font-size: 23px;
+    font-size: 16px;
 }
 .score-star i.cur{
     color: #e15f45;
@@ -1956,10 +1993,136 @@ B2C商城模板样式
 }
 .comment-item .user-info{
     float: left;
+    font-size: 12px;
+    width:80px;
+    text-align: center;
+    margin-right: 20px;
 }
 .comment-item .user-info .photo{
     width: 40px;
     height: 40px;
     overflow: hidden;
     border-radius: 50%;
+    margin: 0 auto;
+}
+.comment-item{
+    padding: 20px 20px 10px;
+    border-bottom: 1px solid #eee;
+}
+.comment-item .comment-con{
+    float: left;
+    width: 838px;
+}
+.comment-item .comment-con .con-l{
+    width: 85%;
+    margin-right: 20px;
+}
+.comment-item .comment-con .con-r {
+    text-align: right;
+}
+.comment-item .comment-con .con-l .bought-spec{
+    color:#999;
+    margin-bottom: 5px;
+}
+.comment-item .comment-con .con-l .pic-show{
+    margin:10px 0
+}
+.comment-item .comment-con .con-l .pic-show img {
+    border: 1px solid #e2e2e2;
+    padding: 1px;
+    margin-right: 6px;
+    width: auto;
+}
+.cart-container .cart-table{
+    width:100%;
+}
+.cart-container .cart-table thead{
+    border-bottom: 7px solid #f0f3ef;
+    background:#f7f7f7;
+    line-height: 40px;
+}
+.cart-container .cart-table tbody{
+    background:#fff;
+    border-bottom: 7px solid #f0f3ef;
+}
+.cart-container .cart-table tbody tr:hover{
+    background:#fafafa;
+}
+.cart-table .promotion-hd{
+    line-height:40px;
+    border-bottom: 1px solid #eee;
+}
+.cart-table .promotion-hd td{
+    padding-left: 30px;
+}
+.cart-table .promotion-hd .cshop-tag{
+    padding:1px 10px;
+    border-radius: 4px;
+}
+.cart-table .promotion-hd .red{
+    margin-left:30px;
+}
+.cart-table .goods-item td{
+    padding: 15px 5px;
+    text-align: center;
+}
+.cart-table .goods-item .item-checkbox{
+    margin: 0 15px 0 24px;
+}
+.cart-table .goods-item .goods-main {
+    text-align: left;
+}
+.cart-table .goods-item .goods-main .goods-info{
+    margin-left: 57px;
+}
+.goods-item .goods-info .img{
+    width:80px;
+    height:80px;
+    border: 1px solid #eee;
+    margin-right: 10px;
+    float: left;
+    position: relative;
+}
+.goods-item .goods-info .img .promotion-tag{
+    position: absolute;
+    width:100%;
+    background:rgba(225,95,69,.8);
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+    padding: 2px 0;
+    bottom: 0;
+}
+.goods-item .goods-info .text{
+    float: left;
+    width: 410px;
+}
+.goods-item .goods-info .text .spec{
+    color:#999;
+}
+.goods-item .goods-discount .layui-form-select .layui-input{
+    border-color: #e15f45;
+    color:#e15f45;
+    height: 32px;
+}
+.goods-item .goods-discount .layui-form-select .layui-input:hover{
+    border-color: #e15f45 !important;
+}
+.goods-item .goods-discount .layui-form-select .layui-edge{
+    border-top-color: #e15f45;
+}
+.goods-item .delete{
+    margin-left: 10px;
+    padding-left: 10px;
+    color: #999;
+    border-left: 1px solid #ccc;
+}
+
+
+.cart-container .cart-table tfoot {
+    background: #f7f7f7;
+    line-height: 75px;
+}
+.cart-container .cart-table tfoot td {
+    padding: 0 0 0 14px;
 }

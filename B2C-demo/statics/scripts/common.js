@@ -24,6 +24,51 @@ $(function () {
     topbarNotice.onmouseout = next;
     // 头部通知栏end
 
+//    数量+-
+    $('.p-quantity .btn').click(function(){
+        var el=$(this);
+        var decBtn=el.siblings('.btn-decrease');
+        var incBtn = el.siblings('.btn-increase');
+        var ipt= el.parent().find('input');
+        var num= Number(ipt.val());
+        var min = Number(ipt.attr('min'));
+        var max= Number(ipt.attr('max'));
+        if(el.hasClass('btn-increase')){ //点击+
+            num++;
+            ipt.val(num);
+            if(max!=1) decBtn.removeClass('layui-disabled');
+            if (num >= max) {
+                //console.log(typeof(num))
+                layer.msg('最多选购 ' + max + ' 件');
+                el.addClass('layui-disabled');
+                ipt.val(max);
+                return false;
+            };
+        }else if(el.hasClass('btn-decrease')){//点击-
+            num--;
+            ipt.val(num);
+            if (max != 1) incBtn.removeClass('layui-disabled');
+            if (num <= min) {
+                el.addClass('layui-disabled');
+                ipt.val(min);
+                return false;
+            };
+        }
+    });
+
+    $(".action-addcart").click(function(e){
+        var el=$(this);
+
+            var html = $('#miniCartHtml').html();
+            layer.tips(html, el, {
+                skin: 'dialog-miniCart',
+                tips: 3,
+                time: 0,
+                area: ['420px', '240px']
+            });
+
+
+    })
 
 });
 
