@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <title>B2C商城-商品详情</title>
     <!--css文件-->
-    <link rel="stylesheet" href="../../statics/layui/css/layui.css">
-    <link rel="stylesheet" href="../../statics/stylesheets/style.css">
+    <link rel="stylesheet" href="../../../statics/layui/css/layui.css">
+    <link rel="stylesheet" href="../../../statics/stylesheets/style.css">
 
     <!--js文件-->
-    <script src="../../statics/scripts/jquery.min.js"></script>
-    <script src="../../statics/layui/layui.js"></script>
-    <script src="../../statics/scripts/common.js"></script>
+    <script src="../../../statics/scripts/jquery.min.js"></script>
+    <script src="../../../statics/layui/layui.js"></script>
+    <script src="../../../statics/scripts/common.js"></script>
 </head>
 
 <body class="is-index">
@@ -24,7 +24,7 @@
             <div class="topbar-l fl">
                 <div class="topbar-nav-item" style="margin-left:0;" >
                     <div class="item-hd" >
-                        <a href="../../index.html" target="_blank" >
+                        <a href="../../../index.html" target="_blank" >
                            <i class="layui-icon layui-icon-home topbar-icon"></i>您好，欢迎来到商城！</a></div>
                 </div>
                 <div class="topbar-nav-item">
@@ -46,12 +46,12 @@
                 <div style="float:left;">
                     <div class="topbar-nav-item" >
                         <div class="item-hd" >
-                            <a href="../passport/signin.html" target="_blank" title="网易严选登录" >登录</a>
+                            <a href="../../passport/signin.html" target="_blank" title="网易严选登录" >登录</a>
                         </div>
                     </div>
                     <div class="topbar-nav-item" style="margin-left:20px;" >
                         <div class="item-hd" >
-                            <a href="../passport/signup.html" target="_blank">注册</a>
+                            <a href="../../passport/signup.html" target="_blank">注册</a>
                         </div>
                     </div>
                 </div>
@@ -79,7 +79,7 @@
                     <div class="item-td">
                         <div class="topbar-dropdown-menu topbar-dropdown-menu-mobile" >
                             <div class="QR-code" >
-                                <img src="../../statics/images/demo_qrcode.png"/>
+                                <img src="../../../statics/images/demo_qrcode.png"/>
                             </div>
                             <span class="yx-cp-QRtxt">扫码浏览移动端</span>
                         </div>
@@ -94,8 +94,8 @@
     <div class="header">
         <div class="wrap-1200 clearfix pr">
             <div class="logo">
-                <a href="../../index.html">
-                    <img src="../../statics/images/demo_logo.png" alt="商城Logo" />
+                <a href="../../../index.html">
+                    <img src="../../../statics/images/demo_logo.png" alt="商城Logo" />
                 </a>
             </div>
             <div class="searchbar">
@@ -131,9 +131,9 @@
                         <ul class="category-primary">
                             <li>
                                 <div class="category-primary-item">
-                                    <a href="../gallery/index.html">服装鞋包 </a>
+                                    <a href="../../gallery/index.html">服装鞋包 </a>
                                     <p>
-                                        <a href="../gallery/index.html">女装</a><a href="../gallery/index.html">皮鞋</a><a href="../gallery/index.html">箱包</a>
+                                        <a href="../../gallery/index.html">女装</a><a href="../../gallery/index.html">皮鞋</a><a href="../gallery/index.html">箱包</a>
                                     </p>
                                     <span class="layui-icon layui-icon-right"></span>
                                 </div>
@@ -253,295 +253,232 @@
 
 <div class="main bg-gray pb20">
     <div class="wrap-1200">
-        <div class="bread-crumbs">
-            <span><a href="../../index.html">首页</a></span>
-            <span> / </span>
-            <span class="now">购物车</span>
-        </div>
-
-        <div class="cart-container">
-            <form class="layui-form">
-                <table class="cart-table">
-                    <thead>
-                        <tr>
-                            <th width="8%"><input type="checkbox" name="" class="cart-checkall" title="全选" lay-skin="primary" lay-filter="checkall"></th>
-                            <th width="40%">商品</th>
-                            <th width="8%">单价</th>
-                            <th width="12%">数量</th>
-                            <th width="10%">优惠</th>
-                            <th width="10%">小计</th>
-                            <th width="12%">操作</th>
-                        </tr>
-                    </thead>
-                    <!--有赠品demo-->
-                    <tbody>
-                        <tr class="goods-item">
-                            <td class="goods-main" colspan="2">
-                                <div class="fl item-checkbox">
-                                    <input type="checkbox" name="" class="cart-checkitem" lay-skin="primary" lay-filter="checkitem">
-                                </div>
-                                <div class="goods-info clearfix">
-                                    <div class="img">
-                                        <a href="../product/index.html">
-                                            <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p class="ml-ellipsis pt-name"><a href="../product/index.html">福临门 东北优质 大米 8kg</a></p>
-                                        <p class="spec">重量：8kg</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>￥48.90</td>
-                            <td>
-                                    <span class="p-quantity">
-                                        <a href="javascript:;" class="btn btn-decrease layui-disabled">-</a><input type="text" name="goods[num]" class="layui-input action-quantity-input" value="1" min="1" max="10"><a href="javascript:;" class="btn btn-increase">+</a>
-                                    </span>
-                            </td>
-                            <td class="goods-discount">-</td>
-                            <td class="price">￥48.90</td>
-                            <td><a href="javascript:;" class="red">收藏</a><a href="javascript:;" class="delete">移除</a></td>
-                        </tr>
-                        <tr class="goods-item">
-                            <td class="goods-main" colspan="2">
-                                <div class="goods-info clearfix">
-                                    <div class="img">
-                                        <a href="../product/index.html">
-                                            <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                        </a>
-                                        <span class="promotion-tag">赠品</span>
-                                    </div>
-                                    <div class="text">
-                                        <p class="ml-ellipsis pt-name"><a href="../product/index.html">福临门 东北优质 大米 8kg</a></p>
-                                        <p class="spec">重量：8kg</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>￥48.90</td>
-                            <td>1</td>
-                            <td class="goods-discount">-</td>
-                            <td class="price">-</td>
-                            <td><a href="javascript:;" class="red">收藏</a></td>
-                        </tr>
-                    </tbody>
-                    <!--满减活动-->
-                    <tbody>
-                        <tr class="promotion-hd">
-                            <td colspan="7">
-                                <span class="cshop-tag">满减</span>
-                                <span>活动商品购满￥100.00，即可减￥5.00，还差 <i class="remain">￥21.00</i></span>
-                                <a href="javascript:;" class="red">去凑单 ></a>
-                            </td>
-                        </tr>
-                        <tr class="goods-item">
-                            <td class="goods-main" colspan="2">
-                                <div class="fl item-checkbox">
-                                    <input type="checkbox" class="cart-checkitem" name="" lay-skin="primary">
-                                </div>
-                                <div class="goods-info clearfix">
-                                    <div class="img">
-                                        <a href="../product/index.html">
-                                            <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p class="ml-ellipsis pt-name"><a href="../product/index.html">福临门 东北优质 大米 8kg</a></p>
-                                        <p class="spec">重量：8kg</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>￥48.90</td>
-                            <td>
-                                <span class="p-quantity">
-                                    <a href="javascript:;" class="btn btn-decrease layui-disabled">-</a><input type="text" name="goods[num]" class="layui-input action-quantity-input" value="1" min="1" max="5"><a href="javascript:;" class="btn btn-increase">+</a>
-                                </span>
-                            </td>
-                            <td class="goods-discount">
-                                <select name="">
-                                    <option value="满减" selected>满100元减5元</option>
-                                    <option value="换购">满49元加48元可换购商品</option>
-                                    <option value="无">不使用活动优惠</option>
-                                </select>
-                            </td>
-                            <td class="price">￥48.90</td>
-                            <td><a href="javascript:;" class="red">收藏</a><a href="javascript:;" class="delete">移除</a></td>
-                        </tr>
-                        <tr class="goods-item">
-                            <td class="goods-main" colspan="2">
-                                <div class="fl item-checkbox">
-                                    <input type="checkbox" class="cart-checkitem" name="" lay-skin="primary">
-                                </div>
-                                <div class="goods-info clearfix">
-                                    <div class="img">
-                                        <a href="../product/index.html">
-                                            <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p class="ml-ellipsis pt-name"><a href="../product/index.html">福临门 东北优质 大米 8kg</a></p>
-                                        <p class="spec">重量：8kg</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>￥48.90</td>
-                            <td>
-                                <span class="p-quantity">
-                                    <a href="javascript:;" class="btn btn-decrease layui-disabled">-</a><input type="text" name="goods[num]" class="layui-input action-quantity-input" value="1" min="1" max="20"><a href="javascript:;" class="btn btn-increase">+</a>
-                                </span>
-                            </td>
-                            <td class="goods-discount">
-                                <select name="" lay-filter="select1">
-                                    <option value="满减" selected>满100元减5元</option>
-                                    <option value="换购">满49元加48元可换购商品</option>
-                                    <option value="无">不使用活动优惠</option>
-                                </select>
-                            </td>
-                            <td class="price">￥48.90</td>
-                            <td><a href="javascript:;" class="red">收藏</a><a href="javascript:;" class="delete">移除</a></td>
-                        </tr>
-                    </tbody>
-                    <!--加价购-->
-                    <tbody>
-                        <tr class="promotion-hd">
-                            <td colspan="7">
-                                <span class="cshop-tag">加价购</span>
-                                <span>活动商品购满￥59.00，即可加价购买商品1件，已满￥59.00</span>
-                                <div class="choicegoods-div">
-                                    <button class="layui-btn layui-btn-sm layui-btn-warm" type="button">换购商品</button>
-                                    <div class="choicegoods-list">
-                                        <div class="hd">
-                                            可换购最多1件，已选0件
-                                            <a href="javascript:;" class="fr">×</a>
+        <div class="checkout-container">
+            <h2 class="checkout-tit">填写并核对订单信息</h2>
+            <form class="layui-form checkout-form">
+                <div class="section order-address">
+                    <div class="section-title">选择收货地址</div>
+                    <div class="section-content">
+                        <ul class="option-list clearfix">
+                            <li class="option-item active">
+                                <div class="option-box">
+                                    <div class="address-item-con">
+                                        <p class="o-receiver"><span>刘德华 收</span><i>默认地址</i></p>
+                                        <p>上海 浦东新区 北蔡镇</p>
+                                        <p>牡丹路258弄22号301室</p>
+                                        <p>13681620332</p>
+                                        <div class="action-btn-group">
+                                            <a class="link action_address_edit" href="javascript:;">修改</a>
                                         </div>
-                                        <div class="choicegoods">
-                                            <ul>
-                                                <li class="goods-item clearfix">
-                                                    <div class="img">
-                                                        <a href="../product/index.html">
-                                                            <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                                        </a>
-                                                    </div>
-                                                    <div class="text">
-                                                        <p class="ml-ellipsis pt-name"><a href="../product/index.html">福临门 东北优质 大米 8kg</a>
-                                                        </p>
-                                                        <p class="spec">重量：8kg</p>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div>
-
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="option-item">
+                                <div class="option-box">
+                                    <div class="address-item-con">
+                                        <p class="o-receiver"><span>刘德华 收</span><a class="link fr  action_address_default" href="javascript:;">设为默认地址</a></p>
+                                        <p>上海 浦东新区 北蔡镇</p>
+                                        <p class="ml-ellipsis" title="牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室">牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室</p>
+                                        <p>13681620332</p>
+                                        <div class="action-btn-group">
+                                            <a class="link action_address_edit" href="javascript:;">修改</a>
+                                            <a class="link action_address_delete" href="javascript:;">删除</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="option-item">
+                                <div class="option-box">
+                                    <div class="address-item-con">
+                                        <p class="o-receiver">
+                                            <span>刘德华 收</span><a class="link fr  action_address_default" href="javascript:;">设为默认地址</a></p>
+                                        <p>上海 浦东新区 北蔡镇</p>
+                                        <p class="ml-ellipsis" title="牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室">牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室</p>
+                                        <p>13681620332</p>
+                                        <div class="action-btn-group">
+                                            <a class="link action_address_edit" href="javascript:;">修改</a>
+                                            <a class="link action_address_delete" href="javascript:;">删除</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="option-item">
+                                <div class="option-box">
+                                    <div class="address-item-con">
+                                        <p class="o-receiver">
+                                            <span>刘德华 收</span><a class="link fr  action_address_default" href="javascript:;">设为默认地址</a></p>
+                                        <p>上海 浦东新区 北蔡镇</p>
+                                        <p class="ml-ellipsis" title="牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室">牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室</p>
+                                        <p>13681620332</p>
+                                        <div class="action-btn-group">
+                                            <a class="link action_address_edit" href="javascript:;">修改</a>
+                                            <a class="link action_address_delete" href="javascript:;">删除</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="option-item">
+                                <div class="option-box">
+                                    <div class="address-item-con">
+                                        <p class="o-receiver">
+                                            <span>刘德华 收</span><a class="link fr  action_address_default" href="javascript:;">设为默认地址</a></p>
+                                        <p>上海 浦东新区 北蔡镇</p>
+                                        <p class="ml-ellipsis" title="牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室">牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室</p>
+                                        <p>13681620332</p>
+                                        <div class="action-btn-group">
+                                            <a class="link action_address_edit" href="javascript:;">修改</a>
+                                            <a class="link action_address_delete" href="javascript:;">删除</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <p><a href="javascript:;" class="more-address active_more_address">更多地址 <i class="layui-icon layui-icon-down"></i></a></p>
+                        <p><button type="button" class="layui-btn layui-btn-primary">+ 新增收货地址</button></p>
+                    </div>
+                </div>
+                <div class="section order-delivery">
+                    <div class="section-title">配送方式</div>
+                    <div class="section-content">
+                        <ul class="option-list clearfix">
+                            <li class="option-item active">
+                                <a class="option-box" href="javascript:;"><em>顺丰快递</em></a>
+                            </li>
+                            <li class="option-item">
+                                <a class="option-box" href="javascript:;"><em>普通快递</em></a>
+                            </li>
+                        </ul>
+                        <p class="o-freight"><i class="layui-icon layui-icon-tips"></i>运费：<span class="price">￥20.00</span></p>
+                    </div>
+                </div>
+                <div class="section">
+                    <div class="section-title">支付方式</div>
+                    <div class="section-content">
+                        <ul class="option-list clearfix">
+                            <li class="option-item">
+                                <a class="option-box" href="javascript:;"><em>货到付款</em></a>
+                            </li>
+                            <li class="option-item active">
+                                <a class="option-box" href="javascript:;"><em>支付宝</em></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="section order-invoice">
+                    <div class="section-title">发票信息</div>
+                    <div class="section-content">
+                        <div class="layui-form-item">
+                            <label class="layui-form-label">是否要开发票？</label>
+                            <div class="layui-input-block">
+                                <input type="radio" name="sex" value="否" title="否">
+                                <input type="radio" name="sex" value="是" title="是" checked>
+                            </div>
+                        </div>
+                        <ul class="option-list clearfix">
+                            <li class="option-item active">
+                                <div class="option-box">
+                                    <div class="invoice-item-con">
+                                        <p class="o-name">上海感豪信息技术有限公司</p>
+                                        <p class="o-type">公司</p>
+                                        <p class="action-btn-group">
+                                            <a class="layui-btn layui-btn-primary layui-btn-xs action_invoice_edit" href="javascript:;">编辑</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="option-item">
+                                <div class="option-box">
+                                    <div class="invoice-item-con">
+                                        <p class="o-name">刘德华</p>
+                                        <p class="o-type">个人</p>
+                                        <p class="action-btn-group">
+                                            <a class="layui-btn layui-btn-primary layui-btn-xs action_invoice_edit" href="javascript:;">编辑</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="mt10"><button type="button" class="layui-btn layui-btn-primary action_add_invoice">+ 新增发票抬头</button></p>
+                    </div>
+                </div>
+                <div class="section order-goodslist">
+                    <div class="section-title">商品清单</div>
+                    <div class="section-content">
+                        <table class="goodslist-table">
+                            <thead>
+                                <tr>
+                                    <th width="50%">商品</th>
+                                    <th width="12%">单价</th>
+                                    <th width="12%">数量</th>
+                                    <th width="12%">优惠金额</th>
+                                    <th width="14%">小计</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="goods-item">
+                                    <td style="text-align: left">
+                                        <div class="goods-info">
+                                            <div class="img">
+                                                <a href="../product/index.html">
+                                                    <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="text">
+                                                <p class="ml-ellipsis pt-name"><a href="../product/index.html">福临门 东北优质 大米 8kg</a></p>
+                                                <p class="spec">重量：8kg</p>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <a href="javascript:;" class="red">去凑单 ></a>
-                            </td>
-                        </tr>
-                        <tr class="goods-item">
-                            <td class="goods-main" colspan="2">
-                                <div class="fl item-checkbox">
-                                    <input type="checkbox" class="cart-checkitem" name="" lay-skin="primary">
-                                </div>
-                                <div class="goods-info clearfix">
-                                    <div class="img">
-                                        <a href="../product/index.html">
-                                            <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p class="ml-ellipsis pt-name"><a href="../product/index.html">福临门 东北优质 大米 8kg</a></p>
-                                        <p class="spec">重量：8kg</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>￥48.90</td>
-                            <td>
-                                    <span class="p-quantity">
-                                        <a href="javascript:;" class="btn btn-decrease layui-disabled">-</a><input type="text" name="goods[num]" class="layui-input action-quantity-input" value="1" min="1" max="1"><a href="javascript:;" class="btn btn-increase">+</a>
-                                    </span>
-                            </td>
-                            <td class="goods-discount">
-                                <select name="">
-                                    <option value="满减">满100元减5元</option>
-                                    <option value="换购" selected>满49元加48元可换购商品</option>
-                                    <option value="无">不使用活动优惠</option>
+                                    </td>
+                                    <td>￥7099.00</td>
+                                    <td>1</td>
+                                    <td>-</td>
+                                    <td class="price">￥7099.00</td>
+                                </tr>
+                                <tr class="goods-item">
+                                    <td style="text-align: left">
+                                        <div class="goods-info">
+                                            <div class="img">
+                                                <a href="../product/index.html">
+                                                    <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
+                                                </a>
+                                            </div>
+                                            <div class="text">
+                                                <p class="ml-ellipsis pt-name"><a href="../product/index.html">福临门 东北优质 大米 8kg</a></p>
+                                                <p class="spec">重量：8kg</p>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>￥7099.00</td>
+                                    <td>1</td>
+                                    <td>-</td>
+                                    <td class="price">￥7099.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="checkout-footer clearfix">
+                    <div class="checkout-footer-l">
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">订单备注</label>
+                            <div class="layui-input-block">
+                                <textarea name="desc" placeholder="选填：本次交易的补充说明（所填内容建议已经和商家达成一致意见， 85字以内）" class="layui-textarea"></textarea>
+                            </div>
+                        </div>
+                        <div class="layui-form-item layui-form-text">
+                            <label class="layui-form-label">优惠券抵扣</label>
+                            <div class="layui-input-block">
+                                <select name="city" lay-verify="required">
+                                    <option value="0">满500元减5元</option>
+                                    <option value="1">不使用优惠券</option>
                                 </select>
-                            </td>
-                            <td class="price">￥48.90</td>
-                            <td><a href="javascript:;" class="red">收藏</a><a href="javascript:;" class="delete">移除</a></td>
-                        </tr>
-                        <tr class="goods-item">
-                            <td class="goods-main" colspan="2">
-                                <div class="goods-info clearfix">
-                                    <div class="img">
-                                        <a href="../product/index.html">
-                                            <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                        </a>
-                                        <span class="promotion-tag">加价购</span>
-                                    </div>
-                                    <div class="text">
-                                        <p class="ml-ellipsis pt-name"><a href="../product/index.html">福临门 东北优质 大米 8kg</a></p>
-                                        <p class="spec">重量：8kg</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>￥48.90</td>
-                            <td>1</td>
-                            <td class="goods-discount">-￥15.00</td>
-                            <td class="price">￥48.90</td>
-                            <td><a href="javascript:;" class="red">收藏</a><a href="javascript:;" class="delete">移除</a></td>
-                        </tr>
-                    </tbody>
-                    <!--无促销-->
-                    <tbody>
-                        <tr class="goods-item">
-                            <td class="goods-main" colspan="2">
-                                <div class="fl item-checkbox">
-                                    <input type="checkbox" class="cart-checkitem" name="" lay-skin="primary">
-                                </div>
-                                <div class="goods-info clearfix">
-                                    <div class="img">
-                                        <a href="../product/index.html">
-                                            <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                        </a>
-                                    </div>
-                                    <div class="text">
-                                        <p class="ml-ellipsis pt-name"><a href="../product/index.html">福临门 东北优质 大米 8kg</a></p>
-                                        <p class="spec">重量：8kg</p>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>￥48.90</td>
-                            <td>
-                                        <span class="p-quantity">
-                                            <a href="javascript:;" class="btn btn-decrease layui-disabled">-</a><input type="text" name="goods[num]" class="layui-input action-quantity-input" value="1" min="1" max="2"><a href="javascript:;" class="btn btn-increase">+</a>
-                                        </span>
-                            </td>
-                            <td class="goods-discount">-</td>
-                            <td class="price">￥48.90</td>
-                            <td><a href="javascript:;" class="red">收藏</a><a href="javascript:;" class="delete">移除</a></td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td colspan="7" class="">
-                                <div class="fl tfoot-l">
-                                    <input type="checkbox" class="cart-checkall" name="f" title="全选" lay-skin="primary" lay-filter="checkall">
-                                    <a href="javascript:;">清空购物车</a>
-                                </div>
-                                <div class="fr tfoot-r">
-                                    <span class="tfoot-r-data">
-                                        <em>已选商品 <i class="red">2</i> 件</em>
-                                        <em>总计原价： ￥682.00</em>
-                                        <em>优惠金额： -￥15.00</em>
-                                        <em>合计： <i class="price">￥667.00</i></em>
-                                    </span>
-                                    <a href="checkout/index.html" class="layui-btn checkout-btn">去结算</a>
-                                </div>
-                            </td>
-                        </tr>
-                    </tfoot>
-                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-footer-r">
+
+                    </div>
+                </div>
             </form>
         </div>
     </div>
@@ -550,7 +487,7 @@
 
 <!-- 右侧菜单栏 -->
 <div class="fixed-right-nav clearfix" id="fixedRightNav">
-    <a class="nav-item" href="index.html">
+    <a class="nav-item" href="../index.html">
         <i class="layui-icon layui-icon-cart"><em class="op-cart-count">0</em></i>
         <p>购物车</p>
     </a>
@@ -570,23 +507,23 @@
 <div class="wrap-footer">
     <div class="footer-site-ensure">
         <div class="wrap-1200 clearfix">
-            <dl style="width:19%;background:url('../../statics/images/footer-icon2.png') no-repeat center left;margin-left: 1%;">
+            <dl style="width:19%;background:url('../../../statics/images/footer-icon2.png') no-repeat center left;margin-left: 1%;">
                 <dt>商品安全</dt>
                 <dd>精选食品 严格质检</dd>
             </dl>
-            <dl style="width:19%;background:url('../../statics/images/footer-icon5.png') no-repeat center left;margin-left: 1%;">
+            <dl style="width:19%;background:url('../../../statics/images/footer-icon5.png') no-repeat center left;margin-left: 1%;">
                 <dt>全程冷链</dt>
                 <dd>自营物流 安全可控</dd>
             </dl>
-            <dl style="width:19%;background:url('../../statics/images/footer-icon3.png') no-repeat center left;margin-left: 1%;">
+            <dl style="width:19%;background:url('../../../statics/images/footer-icon3.png') no-repeat center left;margin-left: 1%;">
                 <dt>鲜活天然</dt>
                 <dd>绿色生态 精挑先选</dd>
             </dl>
-            <dl style="width:19%;background:url('../../statics/images/footer-icon1.png') no-repeat center left;margin-left: 1%;">
+            <dl style="width:19%;background:url('../../../statics/images/footer-icon1.png') no-repeat center left;margin-left: 1%;">
                 <dt>产地直采</dt>
                 <dd>限定产源 质量保证</dd>
             </dl>
-            <dl style="width:19%;background:url('../../statics/images/footer-icon4.png') no-repeat center left;margin-left: 1%;">
+            <dl style="width:19%;background:url('../../../statics/images/footer-icon4.png') no-repeat center left;margin-left: 1%;">
                 <dt>天天低价</dt>
                 <dd>会员专属 优惠不停</dd>
             </dl>
@@ -691,7 +628,7 @@
                     <p class="time">9:30 - 11:30</p>
                 </div>
                 <div class="footer-qr fr">
-                    <img src="../../statics/images/demo/footer_qr.png" width="104" height="104">
+                    <img src="../../../statics/images/demo/footer_qr.png" width="104" height="104">
                 </div>
             </div>
         </div>
@@ -702,7 +639,7 @@
                 <p>© 2012-2016 ganhao.com 版权所有 ICP证：浙ICP备13029734号-2</p>
                 <p>食品流通许可证：许可证编号:SP3301081510036097 | 营业执照号：330103000176643 | 客服服务电话：400-811-3508</p>
                 <br/>
-                <p><img style="width: inherit;" src="../../statics/images/demo/footer_alipay.png" ></p>
+                <p><img style="width: inherit;" src="../../../statics/images/demo/footer_alipay.png" ></p>
             </div>
         </div>
     </div>
@@ -734,7 +671,21 @@
     });
 
     $(function () {
+        $('.option-list .option-item').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+        });
+        $('.active_more_address').click(function(){
+            var el=$(this);
+            var orderAdd= el.parents('.order-address');
+            if(orderAdd.hasClass('show-more-address')){
+                orderAdd.removeClass('show-more-address');
+                el.html('更多地址 <i class="layui-icon layui-icon-down"></i>')
 
+            }else{
+                orderAdd.addClass('show-more-address');
+                el.html('收起地址 <i class="layui-icon layui-icon-up"></i>')
+            };
+        });
 
     });
 

@@ -227,11 +227,18 @@ layui制定
     font-size: 16px;
     padding:0 10px;
 }
+.layui-btn-primary:hover{
+    border-color: #e25e44;
+    color:#e25e44;
+}
 /**
 B2C商城模板样式
 **/
 .pb20{
     padding-bottom:20px;
+}
+.mt10{
+    margin-top:10px;
 }
 .bg-fff, .main {
     background-color: #fff;
@@ -2075,7 +2082,7 @@ B2C商城模板样式
 .cart-table .goods-item .goods-main .goods-info{
     margin-left: 57px;
 }
-.goods-item .goods-info .img{
+.goods-item .img{
     width:80px;
     height:80px;
     border: 1px solid #eee;
@@ -2083,7 +2090,7 @@ B2C商城模板样式
     float: left;
     position: relative;
 }
-.goods-item .goods-info .img .promotion-tag{
+.goods-item .img .promotion-tag{
     position: absolute;
     width:100%;
     background:rgba(225,95,69,.8);
@@ -2093,11 +2100,11 @@ B2C商城模板样式
     padding: 2px 0;
     bottom: 0;
 }
-.goods-item .goods-info .text{
+.goods-item .text{
     float: left;
-    width: 410px;
+    width: 75%;
 }
-.goods-item .goods-info .text .spec{
+.goods-item .text .spec{
     color:#999;
 }
 .goods-item .goods-discount .layui-form-select .layui-input{
@@ -2121,8 +2128,219 @@ B2C商城模板样式
 
 .cart-container .cart-table tfoot {
     background: #f7f7f7;
-    line-height: 75px;
 }
 .cart-container .cart-table tfoot td {
     padding: 0 0 0 14px;
+}
+.cart-container .cart-table tfoot .tfoot-l{
+    line-height: 75px;
+}
+.cart-container .cart-table tfoot .tfoot-l .layui-form-checkbox{
+    /*display: block;*/
+    float: left;
+    margin: 29px 29px 0 0;
+}
+.cart-container .cart-table tfoot .tfoot-r .checkout-btn{
+    height: 75px;
+    border-radius: 0;
+    line-height: 75px;
+    font-size: 25px;
+    padding: 0 35px;
+}
+.cart-container .cart-table tfoot .tfoot-r .tfoot-r-data{
+    /*margin-right: 25px;*/
+    font-size: 14px;
+}
+.cart-container .cart-table tfoot .tfoot-r .tfoot-r-data em{
+    margin-right: 30px;
+}
+.cart-container .cart-table tfoot .tfoot-r .tfoot-r-data em .price{
+    font-size: 21px;
+}
+.choicegoods-div{
+    display: inline-block;
+    margin-left: 10px;
+    position: relative;
+}
+.choicegoods-div .choicegoods-list{
+    display: none;
+    position: absolute;
+    width:380px;
+    height:300px;
+    background:#fff;
+    border: 2px solid #d1ab70;
+    z-index: 1;
+}
+.choicegoods-div .choicegoods-list .hd{
+    line-height: 30px;
+    background:#d1ab70;
+    color: #fff;
+    padding: 0 10px;
+}
+.checkout-container .section{
+    border:0 none;
+}
+.checkout-container .section .section-title{
+    font-size: 14px;
+    font-weight: bold;
+}
+.checkout-container .section-content{
+    padding:20px 40px;
+}
+.checkout-container .checkout-tit{
+    line-height: 60px;
+}
+.checkout-container .checkout-form{
+    border:1px solid #eee;
+}
+.checkout-form .option-item{
+    border:1px solid #eee;
+    background:#fff;
+    float: left;
+    margin: 5px 10px 5px 0;
+    cursor: context-menu;
+}
+.checkout-form .option-item:hover{
+    background-color: #f8f8f8;
+}
+.checkout-form .option-item .option-box{
+    display: block;
+    border: 1px solid #fff;
+    padding: 12px;
+    height:100%;
+    box-sizing: border-box;
+}
+.checkout-form .option-item .option-box em{
+    font-size: 15px;
+    padding: 0 22px;
+    font-weight: bold;
+}
+.checkout-form .option-item.active{
+    border-color:#e25e44;
+    background-color: #fff5f3;
+    position: relative;
+}
+.checkout-form .option-item.active .option-box{
+    border-color:#e25e44;
+}
+.checkout-form .option-item.active .option-box em{
+    color:#e25e44;
+}
+.checkout-form .option-item.active:after{
+    content: '';
+    position: absolute;
+    bottom:-1px;
+    right: -1px;
+    width:28px;
+    height:28px;
+    background-image: url('../images/cshop_icon.png');
+    background-position: 0 -141px;
+}
+.checkout-form .order-address .option-item{
+    width:265px;
+    height:150px;
+}
+.checkout-form .order-address .option-item:nth-child(n+5){
+    display: none;
+}
+.checkout-form .order-address.show-more-address .option-item:nth-child(n+5) {
+    display: block;
+}
+.checkout-form .order-address .address-item-con{
+    font-size: 12px;
+    height:100%;
+    position: relative;
+}
+.checkout-form .order-address .address-item-con .action-btn-group{
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+.checkout-form .order-address .option-item:hover .action-btn-group {
+    display: block;
+}
+.checkout-form .order-address .address-item-con .action-btn-group .link{
+    margin-right:10px;
+}
+.checkout-form .order-address .o-receiver{
+    margin-bottom:5px;
+}
+.checkout-form .order-address .o-receiver span{
+    font-size: 14px;
+    font-weight: bold;
+}
+.checkout-form .order-address .o-receiver i{
+    float: right;
+    color:#999;
+}
+.checkout-form .order-address .option-item.active .o-receiver span{
+    color:#e25e44;
+}
+.checkout-form .order-address .more-address{
+    line-height: 50px;
+}
+.checkout-form .order-delivery .o-freight{
+    border-top: 1px solid #eee;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+.checkout-form .order-delivery .o-freight .layui-icon{
+    margin-right: 10px;
+    font-size: 15px;
+    color: #d3b740;
+}
+.checkout-form .order-invoice .option-item{
+    min-width: 170px;
+    font-size: 12px;
+}
+.checkout-form .order-invoice .invoice-item-con{
+    padding:0 5px;
+}
+.checkout-form .order-invoice .invoice-item-con .o-name{
+    font-size: 14px;
+    font-weight: bold;
+}
+.checkout-form .order-invoice .invoice-item-con .o-type{
+    margin: 5px 0;
+}
+.checkout-form .order-invoice .invoice-item-con .layui-btn{
+    background-color: transparent;
+}
+.checkout-form .order-invoice .layui-form-label{
+    padding: 10px 0 0 0;
+    width: auto;
+}
+.checkout-form .order-goodslist .section-content{
+    padding:0;
+}
+.checkout-form .order-goodslist .goodslist-table{
+    width:100%;
+}
+.checkout-form .order-goodslist .goodslist-table thead{
+    background-color: #fffdfd;
+    line-height: 40px;
+    border-bottom: 1px solid #eee;
+}
+.checkout-form .order-goodslist .goodslist-table td{
+    text-align: center;
+    padding: 10px 5px;
+}
+.checkout-form .order-goodslist .goodslist-table .goods-info{
+    margin-left: 40px;
+}
+.checkout-form .order-goodslist .goodslist-table .goods-info .img{
+    width:50px;
+    height:50px;
+}
+.checkout-form .checkout-footer{
+    background-color: #f7f7f7;
+    padding:40px 12px;
+}
+.checkout-form .checkout-footer-l {
+    width:40%;
+    float: left;
+}
+.checkout-form .checkout-footer-r {
+    width: 60%;
+    float: right;
 }
