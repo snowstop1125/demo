@@ -231,6 +231,9 @@ layui制定
     border-color: #e25e44;
     color:#e25e44;
 }
+.layui-nav .layui-nav-bar{
+    background:#e25e44;
+}
 /**
 B2C商城模板样式
 **/
@@ -2177,20 +2180,20 @@ B2C商城模板样式
     color: #fff;
     padding: 0 10px;
 }
-.checkout-container .section{
+.checkout-container .section,.paycenter-container .section{
     border:0 none;
 }
 .checkout-container .section .section-title{
     font-size: 14px;
     font-weight: bold;
 }
-.checkout-container .section-content{
+.checkout-container .section-content, .paycenter-container .section-content{
     padding:20px 40px;
 }
-.checkout-container .checkout-tit{
+.checkout-container .checkout-tit, .paycenter-container .checkout-tit{
     line-height: 60px;
 }
-.checkout-container .checkout-form{
+.checkout-container .checkout-form, .paycenter-container .checkout-form{
     border:1px solid #eee;
 }
 .checkout-form .option-item{
@@ -2273,11 +2276,18 @@ B2C商城模板样式
     float: right;
     color:#999;
 }
+.checkout-form .order-address .o-receiver .link{
+    display: none;
+}
 .checkout-form .order-address .option-item.active .o-receiver span{
     color:#e25e44;
 }
+.checkout-form .order-address .option-item:hover .o-receiver .link {
+    display: block;
+}
 .checkout-form .order-address .more-address{
-    line-height: 50px;
+    display: none;
+    line-height: 30px;
 }
 .checkout-form .order-delivery .o-freight{
     border-top: 1px solid #eee;
@@ -2334,7 +2344,7 @@ B2C商城模板样式
 }
 .checkout-form .checkout-footer{
     background-color: #f7f7f7;
-    padding:40px 12px;
+    padding:50px 50px 50px 12px;
 }
 .checkout-form .checkout-footer-l {
     width:40%;
@@ -2343,4 +2353,193 @@ B2C商城模板样式
 .checkout-form .checkout-footer-r {
     width: 60%;
     float: right;
+    text-align: right;
+}
+.checkout-form .checkout-footer-r dl{
+    margin-bottom:10px;
+    font-size: 14px;
+}
+.checkout-form .checkout-footer-r dt{
+    display: inline-block;
+    color:#999;
+}
+.checkout-form .checkout-footer-r dd {
+    display: inline-block;
+}
+.checkout-form .checkout-footer-r dl.price-dl dt{
+    color: #333;
+    font-weight: bold;
+}
+.checkout-form .checkout-footer-r dl.price-dl .price{
+    font-size: 24px;
+    font-weight: bold;
+}
+.checkout-form .checkout-footer-r .cart-link{
+    color:#999;
+    text-decoration: underline;
+    margin-right: 20px;
+    font-size: 14px;
+}
+.checkout-form .submit-btn{
+    border-radius: 0;
+    font-size: 22px;
+    padding: 0px 40px;
+    height: 50px;
+    line-height: 50px;
+}
+
+.paycenter-result{
+    background: #f7f7f7;
+}
+.paycenter-result .result-con{
+    text-align: center;
+    padding: 20px 0;
+}
+.paycenter-result .result-icon{
+    display: inline-block;
+    font-size: 60px;
+    margin-right:15px;
+}
+.paycenter-result .result-con-r {
+    display: inline-block;
+    text-align: left;
+}
+.paycenter-result .result-con-r h2{
+    font-size: 22px;
+}
+.paycenter-result .result-con-r h2 em{
+    color:#666;
+}
+.paycenter-result .result-con-r p {
+    color: #999;
+    font-size: 16px;
+}
+.pay-datail .section-content{
+    padding: 50px 100px;
+}
+.pay-datail .payinfo-item {
+    font-size:15px;
+    margin-bottom: 20px;
+}
+.pay-datail .payinfo-item:last-child{
+    margin-bottom: 0;
+}
+.pay-datail .payinfo-item label{
+    float: left;
+    line-height: 35px;
+    margin-right: 10px;
+}
+.pay-datail .payinfo-item .payinfo-item-val{
+    float: left;
+    width: 86%;
+}
+.pay-datail .payinfo-item .payinfo-item-val>p{
+    line-height: 35px;
+}
+.pay-datail .payinfo-item .payinfo-item-val .price {
+    font-size: 26px;
+}
+.pay-datail .payinfo-item .payinfo-item-val .change-payment-btn{
+    margin-left:20px;
+}
+.pay-datail .change-payment-box{
+    display: none;
+    background:#f7f7f7;
+    padding: 30px;
+    margin-top: 20px;
+}
+.pay-datail .change-payment-box .tit{
+    margin-bottom:10px;
+}
+.paycenter-container .payment-footer{
+    background-color: #f7f7f7;
+    padding: 50px;
+    text-align: center;
+}
+/**
+    会员中心
+**/
+.member-header{
+    background:#e25e44;
+    color:#fff;
+    padding: 25px 0 140px;
+}
+.member-header .logo {
+    float: left;
+    width: 220px;
+    margin-right: 20px;
+    min-height: 50px;
+}
+.member-header .logo img {
+    width: auto;
+    max-width: 215px;
+}
+.member-header .searchbar{
+    left: auto;
+    right: 0;
+    top: 50%;
+    margin-top: -20px;
+    width:auto;
+}
+.member-header .searchbar input{
+    width:240px;
+    border:1px solid #eee;
+}
+.member-header .searchbar .submit{
+    background: #f7f7f7;
+    color: #666;
+    font-size: 16px;
+}
+.member-header .layui-nav{
+    float: left;
+    padding:0;
+    background:transparent;
+    margin-top: 13px;
+}
+.member-header .layui-nav .layui-nav-item a{
+    color:#fff;
+    font-size: 16px;
+}
+.member-header .layui-nav .layui-nav-bar{
+    background: rgba(255, 255, 255, 0.7);
+    height: 3px;
+}
+.member-header .layui-nav .layui-nav-child a{
+    color:#666;
+    font-size: 14px;
+}
+.member-container{
+    background:#f7f7f7;
+    margin-top: -112px;
+    -webkit-box-shadow: 0 5px 12px 2px rgba(117,48,48,.18); -moz-box-shadow: 0 5px 12px 2px rgba(117,48,48,.18); box-shadow: 0 5px 12px 2px rgba(117,48,48,.18);
+}
+.member-container .member-aside{
+    float: left;
+    width:220px;
+    min-height: 600px;
+    padding:20px 0;
+}
+.member-container .member-aside dl{
+    padding: 0px 25px 20px;
+}
+.member-container .member-aside dl dt{
+    font-weight: bold;
+    font-size: 17px;
+    color:#333;
+    margin-bottom: 10px;
+}
+.member-container .member-aside dl dd {
+    font-size: 15px;
+    color: #666;
+    margin:0 0 7px 10px;
+}
+.member-container .member-aside dl dd:hover,
+.member-container .member-aside dl dd.active{
+    color:#e25e44;
+}
+.member-container .member-main{
+    float: left;
+    width:980px;
+    background:#fff;
+    min-height: 640px;
 }

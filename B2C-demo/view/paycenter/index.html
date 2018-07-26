@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <title>B2C商城-品牌专区</title>
+    <title>B2C商城-支付中心</title>
     <!--css文件-->
     <link rel="stylesheet" href="../../statics/layui/css/layui.css">
     <link rel="stylesheet" href="../../statics/stylesheets/style.css">
@@ -109,7 +109,7 @@
             <!-- 迷你购物车 -->
             <div class="mini-cart">
                 <div class="mini-cart-con">
-                    <a href="../cart/index.html">
+                    <a href="index.html">
                       <i class="layui-icon layui-icon-cart"></i>
                       我的购物车
                     </a>
@@ -131,9 +131,9 @@
                         <ul class="category-primary">
                             <li>
                                 <div class="category-primary-item">
-                                    <a href="index.html">服装鞋包 </a>
+                                    <a href="../gallery/index.html">服装鞋包 </a>
                                     <p>
-                                        <a href="index.html">女装</a><a href="index.html">皮鞋</a><a href="index.html">箱包</a>
+                                        <a href="../gallery/index.html">女装</a><a href="../gallery/index.html">皮鞋</a><a href="../gallery/index.html">箱包</a>
                                     </p>
                                     <span class="layui-icon layui-icon-right"></span>
                                 </div>
@@ -253,109 +253,63 @@
 
 <div class="main bg-gray pb20">
     <div class="wrap-1200">
-        <div class="bread-crumbs">
-            <span><a href="../../index.html" alt="" title="">首页</a></span>
-            <span> / </span>
-            <span class="now">品牌专区</span>
-        </div>
+        <div class="paycenter-container">
+            <h2 class="checkout-tit">订单支付</h2>
+            <form class="layui-form checkout-form" id="paycenterForm">
+                <div class="section paycenter-result">
+                    <div class="section-content">
+                        <div class="result-con">
+                            <div class="result-icon">
+                                <i class="layui-icon layui-icon-ok-circle green"></i>
+                            </div>
+                            <div class="result-con-r">
+                                <h2 class="green">订单创建成功！<em>订单号：201808301256</em></h2>
+                                <p>请您尽快完成支付，以便尽快为您发货~</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section pay-datail">
+                    <div class="section-content">
+                        <div class="payinfo-item clearfix">
+                            <label class="">支付方式：</label>
+                            <div class="payinfo-item-val">
+                                <p>
+                                    <b id="order_payment">支付宝</b>
+                                    <button class="layui-btn layui-btn-primary change-payment-btn action_change_payment" type="button">更改支付方式</button>
+                                </p>
+                                <div class="change-payment-box">
+                                    <p class="tit">请选择支付方式：</p>
+                                    <ul class="option-list clearfix">
+                                        <li class="option-item">
+                                            <a class="option-box" href="javascript:;"><em>货到付款</em></a>
+                                        </li>
+                                        <li class="option-item active">
+                                            <a class="option-box" href="javascript:;"><em>支付宝</em></a>
+                                        </li>
+                                    </ul>
+                                </div>
 
-        <div class="brand-area">
-            <div class="section">
-                <div class="section-title clearfix">
-                    <h3>女装品牌</h3>
-                </div>
-                <div class="brand-list section-content">
-                    <ul class="clearfix">
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_2.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_2.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section">
-                <div class="section-title clearfix">
-                    <h3>女装品牌</h3>
-                </div>
-                <div class="brand-list section-content">
-                    <ul class="clearfix">
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_2.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_2.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                        <li>
-                            <a href="javascript:;"><img lay-src="../../statics/images/demo/demo_brand_logo_1.png" /></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                            </div>
+                        </div>
+                        <div class="payinfo-item clearfix">
+                            <label class="">支付金额：</label>
+                            <div class="payinfo-item-val">
+                                <p><b class="price">￥6822.00</b></p>
+                            </div>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="payment-footer clearfix">
+                     <button type="button" class="layui-btn layui-btn-lg submit-btn action_checkout_submit">去支付</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>
 
 
-<!-- 右侧菜单栏 -->
-<div class="fixed-right-nav clearfix" id="fixedRightNav">
-    <a class="nav-item" href="../cart/index.html">
-        <i class="layui-icon layui-icon-cart"><em class="op-cart-count">0</em></i>
-        <p>购物车</p>
-    </a>
-    <a class="nav-item" href="../member/index.html">
-        <i class="layui-icon layui-icon-star"></i>
-        <p>收藏</p>
-    </a>
-    <a class="nav-item" href="../member/index.html">
-        <i class="layui-icon layui-icon-username"></i>
-        <p>个人</p>
-    </a>
-    <a class="nav-item top-btn" href="#">
-        <i class="cshop-icon cshop-icon-top"></i>
-    </a>
-</div>
 <!-- 公用底部-->
 <div class="wrap-footer">
     <div class="footer-site-ensure">
@@ -500,12 +454,24 @@
 <!-- 公用底部-->
 </body>
 <script>
-    layui.use(['element'], function () {
-
+    layui.use(['element','form'], function () {
+        var form = layui.form;
     });
 
     $(function () {
+
+        $('#paycenterForm').on('click', '.change-payment-box .option-item', function (e) {
+            var el=$(this);
+            var val=el.find('em').text();
+            $('#order_payment').text(val)
+            el.addClass('active').siblings().removeClass('active');
+            $('.change-payment-box').hide()
+        }).on('click', '.action_change_payment', function (e) {// 更改支付方式
+            $('.change-payment-box').show()
+        })
     });
+
+
 </script>
 
 </html>

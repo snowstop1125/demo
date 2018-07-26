@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <title>B2C商城-商品详情</title>
+    <title>B2C商城-订单结算</title>
     <!--css文件-->
     <link rel="stylesheet" href="../../../statics/layui/css/layui.css">
     <link rel="stylesheet" href="../../../statics/stylesheets/style.css">
@@ -255,7 +255,7 @@
     <div class="wrap-1200">
         <div class="checkout-container">
             <h2 class="checkout-tit">填写并核对订单信息</h2>
-            <form class="layui-form checkout-form">
+            <form class="layui-form checkout-form" id="checkoutForm">
                 <div class="section order-address">
                     <div class="section-title">选择收货地址</div>
                     <div class="section-content">
@@ -263,7 +263,7 @@
                             <li class="option-item active">
                                 <div class="option-box">
                                     <div class="address-item-con">
-                                        <p class="o-receiver"><span>刘德华 收</span><i>默认地址</i></p>
+                                        <p class="o-receiver"><span>汪雪婷 收</span><i>默认地址</i></p>
                                         <p>上海 浦东新区 北蔡镇</p>
                                         <p>牡丹路258弄22号301室</p>
                                         <p>13681620332</p>
@@ -276,7 +276,7 @@
                             <li class="option-item">
                                 <div class="option-box">
                                     <div class="address-item-con">
-                                        <p class="o-receiver"><span>刘德华 收</span><a class="link fr  action_address_default" href="javascript:;">设为默认地址</a></p>
+                                        <p class="o-receiver"><span>汪雪婷 收</span><a class="link fr  action_address_default" href="javascript:;">设为默认地址</a></p>
                                         <p>上海 浦东新区 北蔡镇</p>
                                         <p class="ml-ellipsis" title="牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室">牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室</p>
                                         <p>13681620332</p>
@@ -291,9 +291,9 @@
                                 <div class="option-box">
                                     <div class="address-item-con">
                                         <p class="o-receiver">
-                                            <span>刘德华 收</span><a class="link fr  action_address_default" href="javascript:;">设为默认地址</a></p>
+                                            <span>汪雪婷 收</span><a class="link fr  action_address_default" href="javascript:;">设为默认地址</a></p>
                                         <p>上海 浦东新区 北蔡镇</p>
-                                        <p class="ml-ellipsis" title="牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室">牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室</p>
+                                        <p class="ml-ellipsis" title="牡丹路258弄22号301室牡丹路258弄">牡丹路258弄22号301室牡丹路258弄22号</p>
                                         <p>13681620332</p>
                                         <div class="action-btn-group">
                                             <a class="link action_address_edit" href="javascript:;">修改</a>
@@ -308,7 +308,22 @@
                                         <p class="o-receiver">
                                             <span>刘德华 收</span><a class="link fr  action_address_default" href="javascript:;">设为默认地址</a></p>
                                         <p>上海 浦东新区 北蔡镇</p>
-                                        <p class="ml-ellipsis" title="牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室">牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室</p>
+                                        <p class="ml-ellipsis" title="牡丹路258弄22号301">牡丹路258弄22号301</p>
+                                        <p>13681620332</p>
+                                        <div class="action-btn-group">
+                                            <a class="link action_address_edit" href="javascript:;">修改</a>
+                                            <a class="link action_address_delete" href="javascript:;">删除</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="option-item">
+                                <div class="option-box">
+                                    <div class="address-item-con">
+                                        <p class="o-receiver">
+                                            <span>刘德华 收</span><a class="link fr  action_address_default" href="javascript:;">设为默认地址</a></p>
+                                        <p>上海 浦东新区 北蔡镇</p>
+                                        <p class="ml-ellipsis" title="牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室牡丹路258弄22号301室">牡丹路258弄22号301室</p>
                                         <p>13681620332</p>
                                         <div class="action-btn-group">
                                             <a class="link action_address_edit" href="javascript:;">修改</a>
@@ -334,7 +349,7 @@
                             </li>
                         </ul>
                         <p><a href="javascript:;" class="more-address active_more_address">更多地址 <i class="layui-icon layui-icon-down"></i></a></p>
-                        <p><button type="button" class="layui-btn layui-btn-primary">+ 新增收货地址</button></p>
+                        <p><button type="button" class="mt10 layui-btn layui-btn-primary">+ 新增收货地址</button></p>
                     </div>
                 </div>
                 <div class="section order-delivery">
@@ -351,7 +366,7 @@
                         <p class="o-freight"><i class="layui-icon layui-icon-tips"></i>运费：<span class="price">￥20.00</span></p>
                     </div>
                 </div>
-                <div class="section">
+                <div class="section order-payment">
                     <div class="section-title">支付方式</div>
                     <div class="section-content">
                         <ul class="option-list clearfix">
@@ -370,8 +385,8 @@
                         <div class="layui-form-item">
                             <label class="layui-form-label">是否要开发票？</label>
                             <div class="layui-input-block">
-                                <input type="radio" name="sex" value="否" title="否">
-                                <input type="radio" name="sex" value="是" title="是" checked>
+                                <input type="radio" name="isInvoice" value="否" title="否" lay-filter="isInvoice">
+                                <input type="radio" name="isInvoice" value="是" title="是" lay-filter="isInvoice" checked>
                             </div>
                         </div>
                         <ul class="option-list clearfix">
@@ -476,7 +491,34 @@
                         </div>
                     </div>
                     <div class="checkout-footer-r">
-
+                        <dl>
+                            <dt>商品总数量：</dt>
+                            <dd>2件</dd>
+                        </dl>
+                        <dl>
+                            <dt>商品总金额：</dt>
+                            <dd>￥7099.00</dd>
+                        </dl>
+                        <dl>
+                            <dt>优惠金额：</dt>
+                            <dd>￥0.00</dd>
+                        </dl>
+                        <dl>
+                            <dt>运费：</dt>
+                            <dd>￥20.00</dd>
+                        </dl>
+                        <dl>
+                            <dt>优惠券抵扣：</dt>
+                            <dd>￥100.00</dd>
+                        </dl>
+                        <dl class="price-dl">
+                            <dt>应付总额：</dt>
+                            <dd class="price">￥6999.00</dd>
+                        </dl>
+                        <div class="">
+                            <a href="../index.html" class="cart-link">返回购物车</a>
+                            <button type="button" class="layui-btn layui-btn-lg submit-btn action_checkout_submit"><a href="../../paycenter/index.html">提交订单</a></button>
+                        </div>
                     </div>
                 </div>
             </form>
@@ -485,24 +527,6 @@
 </div>
 
 
-<!-- 右侧菜单栏 -->
-<div class="fixed-right-nav clearfix" id="fixedRightNav">
-    <a class="nav-item" href="../index.html">
-        <i class="layui-icon layui-icon-cart"><em class="op-cart-count">0</em></i>
-        <p>购物车</p>
-    </a>
-    <a class="nav-item" href="">
-        <i class="layui-icon layui-icon-star"></i>
-        <p>收藏</p>
-    </a>
-    <a class="nav-item" href="">
-        <i class="layui-icon layui-icon-username"></i>
-        <p>个人</p>
-    </a>
-    <a class="nav-item top-btn" href="#">
-        <i class="cshop-icon cshop-icon-top"></i>
-    </a>
-</div>
 <!-- 公用底部-->
 <div class="wrap-footer">
     <div class="footer-site-ensure">
@@ -649,44 +673,57 @@
 <script>
     layui.use(['element','form'], function () {
         var form = layui.form;
-        form.on('select(select1)', function (data) {
-            console.log(data.elem); //得到select原始DOM对象
-            console.log(data.value); //得到被选中的值
-            console.log(data.othis); //得到美化后的DOM对象
-        });
-        form.on('checkbox(checkall)', function (data) {
-            console.log(data.elem); //得到checkbox原始DOM对象
-            console.log(data.elem.checked); //是否被选中，true或者false
-            console.log(data.value); //复选框value值，也可以通过data.elem.value得到
-            console.log(data.othis); //得到美化后的DOM对象
-
-            if(data.elem.checked){
-                $('.cart-table').find('.cart-checkitem,.cart-checkall').prop('checked', true);
-                $('.cart-table').find('.cart-checkitem,.cart-checkall').next(".layui-form-checkbox").addClass('layui-form-checked');
+        form.on('radio(isInvoice)', function (data) { //是否要发票
+            var List= data.othis.parents('.order-invoice').find('.option-list,.action_add_invoice');
+            if(data.value=='是'){
+                List.show();
             }else{
-                $('.cart-table').find('.cart-checkitem,.cart-checkall').prop('checked', false);
-                $('.cart-table').find('.cart-checkitem,.cart-checkall').next(".layui-form-checkbox").removeClass('layui-form-checked');
+                List.hide()
             }
+
         });
+
     });
 
     $(function () {
-        $('.option-list .option-item').click(function(){
+        if($('.order-address .option-item').length>4){
+            $('.active_more_address').show();
+        };
+
+        $('#checkoutForm').on('click', '.option-list .option-item', function (e) {
+            var target = $(e.target)
+            if (target.hasClass('action_address_edit') || target.hasClass('action_address_delete') || target.hasClass('action_address_default') || target.hasClass('action_invoice_edit')) return false;
             $(this).addClass('active').siblings().removeClass('active');
-        });
-        $('.active_more_address').click(function(){
+
+        }).on('click','.action_address_edit',function(e){ // 收货地址编辑
+
+        }).on('click','.action_address_delete',function(e){// 收货地址删除
             var el=$(this);
-            var orderAdd= el.parents('.order-address');
-            if(orderAdd.hasClass('show-more-address')){
+            layer.confirm('确定要删除该收货地址吗？', {
+                btn: ['确定', '取消'] //按钮
+            }, function () {
+                if (el.parents('.option-list').find('.option-item').length <= 5) {
+                    $('.active_more_address').hide();
+                }
+                el.parents('.option-item').remove();
+                layer.msg('已删除');
+
+            }, function () {
+
+            });
+
+        }).on('click', '.active_more_address', function (e) {// 更多地址
+            var el = $(this);
+            var orderAdd = el.parents('.order-address');
+            if (orderAdd.hasClass('show-more-address')) {
                 orderAdd.removeClass('show-more-address');
                 el.html('更多地址 <i class="layui-icon layui-icon-down"></i>')
 
-            }else{
+            } else {
                 orderAdd.addClass('show-more-address');
                 el.html('收起地址 <i class="layui-icon layui-icon-up"></i>')
             };
-        });
-
+        })
     });
 
 
