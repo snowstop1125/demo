@@ -90,7 +90,7 @@ window.onscroll = function () {
     }
 };
 
-layui.use(['flow', 'element', 'form','util'], function () {
+layui.use(['flow', 'element', 'form','util','layer'], function () {
     var flow = layui.flow;
     //当你执行这样一个方法时，即对页面中的全部带有lay-src的img元素开启了懒加载（当然你也可以指定相关img）
     flow.lazyimg();
