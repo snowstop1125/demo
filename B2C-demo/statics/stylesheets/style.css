@@ -243,6 +243,12 @@ layui制定
 .layui-laypage a:hover {
     color: #e25e44;
 }
+.layui-table tbody tr:hover, .layui-table thead tr, .layui-table-click, .layui-table-header, .layui-table-hover, .layui-table-mend, .layui-table-patch, .layui-table-tool, .layui-table[lay-even] tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+.layui-table[lay-skin=line] td, .layui-table[lay-skin=line] th{
+    text-align: center;
+}
 /**
 B2C商城模板样式
 **/
@@ -2541,7 +2547,7 @@ B2C商城模板样式
 .member-container .member-aside dl dt{
     font-weight: bold;
     font-size: 16px;
-    color:#333;
+    color: #8d7c78;
     margin-bottom: 10px;
 }
 .member-container .member-aside dl dd {
@@ -2561,9 +2567,9 @@ B2C商城模板样式
     padding: 20px 30px 50px;
 }
 .member-userinfo{
-    background:#f7f7f7;
+    background: #fff5f3;
     border: 1px solid #eee;
-    padding: 10px 20px;
+    padding: 30px 20px;
     margin-bottom:20px;
 }
 .member-userinfo-l .user-photo{
@@ -2964,4 +2970,223 @@ B2C商城模板样式
     height:121px;
     background:url('../images/icon_empty.png') no-repeat center;
     margin-bottom:10px;
+}
+.m-couponlist{
+    margin-top:10px;
+}
+.m-couponlist .item{
+    position: relative;
+    float: left;
+    width: 294px;
+    margin: 0 15px 15px 0;
+    border: 1px solid #e6ddda;
+    background-color: #fff4f1;
+    color: #666;
+}
+.m-couponlist .item:nth-child(3n){
+    margin-right:0;
+}
+.m-couponlist .head {
+    position: relative;
+}
+.m-couponlist .amount {
+    padding: 24px 0px 21px 22px;
+    float: left;
+    color: #e25e44;
+    min-width: 60px;
+    line-height: 23px;
+    height: 23px;
+    font-size: 14px;
+}
+.m-couponlist .amount .num {
+    position: relative;
+    left: 2px;
+    bottom: 1px;
+    font-size: 32px;
+    font-weight: bold;
+}
+.m-couponlist .condition {
+    height: 68px;
+    float: left;
+    display: table;
+    vertical-align: middle;
+    font-size: 12px;
+    margin-left: 10px;
+    word-break: break-all;
+}
+.m-couponlist .condition .item-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+.m-couponlist .condition .item-text .tag {
+    font-size: 12px;
+    padding: 0px 3px;
+    color: #fff;
+    margin-right: 5px;
+    margin-left: 1px;
+    border-radius: 2px;
+    background-color: #ed8d7a;
+}
+.m-couponlist .middle-line {
+    position: relative;
+    height: 0;
+    font-size: 0;
+    border-bottom: 1px dotted #d9d0cd;
+}
+.m-couponlist .middle-line .circular {
+    position: absolute;
+    top: 50%;
+    width: 8px;
+    height: 17px;
+    margin-top: -9px;
+    border: 1px solid #e6ddda;
+    background-color: #fff;
+}
+.m-couponlist .middle-line .circular.left {
+    left: -1px;
+    border-left: none;
+    -webkit-border-radius: 0 9px 9px 0;
+    border-radius: 0 9px 9px 0;
+}
+.m-couponlist .middle-line .circular.right {
+    right: -1px;
+    border-right: none;
+    -webkit-border-radius: 0 9px 9px 0;
+    border-radius: 9px 0 0 9px;
+}
+.m-couponlist .middle-line .left:before, .m-couponlist .middle-line .right:before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 0;
+    height: 18px;
+    width: 17px;
+    background: #fff;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.m-couponlist .middle-line .left:before {
+    left: auto;
+    right: 4px;
+}
+.m-couponlist .coupon-bottom {
+    padding: 10px 20px 15px 20px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.m-couponlist .item.coupon-type-used {
+    background: #fbf6e9;
+    color: #c6c1b2;
+}
+.m-couponlist .item.coupon-type-used .amount{
+    color: #c6c1b2;
+}
+.m-couponlist .item.coupon-type-used .condition .item-text .tag{
+    background: #c6c1b2;
+}
+.m-couponlist .item.coupon-type-lose {
+    background: #f3f2f2;
+    color: #d1d0d0;
+}
+.m-couponlist .item.coupon-type-lose .amount {
+    color: #d6d3d3;
+}
+.m-couponlist .item.coupon-type-lose .condition .item-text .tag {
+    background: #d6d3d3;
+}
+.member-point .m-point-head{
+    background: #fff5f3;
+    border: 1px solid #eee;
+    padding: 20px 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 60px;
+}
+.member-point .m-point-head .m-point-h-l {
+    float: left;
+    border-right: 1px solid #ede1df;
+    width: 49%;
+    text-align: center;
+}
+.member-point .m-point-h-l .red{
+    font-size: 28px;
+    font-weight: bold;
+}
+.member-point .m-point-h-r{
+    float: left;
+    width: 49%;
+    text-align: center;
+}
+
+.member-inbox-table[lay-skin=line] td,
+.member-inbox-table[lay-skin=line] th{
+    text-align: left;
+}
+.member-inbox-table tbody tr.handle{
+    cursor: pointer;
+}
+.member-inbox-table tbody tr.new {
+    font-weight:bold;
+}
+.member-inbox-table .layui-form-checkbox {
+    margin-right: 10px
+}
+.member-inbox-table tbody tr.detail:hover{
+    background:transparent;
+}
+.member-inbox-table tbody tr.detail {
+    display: none;
+}
+.member-inbox-table tbody tr.detail td {
+    padding:30px 40px;
+}
+.member-inbox-table tbody tr.detail .detail-title{
+    font-size: 16px;
+    color:#333;
+    margin-bottom: 10px;
+}
+.member-inbox-table tbody tr.detail .detail-reply{
+    margin-top: 30px;
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+.member-inbox-table tbody.active tr.detail{
+    display: table-row;
+}
+.member-inbox-table tbody.active tr.handle td{
+    border-bottom:0;
+    background-color: #fcf3f1;
+    color: #805248;
+}
+.inbox-header .layui-btn{
+    margin-left: 5px;
+}
+.inbox-header .fr{
+    margin-top:6px
+}
+.coupon-getlist .m-couponlist{
+    margin-top: 30px;
+}
+.coupon-getlist .m-couponlist .item{
+    width: 286px;
+}
+.coupon-getlist .m-couponlist .item:nth-child(3n){
+    margin-right:15px;
+}
+.coupon-getlist .m-couponlist .item:nth-child(4n) {
+    margin-right:0;
+}
+/*.coupon-getlist .m-couponlist .item .coupon-bottom .detail{*/
+    /*display: none;*/
+/*}*/
+/*.coupon-getlist .m-couponlist .item:hover .coupon-bottom .detail{*/
+    /*display: block;*/
+/*}*/
+.coupon-getlist .m-couponlist .item .coupon-bottom .center{
+    margin-top: 15px;
+}
+.coupon-getlist .m-couponlist .item .coupon-bottom .center .layui-btn{
+    border-radius: 40px;
+    padding:0 30px
 }

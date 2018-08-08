@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
-    <title>B2C商城-会员中心</title>
+    <title>B2C商城-会员中心-站内信</title>
     <!--css文件-->
     <link rel="stylesheet" href="../../statics/layui/css/layui.css">
     <link rel="stylesheet" href="../../statics/stylesheets/style.css">
@@ -143,13 +143,13 @@
                     <dl>
                         <dt>我的账户</dt>
                         <dd><a href="favorite.html">商品收藏</a></dd>
-                        <dd class="active"><a href="coupon.html">我的优惠券</a></dd>
+                        <dd><a href="coupon.html">我的优惠券</a></dd>
                         <dd><a href="point.html">我的积分</a></dd>
                         <dd><a href="notify.html">到货通知</a></dd>
                     </dl>
                     <dl>
                         <dt>个人信息管理</dt>
-                        <dd><a href="inbox.html">站内信</a></dd>
+                        <dd class="active"><a href="inbox.html">站内信</a></dd>
                         <dd><a href="setting.html">个人信息</a></dd>
                         <dd><a href="">安全中心</a></dd>
                         <dd><a href="">收货地址</a></dd>
@@ -159,229 +159,216 @@
                 <div class="member-main fr">
                     <div class="member-child-panel ">
                         <div class="m-panel-hd clearfix">
-                            <h2 class="fl">我的优惠券</h2>
+                            <h2 class="fl">站内信</h2>
                         </div>
                         <div class="m-panel-bd">
                             <div class="layui-tab" lay-filter="order_tab">
                                 <ul class="layui-tab-title">
-                                    <li class="layui-this">可使用的优惠券</li>
-                                    <li>已使用的优惠券</li>
-                                    <li>已失效的优惠券</li>
+                                    <li class="layui-this">收件箱</li>
+                                    <li>发件箱</li>
+                                    <li>草稿箱</li>
+                                    <li>发信息</li>
+                                    <li>给管理员发信息</li>
                                 </ul>
                                 <div class="layui-tab-content">
+                                    <!--收件箱-->
                                     <div class="layui-tab-item layui-show">
-                                        <ul class="m-couponlist clearfix">
-                                            <li class="item">
-                                                <div class="head clearfix">
-                                                    <div class="amount">
-                                                        <span>¥</span><span class="num">150</span>
-                                                    </div>
-                                                    <div class="condition">
-                                                        <span class="item-text">
-                                                            <span class="tag">满减券</span>
-                                                            <br><span>满499元使用</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="middle-line">
-                                                    <span class="circular left"></span><span class="circular right"></span>
-                                                </div>
-                                                <div class="coupon-bottom">
-                                                    <div class="detail">
-                                                        <p>有效日期：2018.06.13 - 2018.07.13</p>
-                                                        <p>其他限制：无</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="item">
-                                                <div class="head clearfix">
-                                                    <div class="amount">
-                                                        <span>¥</span><span class="num">50</span>
-                                                    </div>
-                                                    <div class="condition">
-                                                        <span class="item-text">
-                                                            <span class="tag">满减券</span>
-                                                            <br><span>满499元使用</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="middle-line">
-                                                    <span class="circular left"></span><span class="circular right"></span>
-                                                </div>
-                                                <div class="coupon-bottom">
-                                                    <div class="detail">
-                                                        <p>有效日期：2018.06.13 - 2018.07.13</p>
-                                                        <p>其他限制：无</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="item">
-                                                <div class="head clearfix">
-                                                    <div class="amount">
-                                                        <span>¥</span><span class="num">50</span>
-                                                    </div>
-                                                    <div class="condition">
-                                                        <span class="item-text">
-                                                            <span class="tag">满减券</span>
-                                                            <br><span>满499元使用</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="middle-line">
-                                                    <span class="circular left"></span><span class="circular right"></span>
-                                                </div>
-                                                <div class="coupon-bottom">
-                                                    <div class="detail">
-                                                        <p>有效日期：2018.06.13 - 2018.07.13</p>
-                                                        <p>其他限制：无</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                        <div class="inbox-header clearfix">
+                                            <button class="layui-btn layui-btn-primary layui-btn-sm fl">删除</button>
+                                            <p class="fr">共255条消息，<b>250</b> 条未读</p>
+                                        </div>
+                                        <table class="layui-table layui-form member-inbox-table" lay-skin="line">
+                                            <colgroup>
+                                                <col width="15%">
+                                                <col width="55%">
+                                                <col width="15%">
+                                                <col width="15%">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th><input type="checkbox" class="checkbox-all" name="" title="" lay-skin="primary">发件人</th>
+                                                <th>标题</th>
+                                                <th>时间</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody class="active">
+                                                <tr class="handle">
+                                                    <td><input type="checkbox" class="checkbox-item" name="" title="" lay-skin="primary">管理员</td>
+                                                    <td>Buyaplus</td>
+                                                    <td>2016-11-29</td>
+                                                    <td>回复</td>
+                                                </tr>
+                                                <tr class="detail">
+                                                    <td colspan="4">
+                                                        <h2 class="detail-title">Buyaplus</h2>
+                                                        <p class="detail-content">感谢您的购物，根据您的订货信息，我们已经将您购买的商品发出，请注意查收。订单号：180619104168396，配送方式：，收货人：，送货地址：。您可以进入会员中心跟踪订单运送状态。</p>
+                                                        <div class="detail-reply">
+                                                            <form action="/member-send_msg.html" method="post" class="layui-form action-reply-form">
+                                                                <ul>
+                                                                    <div class="layui-form-item">
+                                                                        <input type="hidden" name="msg_to" value="管理员">
+                                                                        <label class="layui-form-label">收件人</label>
+                                                                        <div class="layui-form-mid layui-word-aux">管理员</div>
+                                                                    </div>
+                                                                    <div class="layui-form-item">
+                                                                        <label class="layui-form-label">标题</label>
+                                                                        <div class="layui-input-block">
+                                                                            <input type="text" name="subject" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="layui-form-item">
+                                                                        <label class="layui-form-label">内容</label>
+                                                                        <div class="layui-input-block">
+                                                                            <textarea name="comment" placeholder="请输入内容" class="layui-textarea"></textarea>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="layui-form-item">
+                                                                        <label class="layui-form-label"></label>
+                                                                        <div class="layui-input-block">
+                                                                            <button type="submit" class="layui-btn action-sendmsg" rel="_request">
+                                                                               发送</button>
+                                                                            <button type="submit" class="layui-btn layui-btn-primary action-savetodrafts" name="has_sent" value="false" rel="_request">保存到草稿箱</button>
+                                                                        </div>
+                                                                    </div>
+                                                                </ul>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                            <tbody>
+                                                <tr class="handle new">
+                                                    <td><input type="checkbox" class="checkbox-item" name="" title="" lay-skin="primary">贤心</td>
+                                                    <td>生就像是一场修行</td>
+                                                    <td>2016-11-29人</td>
+                                                    <td>回复</td>
+                                                </tr>
+                                                <tr class="detail">
+                                                    <td colspan="4">0000</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
+                                    <!--发件箱-->
                                     <div class="layui-tab-item">
-                                        <ul class="m-couponlist clearfix">
-                                            <li class="item coupon-type-used">
-                                                <div class="head clearfix">
-                                                    <div class="amount">
-                                                        <span>¥</span><span class="num">50</span>
+                                        <div class="inbox-header clearfix">
+                                            <button class="layui-btn layui-btn-primary layui-btn-sm fl">删除</button>
+                                            <p class="fr">共0条消息</p>
+                                        </div>
+                                        <table class="layui-table layui-form member-inbox-table" lay-skin="line">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="60%">
+                                                <col width="20%">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th><input type="checkbox" class="checkbox-all" name="" title="" lay-skin="primary">收件人</th>
+                                                <th>标题</th>
+                                                <th>时间</th>
+                                            </tr>
+                                            </thead>
+                                            <tr>
+                                                <td colspan="4">
+                                                    <div class="empty-data">
+                                                        <div class="empty-icon"></div>
+                                                        <p>暂无数据~</p>
                                                     </div>
-                                                    <div class="condition">
-                                                        <span class="item-text">
-                                                            <span class="tag">满减券</span>
-                                                            <br><span>满499元使用</span>
-                                                        </span>
-                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <!---->
+                                    </div>
+                                    <!--草稿箱-->
+                                    <div class="layui-tab-item">
+                                        <div class="inbox-header clearfix">
+                                            <button class="layui-btn layui-btn-primary layui-btn-sm fl">删除</button>
+                                            <p class="fr">共1条消息</p>
+                                        </div>
+                                        <table class="layui-table layui-form member-inbox-table" lay-skin="line">
+                                            <colgroup>
+                                                <col width="20%">
+                                                <col width="60%">
+                                                <col width="20%">
+                                            </colgroup>
+                                            <thead>
+                                            <tr>
+                                                <th><input type="checkbox" class="checkbox-all" name="" title="" lay-skin="primary">收件人</th>
+                                                <th>标题</th>
+                                                <th>时间</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="handle">
+                                                <td><input type="checkbox" class="checkbox-item" name="" title="" lay-skin="primary">管理员</td>
+                                                <td>Buyaplus</td>
+                                                <td>2016-11-29</td>
+                                            </tr>
+                                            <tr class="detail">
+                                                <td colspan="4">
+                                                    <h2 class="detail-title">Buyaplus</h2>
+                                                    <p class="detail-content">感谢您的购物，根据您的订货信息，我们已经将您购买的商品发出，请注意查收。订单号：180619104168396，配送方式：，收货人：，送货地址：。您可以进入会员中心跟踪订单运送状态。</p>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <!--发信息-->
+                                    <div class="layui-tab-item">
+                                        <form class="layui-form" style="width:90%;margin-top: 30px;">
+                                            <div class="layui-form-item">
+                                                <label class="layui-form-label">收件人</label>
+                                                <div class="layui-input-block">
+                                                    <input type="text" name="title" required lay-verify="required" placeholder="请输入收件人" autocomplete="off" class="layui-input">
                                                 </div>
-                                                <div class="middle-line">
-                                                    <span class="circular left"></span><span class="circular right"></span>
+                                            </div>
+                                            <div class="layui-form-item">
+                                                <label class="layui-form-label">标题</label>
+                                                <div class="layui-input-block">
+                                                    <input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
                                                 </div>
-                                                <div class="coupon-bottom">
-                                                    <div class="detail">
-                                                        <p>有效日期：2018.06.13 - 2018.07.13</p>
-                                                        <p>其他限制：无</p>
-                                                    </div>
+                                            </div>
+                                            <div class="layui-form-item layui-form-text">
+                                                <label class="layui-form-label">内容</label>
+                                                <div class="layui-input-block">
+                                                    <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
                                                 </div>
-                                            </li>
-                                            <li class="item coupon-type-used">
-                                                <div class="head clearfix">
-                                                    <div class="amount">
-                                                        <span>¥</span><span class="num">50</span>
-                                                    </div>
-                                                    <div class="condition">
-                                                        <span class="item-text">
-                                                            <span class="tag">满减券</span>
-                                                            <br><span>满499元使用</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="middle-line">
-                                                    <span class="circular left"></span><span class="circular right"></span>
-                                                </div>
-                                                <div class="coupon-bottom">
-                                                    <div class="detail">
-                                                        <p>有效日期：2018.06.13 - 2018.07.13</p>
-                                                        <p>其他限制：无</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="item coupon-type-used">
-                                                <div class="head clearfix">
-                                                    <div class="amount">
-                                                        <span>¥</span><span class="num">50</span>
-                                                    </div>
-                                                    <div class="condition">
-                                                        <span class="item-text">
-                                                            <span class="tag">满减券</span>
-                                                            <br><span>满499元使用</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="middle-line">
-                                                    <span class="circular left"></span><span class="circular right"></span>
-                                                </div>
-                                                <div class="coupon-bottom">
-                                                    <div class="detail">
-                                                        <p>有效日期：2018.06.13 - 2018.07.13</p>
-                                                        <p>其他限制：无</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                            </div>
+
+                                        </form>
                                         <!--<div class="empty-data">
                                             <div class="empty-icon"></div>
                                             <p>暂无数据~</p>
                                         </div>-->
                                     </div>
+                                    <!--给管理员发信息-->
                                     <div class="layui-tab-item">
-                                        <ul class="m-couponlist clearfix">
-                                            <li class="item coupon-type-lose">
-                                                <div class="head clearfix">
-                                                    <div class="amount">
-                                                        <span>¥</span><span class="num">50</span>
-                                                    </div>
-                                                    <div class="condition">
-                                                        <span class="item-text">
-                                                            <span class="tag">满减券</span>
-                                                            <br><span>满499元使用</span>
-                                                        </span>
-                                                    </div>
+                                        <form class="layui-form" style="width:90%;margin-top: 30px;">
+                                            <div class="layui-form-item">
+                                                <label class="layui-form-label">收件人</label>
+                                                <div class="layui-input-block">
+                                                    <div class="layui-form-mid layui-word-aux">管理员</div>
                                                 </div>
-                                                <div class="middle-line">
-                                                    <span class="circular left"></span><span class="circular right"></span>
+                                            </div>
+                                            <div class="layui-form-item">
+                                                <label class="layui-form-label">标题</label>
+                                                <div class="layui-input-block">
+                                                    <input type="text" name="title" required lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
                                                 </div>
-                                                <div class="coupon-bottom">
-                                                    <div class="detail">
-                                                        <p>有效日期：2018.06.13 - 2018.07.13</p>
-                                                        <p>其他限制：无</p>
-                                                    </div>
+                                            </div>
+                                            <div class="layui-form-item layui-form-text">
+                                                <label class="layui-form-label">内容</label>
+                                                <div class="layui-input-block">
+                                                    <textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
                                                 </div>
-                                            </li>
-                                            <li class="item coupon-type-lose">
-                                                <div class="head clearfix">
-                                                    <div class="amount">
-                                                        <span>¥</span><span class="num">50</span>
-                                                    </div>
-                                                    <div class="condition">
-                                                        <span class="item-text">
-                                                            <span class="tag">满减券</span>
-                                                            <br><span>满499元使用</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="middle-line">
-                                                    <span class="circular left"></span><span class="circular right"></span>
-                                                </div>
-                                                <div class="coupon-bottom">
-                                                    <div class="detail">
-                                                        <p>有效日期：2018.06.13 - 2018.07.13</p>
-                                                        <p>其他限制：无</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="item coupon-type-lose">
-                                                <div class="head clearfix">
-                                                    <div class="amount">
-                                                        <span>¥</span><span class="num">50</span>
-                                                    </div>
-                                                    <div class="condition">
-                                                        <span class="item-text">
-                                                            <span class="tag">满减券</span>
-                                                            <br><span>满499元使用</span>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="middle-line">
-                                                    <span class="circular left"></span><span class="circular right"></span>
-                                                </div>
-                                                <div class="coupon-bottom">
-                                                    <div class="detail">
-                                                        <p>有效日期：2018.06.13 - 2018.07.13</p>
-                                                        <p>其他限制：无</p>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                            </div>
+
+                                        </form>
+                                        <!--<div class="empty-data">
+                                            <div class="empty-icon"></div>
+                                            <p>暂无数据~</p>
+                                        </div>-->
                                     </div>
                                 </div>
                             </div>
@@ -539,7 +526,7 @@
 <!-- 公用底部-->
 </body>
 <script>
-    layui.use(['upload'], function () {
+    layui.use(['upload','form'], function () {
         var upload = layui.upload;
         //执行实例
         var uploadInst = upload.render({
@@ -553,29 +540,18 @@
             }
         });
     });
+    $(function(){
+        $('.member-inbox-table .handle').click(function(){
+            var el=$(this);
+            var parent=el.parent();
+            el.removeClass('new');
+            if(parent.hasClass('active')){
+                parent.removeClass('active')
+            }else{
+                el.parent().addClass('active').siblings().removeClass('active');
+            };
 
-
-    $('.score-star .layui-icon-star').mouseover(function(){
-        var el=$(this);
-        var curLen = el.parent('.score-star').find('.active').length;
-        el.addClass('layui-icon-star-fill').prevAll().addClass('layui-icon-star-fill')
-        el.nextAll().removeClass('layui-icon-star-fill')
-    }).mouseout(function(){
-        var el = $(this);
-        var aStar= el.parent('.score-star').find('.layui-icon-star');
-        var curLen=el.parent('.score-star').find('.active').length;
-        aStar.removeClass('layui-icon-star-fill');
-        if (curLen>0){
-            el.parent('.score-star').find('.active').addClass('layui-icon-star-fill')
-        };
-    }).click(function () {
-        var el = $(this);
-        el.addClass('layui-icon-star-fill active').prevAll().addClass('layui-icon-star-fill active')
-        el.nextAll().removeClass('layui-icon-star-fill active')
-    });
-
-    $('.add-photo-box .delete-btn').click(function(){
-        $(this).parent().remove();
+        })
     })
 </script>
 
