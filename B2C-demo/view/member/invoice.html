@@ -15,7 +15,7 @@
     <script src="../../statics/scripts/common.js"></script>
 </head>
 
-<body class="is-index">
+<body>
 <!-- 头部 header -->
 
     <!-- 顶部导航 -->
@@ -90,9 +90,6 @@
     </div>
     <!-- 顶部导航end -->
 
-
-
-
 <!-- 头部 header end -->
 
 <div class="main bg-gray pb20">
@@ -114,8 +111,8 @@
                 <li class="layui-nav-item">
                     <a href=""><img src="http://img3.duitang.com/uploads/item/201604/14/20160414001053_MB3yU.thumb.700_0.jpeg" class="layui-nav-img">账户设置</a>
                     <dl class="layui-nav-child">
-                        <dd><a href="javascript:;">修改信息</a></dd>
-                        <dd><a href="javascript:;">安全管理</a></dd>
+                        <dd><a href="javascript:;">个人信息</a></dd>
+                        <dd><a href="javascript:;">安全中心</a></dd>
                         <dd><a href="javascript:;">退了</a></dd>
                     </dl>
                 </li>
@@ -155,143 +152,105 @@
                         <dd><a href="setting.html">个人信息</a></dd>
                         <dd><a href="securitycenter.html">安全中心</a></dd>
                         <dd><a href="receiver.html">收货地址</a></dd>
-                        <dd><a href="invoice.html">发票管理</a></dd>
+                        <dd class="active"><a href="invoice.html">发票管理</a></dd>
                     </dl>
                 </div>
                 <div class="member-main fr">
-                    <div class="member-child-panel order-comment">
+                    <div class="member-child-panel member-receiver">
                         <div class="m-panel-hd clearfix">
-                            <h2 class="fl">商品评价</h2>
+                            <h2 class="fl">发票管理</h2>
+                            <button class="layui-btn layui-btn-primary layui-btn-sm fr action_invoice_add">添加发票信息</button>
                         </div>
-                        <form class="layui-form">
-                            <div class="m-panel-bd">
-                                <!--订单评价-->
-                                <div class="section">
-                                    <div class="section-title">订单评价</div>
-                                    <div class="section-content">
-                                        <div class="m-item clearfix">
-                                            <div class="m-label">物流服务</div>
-                                            <div class="m-val">
-                                                <span class="score-star">
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="m-item clearfix">
-                                            <div class="m-label">服务态度</div>
-                                            <div class="m-val">
-                                                <span class="score-star">
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                </span>
-                                            </div>
+                        <div class="m-panel-bd">
+                            <!--添加收货地址-->
+                            <div class="section layui-form hide" id="invoiceEdit">
+                                <div class="section-title">添加发票信息</div>
+                                <div class="section-content" style="width:80%">
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label"><i class="red">*</i>公司名称</label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" name="name" required lay-verify="required" value="" placeholder="请输入公司名称" autocomplete="off" class="layui-input">
                                         </div>
                                     </div>
-                                </div>
-                                <!--商品评价-->
-                                <div class="section goods-comment">
-                                    <div class="section-title">商品评价</div>
-                                    <div class="section-content">
-                                        <div class="goods-item clearfix">
-                                            <div class="goods-img">
-                                                <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                            </div>
-                                            <div class="goods-score">
-                                                <div class="layui-form-item">
-                                                        <input type="radio" name="goods_score" value="好评" title="好评" checked>
-                                                        <input type="radio" name="goods_score" value="中评" title="中评">
-                                                        <input type="radio" name="goods_score" value="差评" title="差评">
-
-                                                </div>
-                                                <div class="m-item layui-form-item">
-                                                    <div class="m-label">描述相符</div>
-                                                    <div class="m-val">
-                                                        <span class="score-star">
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="layui-form-item layui-form-text">
-                                                    <textarea name="desc" placeholder="输入您对商品的评价吧！最多200字" class="layui-textarea"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="upload-photo">
-                                                <p class="tit">晒图：<span>（最多五张，图片最大2M）</span></p>
-                                                <div class="add-photo-box">
-                                                    <ul>
-                                                        <li>
-                                                            <img src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                                            <div class="delete-btn">删除</div>
-                                                        </li>
-                                                        <li class="upload-btn" id="uploadImg"></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="goods-item clearfix">
-                                            <div class="goods-img">
-                                                <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                            </div>
-                                            <div class="goods-score">
-                                                <div class="layui-form-item">
-                                                    <input type="radio" name="goods_score" value="好评" title="好评" checked>
-                                                    <input type="radio" name="goods_score" value="中评" title="中评">
-                                                    <input type="radio" name="goods_score" value="差评" title="差评">
-
-                                                </div>
-                                                <div class="m-item layui-form-item">
-                                                    <div class="m-label">描述相符</div>
-                                                    <div class="m-val">
-                                                        <span class="score-star">
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="layui-form-item layui-form-text">
-                                                    <textarea name="desc" placeholder="输入您对商品的评价吧！最多200字" class="layui-textarea"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="upload-photo">
-                                                <p class="tit">晒图：<span>（最多五张，图片最大2M）</span></p>
-                                                <div class="add-photo-box">
-                                                    <ul>
-                                                        <li>
-                                                            <img src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                                            <div class="delete-btn">删除</div>
-                                                        </li>
-                                                        <li class="upload-btn" id="uploadImg"></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label"><i class="red">*</i>税号</label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" name="name" required lay-verify="required" value="" placeholder="请输入税号" autocomplete="off" class="layui-input">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="center">
-                                    <button class="layui-btn layui-btn-lg">提交评价</button>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">开户银行名称</label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" name="name" value="" placeholder="请输入开户银行名称" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">开户银行账号</label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" name="name" value="" placeholder="请输入开户银行账号" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">注册地址</label>
+                                        <div class="layui-input-block">
+                                            <input type="text" name="name"  value="" placeholder="请输入注册地址" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label">注册电话</label>
+                                        <div class="layui-input-inline">
+                                            <input type="text" name="name" value="" placeholder="请输入注册电话" autocomplete="off" class="layui-input">
+                                        </div>
+                                    </div>
+                                    <div class="layui-form-item">
+                                        <label class="layui-form-label"> </label>
+                                        <div class="layui-input-inline">
+                                            <button class="layui-btn layui-btn-lg submit_setting">提 交</button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
-                    </div>
+                            <table class="layui-table" lay-skin="line">
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="30%">
+                                    <col width="25%">
+                                    <col width="25%">
+                                </colgroup>
+                                <thead>
+                                <tr>
+                                    <th>发票类型</th>
+                                    <th>发票抬头</th>
+                                    <th>税号</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>企业</td>
+                                    <td>上海感豪信息技术有限公司</td>
+                                    <td>956566566655464X</td>
+                                    <td class="btn-group">
+                                        <p><a class="link" href="javascript:;">编辑</a><a class="link" href="javascript:;">删除</a></p>
+                                    </td>
+                                </tr>
+                                <!--<tr>
+                                    <td colspan="4">
+                                        <div class="empty-data">
+                                            <div class="empty-icon"></div>
+                                            <p>暂无数据~</p>
+                                        </div>
+                                    </td>
+                                </tr>-->
+                                </tbody>
+                            </table>
+                        </div>
                 </div>
 
             </div>
         </div>
-
+    </div>
 </div>
 
 
@@ -437,13 +396,15 @@
     </div>
 </div>
 <!-- 公用底部-->
+
 </body>
 <script>
     layui.use(['upload'], function () {
         var upload = layui.upload;
+
         //执行实例
         var uploadInst = upload.render({
-            elem: '#uploadImg' //绑定元素
+            elem: '#changePhoto' //绑定元素
             , url: '/upload/' //上传接口
             , done: function (res) {
                 //上传完毕回调
@@ -453,29 +414,8 @@
             }
         });
     });
-
-
-    $('.score-star .layui-icon-star').mouseover(function(){
-        var el=$(this);
-        var curLen = el.parent('.score-star').find('.active').length;
-        el.addClass('layui-icon-star-fill').prevAll().addClass('layui-icon-star-fill')
-        el.nextAll().removeClass('layui-icon-star-fill')
-    }).mouseout(function(){
-        var el = $(this);
-        var aStar= el.parent('.score-star').find('.layui-icon-star');
-        var curLen=el.parent('.score-star').find('.active').length;
-        aStar.removeClass('layui-icon-star-fill');
-        if (curLen>0){
-            el.parent('.score-star').find('.active').addClass('layui-icon-star-fill')
-        };
-    }).click(function () {
-        var el = $(this);
-        el.addClass('layui-icon-star-fill active').prevAll().addClass('layui-icon-star-fill active')
-        el.nextAll().removeClass('layui-icon-star-fill active')
-    });
-
-    $('.add-photo-box .delete-btn').click(function(){
-        $(this).parent().remove();
+    $('.action_invoice_add').click(function () {
+       $('#invoiceEdit').removeClass('hide')
     })
 </script>
 

@@ -153,139 +153,51 @@
                         <dt>个人信息管理</dt>
                         <dd><a href="inbox.html">站内信</a></dd>
                         <dd><a href="setting.html">个人信息</a></dd>
-                        <dd><a href="securitycenter.html">安全中心</a></dd>
+                        <dd class="active"><a href="securitycenter.html">安全中心</a></dd>
                         <dd><a href="receiver.html">收货地址</a></dd>
                         <dd><a href="invoice.html">发票管理</a></dd>
                     </dl>
                 </div>
                 <div class="member-main fr">
-                    <div class="member-child-panel order-comment">
+                    <div class="member-child-panel">
                         <div class="m-panel-hd clearfix">
-                            <h2 class="fl">商品评价</h2>
+                            <h2 class="fl">安全中心 <span class="tips">建议您开启全部安全设置，以保障账户及资金安全</span></h2>
                         </div>
-                        <form class="layui-form">
-                            <div class="m-panel-bd">
-                                <!--订单评价-->
-                                <div class="section">
-                                    <div class="section-title">订单评价</div>
-                                    <div class="section-content">
-                                        <div class="m-item clearfix">
-                                            <div class="m-label">物流服务</div>
-                                            <div class="m-val">
-                                                <span class="score-star">
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="m-item clearfix">
-                                            <div class="m-label">服务态度</div>
-                                            <div class="m-val">
-                                                <span class="score-star">
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                    <i class="layui-icon layui-icon-star"></i>
-                                                </span>
-                                            </div>
-                                        </div>
+
+                        <div class="m-panel-bd">
+                            <div class="security-center">
+                                <div class="security-item clearfix">
+                                    <div class="fl">
+                                        <i class="layui-icon layui-icon-ok-circle green"></i>
+                                        <b>登录密码</b>
+                                        <span>请经常更换您的登录密码，且不要和其他账号共用一个密码</span>
+                                    </div>
+                                    <div class="fr">
+                                        <a href="password_edit.html" class="layui-btn layui-btn-primary">修改</a>
                                     </div>
                                 </div>
-                                <!--商品评价-->
-                                <div class="section goods-comment">
-                                    <div class="section-title">商品评价</div>
-                                    <div class="section-content">
-                                        <div class="goods-item clearfix">
-                                            <div class="goods-img">
-                                                <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                            </div>
-                                            <div class="goods-score">
-                                                <div class="layui-form-item">
-                                                        <input type="radio" name="goods_score" value="好评" title="好评" checked>
-                                                        <input type="radio" name="goods_score" value="中评" title="中评">
-                                                        <input type="radio" name="goods_score" value="差评" title="差评">
-
-                                                </div>
-                                                <div class="m-item layui-form-item">
-                                                    <div class="m-label">描述相符</div>
-                                                    <div class="m-val">
-                                                        <span class="score-star">
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="layui-form-item layui-form-text">
-                                                    <textarea name="desc" placeholder="输入您对商品的评价吧！最多200字" class="layui-textarea"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="upload-photo">
-                                                <p class="tit">晒图：<span>（最多五张，图片最大2M）</span></p>
-                                                <div class="add-photo-box">
-                                                    <ul>
-                                                        <li>
-                                                            <img src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                                            <div class="delete-btn">删除</div>
-                                                        </li>
-                                                        <li class="upload-btn" id="uploadImg"></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="goods-item clearfix">
-                                            <div class="goods-img">
-                                                <img class="img-hover" src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                            </div>
-                                            <div class="goods-score">
-                                                <div class="layui-form-item">
-                                                    <input type="radio" name="goods_score" value="好评" title="好评" checked>
-                                                    <input type="radio" name="goods_score" value="中评" title="中评">
-                                                    <input type="radio" name="goods_score" value="差评" title="差评">
-
-                                                </div>
-                                                <div class="m-item layui-form-item">
-                                                    <div class="m-label">描述相符</div>
-                                                    <div class="m-val">
-                                                        <span class="score-star">
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                            <i class="layui-icon layui-icon-star"></i>
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                <div class="layui-form-item layui-form-text">
-                                                    <textarea name="desc" placeholder="输入您对商品的评价吧！最多200字" class="layui-textarea"></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="upload-photo">
-                                                <p class="tit">晒图：<span>（最多五张，图片最大2M）</span></p>
-                                                <div class="add-photo-box">
-                                                    <ul>
-                                                        <li>
-                                                            <img src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                                            <div class="delete-btn">删除</div>
-                                                        </li>
-                                                        <li class="upload-btn" id="uploadImg"></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div class="security-item clearfix">
+                                    <div class="fl">
+                                        <i class="layui-icon layui-icon-ok-circle green"></i>
+                                        <b>手机验证</b>
+                                        <span>您的验证手机：13685165795</span>
+                                    </div>
+                                    <div class="fr">
+                                        <a href="verify.html" class="layui-btn layui-btn-primary">修改</a>
                                     </div>
                                 </div>
-                                <div class="center">
-                                    <button class="layui-btn layui-btn-lg">提交评价</button>
+                                <div class="security-item clearfix">
+                                    <div class="fl">
+                                        <i class="layui-icon layui-icon-close red"></i>
+                                        <b>邮箱验证</b>
+                                        <span>您的验证邮箱：<i class="red">未验证</i></span>
+                                    </div>
+                                    <div class="fr">
+                                        <a href="verify.html" class="layui-btn layui-btn-primary">立即验证</a>
+                                    </div>
                                 </div>
                             </div>
-                        </form>
+                        </div>
                     </div>
                 </div>
 

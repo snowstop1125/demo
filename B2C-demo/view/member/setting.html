@@ -153,9 +153,9 @@
                         <dt>个人信息管理</dt>
                         <dd><a href="inbox.html">站内信</a></dd>
                         <dd class="active"><a href="setting.html">个人信息</a></dd>
-                        <dd><a href="">安全中心</a></dd>
-                        <dd><a href="">收货地址</a></dd>
-                        <dd><a href="">发票管理</a></dd>
+                        <dd><a href="securitycenter.html">安全中心</a></dd>
+                        <dd><a href="receiver.html">收货地址</a></dd>
+                        <dd><a href="invoice.html">发票管理</a></dd>
                     </dl>
                 </div>
                 <div class="member-main fr">
@@ -169,7 +169,7 @@
                                 <!--1.申请表单-->
                                 <div class="section goods-comment">
                                     <div class="section-title">请尽量完整填写您的个人信息，方便店家与您联系</div>
-                                    <div class="section-content">
+                                    <div class="section-content" style="width:80%">
                                         <div class="layui-form-item">
                                             <label class="layui-form-label"><i class="red">*</i>用户名</label>
                                             <div class="layui-input-inline">
@@ -195,43 +195,59 @@
                                                 <input type="radio" name="sex" value="" title="女">
                                             </div>
                                         </div>
-                                        <div class="m-item layui-form-item">
-                                            <div class="m-label">售后理由：</div>
-                                            <div class="m-val">
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">地区</label>
+                                            <div class="layui-input-inline area-select">
                                                 <select name="" lay-verify="required">
                                                     <option value="">请选择</option>
-                                                    <option value="0">多选/不想要</option>
-                                                    <option value="1">多选/不想要</option>
-                                                    <option value="1">多选/不想要</option>
+                                                    <option value="0">上海</option>
+                                                    <option value="1">北京</option>
+                                                    <option value="1">重庆</option>
+                                                </select>
+                                                <select name="" lay-verify="required">
+                                                    <option value="">请选择</option>
+                                                    <option value="0">上海</option>
+                                                    <option value="1">北京</option>
+                                                    <option value="1">重庆</option>
+                                                </select>
+                                                <select name="" lay-verify="required">
+                                                    <option value="">请选择</option>
+                                                    <option value="0">上海</option>
+                                                    <option value="1">北京</option>
+                                                    <option value="1">重庆</option>
                                                 </select>
                                             </div>
                                         </div>
-                                        <div class="m-item layui-form-item">
-                                            <div class="m-label">退款金额：</div>
-                                            <div class="m-val"><span class="price">￥28.00</span></div>
-                                        </div>
-                                        <div class="m-item layui-form-item">
-                                            <div class="m-label">售后说明：</div>
-                                            <div class="m-val">
-                                                <textarea name="desc" placeholder="选填：售后说明" class="layui-textarea"></textarea>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">联系地址</label>
+                                            <div class="layui-input-block">
+                                                <input type="text" name="name" required lay-verify="required" value="" placeholder="输入详细地址" autocomplete="off" class="layui-input">
                                             </div>
                                         </div>
-                                        <div class="m-item layui-form-item">
-                                            <div class="m-label">上传凭证：</div>
-                                            <div class="m-val upload-photo">
-                                                <div class="add-photo-box">
-                                                    <ul>
-                                                        <li>
-                                                            <img src="https://img14.360buyimg.com/n4/s160x160_jfs/t16960/219/2432021016/244846/2ac84b4a/5afc045cN7b06b30f.jpg">
-                                                            <div class="delete-btn">删除</div>
-                                                        </li>
-                                                        <li class="upload-btn" id="uploadImg"></li>
-                                                    </ul>
-                                                </div>
+
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">固定电话</label>
+                                            <div class="layui-input-inline">
+                                                <input type="text" name="name" required lay-verify="required" value="" placeholder="输入固定电话" autocomplete="off" class="layui-input">
                                             </div>
                                         </div>
-                                        <div class="m-item">
-                                            <button class="layui-btn layui-btn-lg submit_apply_aftersale">提 交</button>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">邮编</label>
+                                            <div class="layui-input-inline">
+                                                <input type="text" name="name" required lay-verify="required" value="" placeholder="输入邮编" autocomplete="off" class="layui-input">
+                                            </div>
+                                        </div>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label">出生日期</label>
+                                            <div class="layui-input-inline">
+                                                <input type="text" name="name" required lay-verify="required" value="" placeholder="输入出生日期（YY-MM-DD）" autocomplete="off" class="layui-input">
+                                            </div>
+                                        </div>
+                                        <div class="layui-form-item">
+                                            <label class="layui-form-label"> </label>
+                                            <div class="layui-input-inline">
+                                            <button class="layui-btn layui-btn-lg submit_setting">提 交</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
