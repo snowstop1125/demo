@@ -216,7 +216,7 @@ layui制定
     background-color: #fff;
     color:#666;
     box-shadow: 1px 4px 11px rgba(0, 0, 0, .2);
-    padding:0px;
+    padding:0px !important;
 }
 .dialog-miniCart.layui-layer-tips i.layui-layer-TipsB,.dialog-miniCart.layui-layer-tips i.layui-layer-TipsT{
     display: none;
@@ -226,6 +226,23 @@ layui制定
     background:#f7f7f7;
     font-size: 16px;
     padding:0 10px;
+}
+.miniCart-html .title .close{
+    float: right;
+    cursor: pointer;
+    font-size: 22px;
+    color: #ccc;
+    font-weight: bold;
+}
+.miniCart-html .minicart-con{
+    text-align: center;
+    padding: 20px 10px;
+}
+.miniCart-html .minicart-con .result{
+    font-size: 16px;
+}
+.miniCart-html .minicart-con .detail{
+    margin: 10px 0;
 }
 .layui-btn-primary:hover{
     border-color: #e25e44;
@@ -263,6 +280,9 @@ B2C商城模板样式
 }
 .mt10{
     margin-top:10px;
+}
+.main{
+    overflow: hidden;
 }
 .bg-fff, .main {
     background-color: #fff;
@@ -2059,11 +2079,24 @@ B2C商城模板样式
 .comment-item .comment-con .con-l .pic-show{
     margin:10px 0
 }
-.comment-item .comment-con .con-l .pic-show img {
+.comment-item .comment-con .con-l .pic-show a {
+    display: inline-block;
     border: 1px solid #e2e2e2;
     padding: 1px;
     margin-right: 6px;
+    width: 48px;
+    height:48px; line-height: 43px;
+    cursor: zoom-in;
+    overflow: hidden;
+}
+.comment-item .comment-con .con-l .pic-show a.act{
+    border-color:#e25e44;
+}
+.enlarge-img img{
+    cursor: zoom-out;
     width: auto;
+    max-width: 520px;
+    max-height: 500px;
 }
 .cart-container .cart-table{
     width:100%;
@@ -2190,17 +2223,50 @@ B2C商城模板样式
 .choicegoods-div .choicegoods-list{
     display: none;
     position: absolute;
-    width:380px;
-    height:300px;
+    width:625px;
+    height:400px;
     background:#fff;
     border: 2px solid #d1ab70;
     z-index: 1;
 }
+.choicegoods-div.open .choicegoods-list{
+    display: block;
+}
 .choicegoods-div .choicegoods-list .hd{
+    font-size: 16px;
     line-height: 30px;
     background:#d1ab70;
     color: #fff;
     padding: 0 10px;
+}
+.choicegoods-div .choicegoods{
+    padding:20px 20px 10px;
+    height: 285px;
+    overflow-y: auto;
+}
+.choicegoods-div .choicegoods .goods-item{
+    float: left;
+    width:50%;
+    line-height: normal;
+    margin-bottom:10px;
+}
+.choicegoods-div .choicegoods .goods-item .layui-form-checkbox{
+    float: left;
+    margin-right: 10px;
+}
+.choicegoods-div .choicegoods .goods-item .img{
+    width:60px;
+    height:60px;
+}
+.choicegoods-div .choicegoods .goods-item .text{
+    width:60%;
+}
+.choicegoods-div .choicegoods-footer{
+    border-top:1px solid #eee;
+    padding:5px 20px;
+}
+.choicegoods-div .choicegoods-footer .price{
+    font-size: 17px;
 }
 .checkout-container .section,.paycenter-container .section{
     border:0 none;
@@ -2244,9 +2310,11 @@ B2C商城模板样式
     border-color:#e25e44;
     background-color: #fff5f3;
     position: relative;
+    border-style: dashed;
 }
 .checkout-form .option-item.active .option-box{
     border-color:#e25e44;
+    border-style: dashed;
 }
 .checkout-form .option-item.active .option-box em{
     color:#e25e44;
@@ -2551,7 +2619,7 @@ B2C商城模板样式
 .member-container .member-aside dl dt{
     font-weight: bold;
     font-size: 16px;
-    color: #8d7c78;
+    color: #a96d5f;
     margin-bottom: 10px;
 }
 .member-container .member-aside dl dd {
@@ -3204,6 +3272,7 @@ B2C商城模板样式
 }
 .area-select .layui-form-select{
     float: left;
+    width:140px;
     margin-right:10px;
 }
 .security-center .security-item{
@@ -3418,6 +3487,16 @@ B2C商城模板样式
 .activity-price .del del{
     color:#fff;
 }
+.activity-price .lefttime{
+    margin-top: 4px;
+    display: block;
+}
+.activity-price .lefttime b{
+    background: #333;
+    padding: 3px 4px;
+    border-radius: 4px;
+    margin: 0px 4px 0 5px;
+}
 .point-banner{
     position: relative;
     width: 1200px;
@@ -3485,4 +3564,7 @@ B2C商城模板样式
     width: 100%;
     border-radius: 0px;
     margin-top:8px;
+}
+.address-dialog{
+    padding: 20px 40px 10px 10px;
 }
